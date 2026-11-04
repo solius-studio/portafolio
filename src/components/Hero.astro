@@ -1,0 +1,99 @@
+---
+import { ArrowRight, Bot, Zap, ShieldCheck, Sparkles, CheckCircle2 } from '@lucide/astro';
+---
+
+<section class="relative pt-32 pb-20 md:pt-44 md:pb-32 px-4 overflow-hidden">
+  <div class="max-w-5xl mx-auto text-center flex flex-col items-center">
+    
+    <!-- Tag superior estilo Apple -->
+    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900/80 border border-white/10 mb-8 backdrop-blur-md shadow-inner">
+      <span class="flex h-2 w-2 relative">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+      </span>
+      <span class="text-xs font-medium text-neutral-300">Desarrollo Web & Automatizaciones de Alta Precisión</span>
+      <span class="text-neutral-600">|</span>
+      <span class="text-xs text-red-400 font-medium">Solius Studio</span>
+    </div>
+
+    <!-- Título Principal -->
+    <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.08] max-w-4xl">
+      La presencia digital y la <br class="hidden sm:inline" />
+      <span class="bg-gradient-to-r from-white via-neutral-200 to-red-500/90 bg-clip-text text-transparent">
+        automatización con IA
+      </span> <br class="hidden sm:inline" />
+      que tu negocio necesita.
+    </h1>
+
+    <!-- Subtítulo -->
+    <p class="mt-6 text-base sm:text-lg md:text-xl text-neutral-400 max-w-2xl font-normal leading-relaxed">
+      Desarrollamos sitios web ultrarrápidos, tiendas online y agentes inteligentes que atienden y califican clientes 24/7. Menos tareas repetitivas, más conversión real.
+    </p>
+
+    <!-- Grupo de Botones de Acción -->
+    <div class="mt-10 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+      <a 
+        href="#proyectos" 
+        class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-red-600 hover:bg-red-500 text-white font-medium text-sm transition-all duration-300 shadow-[0_0_30px_-5px_rgba(239,68,68,0.5)] hover:shadow-[0_0_40px_-2px_rgba(239,68,68,0.7)] group"
+      >
+        <span>Ver Demos y Casos de Estudio</span>
+        <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+      </a>
+
+      <a 
+        href="#contacto" 
+        class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-neutral-900/90 hover:bg-neutral-800 text-neutral-200 hover:text-white border border-white/10 hover:border-white/20 font-medium text-sm transition-all duration-300"
+      >
+        <span>Cotizar mi Proyecto</span>
+      </a>
+    </div>
+
+    <!-- Puntos de Confianza Rápidos -->
+    <div class="mt-12 flex flex-wrap items-center justify-center gap-y-3 gap-x-6 text-xs text-neutral-400">
+      <div class="flex items-center gap-1.5">
+        <CheckCircle2 class="w-4 h-4 text-red-500" />
+        <span>Optimizado para SEO en Google</span>
+      </div>
+      <div class="flex items-center gap-1.5">
+        <CheckCircle2 class="w-4 h-4 text-red-500" />
+        <span>Tiempo de carga menor a 1 segundo</span>
+      </div>
+      <div class="flex items-center gap-1.5">
+        <CheckCircle2 class="w-4 h-4 text-red-500" />
+        <span>Integración directa con WhatsApp</span>
+      </div>
+    </div>
+
+    <!-- Banner Métricas / Bento Preview Minimalista -->
+    <div class="mt-16 w-full max-w-4xl p-2 rounded-2xl bg-gradient-to-b from-white/10 via-white/5 to-transparent border border-white/10 shadow-2xl">
+      <div class="rounded-xl bg-neutral-950/90 p-6 sm:p-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-left border border-white/5">
+        <div class="space-y-1">
+          <div class="text-2xl sm:text-3xl font-bold text-white tracking-tight flex items-baseline gap-1">
+            <span>100</span>
+            <span class="text-xs text-red-500 font-medium">/100</span>
+          </div>
+          <p class="text-xs text-neutral-400 uppercase tracking-wider font-medium">Puntaje PageSpeed</p>
+        </div>
+        <div class="space-y-1">
+          <div class="text-2xl sm:text-3xl font-bold text-white tracking-tight flex items-baseline gap-1">
+            <span>&lt;0.8s</span>
+          </div>
+          <p class="text-xs text-neutral-400 uppercase tracking-wider font-medium">Carga en Smartphones</p>
+        </div>
+        <div class="space-y-1">
+          <div class="text-2xl sm:text-3xl font-bold text-white tracking-tight flex items-baseline gap-1">
+            <span>24/7</span>
+          </div>
+          <p class="text-xs text-neutral-400 uppercase tracking-wider font-medium">Agentes IA Operativos</p>
+        </div>
+        <div class="space-y-1">
+          <div class="text-2xl sm:text-3xl font-bold text-white tracking-tight flex items-baseline gap-1">
+            <span>0%</span>
+          </div>
+          <p class="text-xs text-neutral-400 uppercase tracking-wider font-medium">Plantillas genéricas</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

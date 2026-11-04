@@ -1,0 +1,54 @@
+---
+const steps = [
+  {
+    num: "01",
+    title: "Diagnóstico & Estrategia",
+    description: "Analizamos tu modelo de negocio, tus clientes frecuentes y los cuellos de botella operativos donde perdés ventas o tiempo."
+  },
+  {
+    num: "02",
+    title: "Diseño & Identidad",
+    description: "Prototipamos una experiencia visual sobria, moderna y pensada prioritariamente para el usuario que navega desde el smartphone."
+  },
+  {
+    num: "03",
+    title: "Desarrollo & Automatización",
+    description: "Programamos código limpio sin plantillas lentas e implementamos los agentes inteligentes conectados a WhatsApp y calendarios."
+  },
+  {
+    num: "04",
+    title: "Lanzamiento & Acompañamiento",
+    description: "Desplegamos en servidores ultrarrápidos, optimizamos el SEO para Google y te enseñamos a monitorear los resultados."
+  }
+];
+---
+
+<section id="metodo" class="py-24 px-4 bg-neutral-950/40 relative">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-xs font-semibold uppercase tracking-widest text-red-500">Cómo Trabajamos</span>
+      <h2 class="mt-3 text-3xl sm:text-5xl font-bold text-white tracking-tight">
+        Un proceso transparente de punta a punta.
+      </h2>
+      <p class="mt-4 text-sm sm:text-base text-neutral-400">
+        Sin sorpresas, sin demoras infinitas y con entregas funcionales desde el primer día.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      {steps.map((step) => (
+        <div class="rounded-3xl p-6 bg-neutral-900/40 border border-white/10 hover:border-red-500/30 transition-all duration-300 relative group">
+          <div class="text-3xl font-extrabold text-neutral-600 group-hover:text-red-500 transition-colors font-mono mb-4">
+            {step.num}
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">
+            {step.title}
+          </h3>
+          <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed">
+            {step.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

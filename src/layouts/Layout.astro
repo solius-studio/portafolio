@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Solius Studio | Desarrollo Web & Automatizaciones con IA",
+  description = "Agencia digital especializada en sitios web de alta velocidad, tiendas e-commerce y automatización inteligente con IA para negocios locales y estudios profesionales."
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <!-- Open Graph / Meta Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+
+    <!-- Tipografía Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="relative min-h-screen text-neutral-200 antialiased selection:bg-red-500/20 selection:text-white">
+    <!-- Luces de ambiente sutiles de fondo (Efecto Studio) -->
+    <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+      <div class="absolute -top-[25%] left-1/2 -translate-x-1/2 w-[700px] h-[500px] rounded-full bg-gradient-to-b from-red-600/15 via-red-900/5 to-transparent blur-3xl opacity-70"></div>
+      <div class="absolute top-[40%] -left-[10%] w-[500px] h-[500px] rounded-full bg-neutral-900/40 blur-3xl"></div>
+      <div class="absolute top-[70%] -right-[10%] w-[500px] h-[500px] rounded-full bg-red-950/10 blur-3xl"></div>
+      <!-- Grilla sutil estilo blueprint Apple -->
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+    </div>
+
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,52 @@
+---
+const faqs = [
+  {
+    q: "¿Por qué necesito un sitio web si ya vendo por Instagram o tengo página en Facebook?",
+    a: "Las redes sociales son excelentes para llamar la atención, pero no son de tu propiedad: dependen de un algoritmo cambiante. Una web propia posiciona en las búsquedas de Google cuando un cliente local necesita tu servicio con urgencia, transmite una imagen 10 veces más seria y permite integrar sistemas automáticos de cobro y reservas sin fricción."
+  },
+  {
+    q: "¿Qué implica tener un agente de IA y qué necesito para implementarlo?",
+    a: "No necesitás saber nada técnico. Nosotros alimentamos al agente con la información de tu negocio (servicios, precios, políticas de atención, horarios) y lo conectamos a tu WhatsApp o sitio web. El bot atiende consultas cotidianas y te deriva únicamente a los clientes que están listos para comprar o agendar."
+  },
+  {
+    q: "¿Cuánto tiempo demora la entrega de un proyecto?",
+    a: "Una landing page o sitio institucional para estudio jurídico suele estar online entre 7 y 14 días hábiles. Desarrollos con e-commerce o automatizaciones con IA a medida toman entre 2 y 3 semanas, con revisiones intermedias constantes."
+  },
+  {
+    q: "¿Tengo que pagar un hosting mensual costoso?",
+    a: "No. Utilizamos arquitectura web de última generación (jamstack y estáticos optimizados) que permite alojar la mayoría de los sitios en infraestructura global de nivel empresarial con costo de servidor $0 o insignificante para pymes."
+  }
+];
+---
+
+<section id="faq" class="py-24 px-4 relative">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-16">
+      <span class="text-xs font-semibold uppercase tracking-widest text-red-500">Preguntas Frecuentes</span>
+      <h2 class="mt-3 text-3xl sm:text-5xl font-bold text-white tracking-tight">
+        Todo claro desde el inicio.
+      </h2>
+      <p class="mt-4 text-sm sm:text-base text-neutral-400">
+        Respuestas directas a las dudas habituales antes de comenzar.
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      {faqs.map((faq) => (
+        <details class="group rounded-2xl bg-neutral-900/40 border border-white/10 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer transition-all duration-300 open:border-red-500/30 open:bg-neutral-900/70">
+          <summary class="flex items-center justify-between text-base sm:text-lg font-semibold text-white">
+            <span>{faq.q}</span>
+            <span class="ml-4 shrink-0 rounded-full bg-white/5 p-1.5 text-neutral-400 group-open:rotate-180 group-open:text-red-400 transition-transform">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </summary>
+          <p class="mt-4 text-sm text-neutral-400 leading-relaxed">
+            {faq.a}
+          </p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

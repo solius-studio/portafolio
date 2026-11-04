@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import BentoServices from '../components/BentoServices.astro';
+import ShowcasePreview from '../components/ShowcasePreview.astro';
+import AIAutomationSection from '../components/AIAutomationSection.astro';
+import Process from '../components/Process.astro';
+import FAQ from '../components/FAQ.astro';
+import CTASection from '../components/CTASection.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Solius Studio | Desarrollo Web & Automatizaciones con IA"
+  description="Desarrollamos sitios web ultrarrápidos, tiendas online y agentes de IA inteligentes para comercios locales y estudios profesionales."
+>
+  <Navbar />
+  <main>
+    <Hero />
+    <BentoServices />
+    <ShowcasePreview />
+    <AIAutomationSection />
+    <Process />
+    <FAQ />
+    <CTASection />
+  </main>
+  <Footer />
+</Layout>

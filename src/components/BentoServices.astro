@@ -1,0 +1,146 @@
+---
+import { 
+  Globe, 
+  ShoppingBag, 
+  Scale, 
+  Bot, 
+  Zap, 
+  Smartphone, 
+  ArrowUpRight,
+  Sparkles,
+  Database,
+  Cpu
+} from '@lucide/astro';
+---
+
+<section id="servicios" class="py-24 px-4 relative">
+  <div class="max-w-6xl mx-auto">
+    <!-- Encabezado de sección -->
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-xs font-semibold uppercase tracking-widest text-red-500">Nuestros Servicios</span>
+      <h2 class="mt-3 text-3xl sm:text-5xl font-bold text-white tracking-tight">
+        Soluciones diseñadas para <br class="hidden sm:inline" />
+        hacer crecer tu facturación.
+      </h2>
+      <p class="mt-4 text-sm sm:text-base text-neutral-400">
+        Combinamos arquitectura web moderna con herramientas de automatización para que tu negocio sea más visible y eficiente.
+      </p>
+    </div>
+
+    <!-- Bento Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Card 1: Comercios Locales (Col 1 y 2 en MD) -->
+      <div class="md:col-span-2 rounded-3xl p-8 bg-neutral-900/40 border border-white/10 hover:border-red-500/30 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between min-h-[340px]">
+        <div class="absolute -right-8 -top-8 w-48 h-48 bg-red-600/10 rounded-full blur-3xl pointer-events-none group-hover:bg-red-600/20 transition-all"></div>
+        
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <div class="w-12 h-12 rounded-2xl bg-neutral-900 border border-white/10 flex items-center justify-center text-red-500 group-hover:scale-105 transition-transform">
+              <Globe class="w-6 h-6" />
+            </div>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neutral-300">
+              Comercios & Negocios de Zona
+            </span>
+          </div>
+
+          <h3 class="text-2xl font-bold text-white tracking-tight">
+            Sitios Web & Landings de Alta Velocidad
+          </h3>
+          <p class="mt-3 text-sm text-neutral-400 max-w-xl leading-relaxed">
+            Tu negocio no puede perder clientes por una página lenta. Creamos sitios optimizados para celulares con botones directos a WhatsApp, ubicación en Google Maps y SEO local para que te encuentren primero.
+          </p>
+        </div>
+
+        <div class="mt-8 flex flex-wrap items-center gap-2 pt-4 border-t border-white/5">
+          <span class="text-xs px-2.5 py-1 rounded-lg bg-neutral-950 border border-white/10 text-neutral-300">Google Local SEO</span>
+          <span class="text-xs px-2.5 py-1 rounded-lg bg-neutral-950 border border-white/10 text-neutral-300">WhatsApp Instantáneo</span>
+          <span class="text-xs px-2.5 py-1 rounded-lg bg-neutral-950 border border-white/10 text-neutral-300">Carga &lt; 1s</span>
+        </div>
+      </div>
+
+      <!-- Card 2: E-Commerce -->
+      <div class="rounded-3xl p-8 bg-neutral-900/40 border border-white/10 hover:border-red-500/30 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between min-h-[340px]">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <div class="w-12 h-12 rounded-2xl bg-neutral-900 border border-white/10 flex items-center justify-center text-red-500 group-hover:scale-105 transition-transform">
+              <ShoppingBag class="w-6 h-6" />
+            </div>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neutral-300">
+              Ventas Online
+            </span>
+          </div>
+
+          <h3 class="text-xl font-bold text-white tracking-tight">
+            E-Commerce & Catálogos Dinámicos
+          </h3>
+          <p class="mt-3 text-sm text-neutral-400 leading-relaxed">
+            Tiendas online optimizadas para checkout sin fricción, pagos con Mercado Pago o tarjetas, y administración de productos simple y sin complicaciones.
+          </p>
+        </div>
+
+        <div class="mt-8 pt-4 border-t border-white/5 flex items-center gap-2">
+          <span class="text-xs px-2.5 py-1 rounded-lg bg-neutral-950 border border-white/10 text-neutral-300">Pasarelas de Pago</span>
+          <span class="text-xs px-2.5 py-1 rounded-lg bg-neutral-950 border border-white/10 text-neutral-300">Stock en tiempo real</span>
+        </div>
+      </div>
+
+      <!-- Card 3: Estudios Jurídicos y Profesionales -->
+      <div class="rounded-3xl p-8 bg-neutral-900/40 border border-white/10 hover:border-red-500/30 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between min-h-[340px]">
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <div class="w-12 h-12 rounded-2xl bg-neutral-900 border border-white/10 flex items-center justify-center text-red-500 group-hover:scale-105 transition-transform">
+              <Scale class="w-6 h-6" />
+            </div>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neutral-300">
+              Servicios Profesionales
+            </span>
+          </div>
+
+          <h3 class="text-xl font-bold text-white tracking-tight">
+            Estudios Jurídicos & Consultorías
+          </h3>
+          <p class="mt-3 text-sm text-neutral-400 leading-relaxed">
+            Plataformas institucionales con diseño sobrio y de máxima seriedad. Formularios de evaluación de casos, agendamiento de turnos y generación de autoridad para firmas de abogados y contadores.
+          </p>
+        </div>
+
+        <div class="mt-8 pt-4 border-t border-white/5 flex items-center gap-2">
+          <span class="text-xs px-2.5 py-1 rounded-lg bg-neutral-950 border border-white/10 text-neutral-300">Filtro de Casos</span>
+          <span class="text-xs px-2.5 py-1 rounded-lg bg-neutral-950 border border-white/10 text-neutral-300">Agenda Privada</span>
+        </div>
+      </div>
+
+      <!-- Card 4: Automatizaciones con IA (Col 2 y 3 en MD - Destacado) -->
+      <div class="md:col-span-2 rounded-3xl p-8 bg-gradient-to-br from-neutral-900/80 via-neutral-900/30 to-red-950/20 border border-red-500/20 hover:border-red-500/40 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between min-h-[340px] shadow-lg shadow-red-950/20">
+        <div class="absolute right-0 bottom-0 w-80 h-80 bg-red-600/10 rounded-full blur-3xl pointer-events-none group-hover:bg-red-600/20 transition-all"></div>
+
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <div class="w-12 h-12 rounded-2xl bg-red-950/60 border border-red-500/40 flex items-center justify-center text-red-400 group-hover:scale-105 transition-transform">
+              <Bot class="w-6 h-6" />
+            </div>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-red-950/60 border border-red-700/50 text-red-300 flex items-center gap-1.5">
+              <Sparkles class="w-3.5 h-3.5" />
+              Especialidad Solius Studio
+            </span>
+          </div>
+
+          <h3 class="text-2xl font-bold text-white tracking-tight">
+            Automatización de Procesos & Agentes IA
+          </h3>
+          <p class="mt-3 text-sm text-neutral-400 max-w-xl leading-relaxed">
+            Eliminá el tiempo perdido respondiendo las mismas dudas 50 veces por día. Implementamos chatbots y agentes entrenados con la información de tu negocio para responder consultas, calificar prospectos y coordinar turnos en automático por WhatsApp o tu web.
+          </p>
+        </div>
+
+        <div class="mt-8 flex flex-wrap items-center gap-2 pt-4 border-t border-white/10">
+          <span class="text-xs px-2.5 py-1 rounded-lg bg-black/60 border border-white/10 text-neutral-300">Chatbots WhatsApp con IA</span>
+          <span class="text-xs px-2.5 py-1 rounded-lg bg-black/60 border border-white/10 text-neutral-300">Calificación de Prospectos</span>
+          <span class="text-xs px-2.5 py-1 rounded-lg bg-black/60 border border-white/10 text-neutral-300">Sincronización con Hojas de Cálculo</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
