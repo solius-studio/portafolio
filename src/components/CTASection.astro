@@ -1,82 +1,99 @@
 ---
-import IconShield from './icons/IconShield.astro';
 import IconArrowRight from './icons/IconArrowRight.astro';
 ---
 
-<section id="contacto" class="py-24 px-4 relative">
-  <div class="max-w-5xl mx-auto">
-    <div class="rounded-3xl bg-gradient-to-b from-neutral-900 via-neutral-900/90 to-black border border-white/10 p-8 sm:p-14 relative overflow-hidden shadow-2xl">
-      <!-- Glow rojo en la esquina superior -->
-      <div class="absolute -top-24 -right-24 w-80 h-80 bg-red-600/20 rounded-full blur-3xl pointer-events-none"></div>
+<section id="contacto" class="py-24 px-6 border-t border-white/[0.06]">
+  <div class="max-w-[1200px] mx-auto">
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
-        <div>
-          <span class="text-xs font-semibold uppercase tracking-widest text-red-500">Contactá a Solius Studio</span>
-          <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
-            Empecemos a construir <br />
-            tu ventaja competitiva.
-          </h2>
-          <p class="mt-4 text-sm text-neutral-400 leading-relaxed">
-            Te asesoramos de forma personalizada. Analizamos tu rubro y te mostramos cómo una web moderna o un flujo de automatización con IA puede ahorrarte horas y aumentar tus clientes.
-          </p>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+      
+      <!-- Lado Izquierdo: Mensaje Institucional -->
+      <div>
+        <p class="text-[13px] text-neutral-500 mb-3 font-mono tracking-wide">Contacto directo</p>
+        <h2 class="font-display text-[clamp(2rem,4.5vw,3rem)] font-bold tracking-[-0.035em] text-white leading-[1.1] mb-6">
+          Hablemos de tu proyecto.
+        </h2>
+        <p class="text-[15px] text-neutral-400 leading-relaxed mb-8 max-w-md">
+          Analizamos la situación de tu negocio y te explicamos con honestidad si tiene sentido implementar una web a medida, un agente de IA o ambos.
+        </p>
 
-          <div class="mt-8 space-y-3 text-xs text-neutral-300">
-            <div class="flex items-center gap-2.5">
-              <IconShield class="w-4 h-4 text-white" />
-              <span>Presupuesto claro y cerrado, sin costos ocultos.</span>
-            </div>
-            <div class="flex items-center gap-2.5">
-              <IconShield class="w-4 h-4 text-white" />
-              <span>Garantía de rendimiento y optimización en móviles.</span>
-            </div>
+        <div class="space-y-4 pt-6 border-t border-white/[0.06] text-[13px] text-neutral-400 font-mono">
+          <div class="flex items-center gap-3">
+            <span class="text-[#e54d2e]">—</span>
+            <span>Presupuesto claro y cerrado, sin costos adicionales.</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-[#e54d2e]">—</span>
+            <span>Código de tu propiedad. Sin tarifas de alquiler.</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-[#e54d2e]">—</span>
+            <span>Respuesta en menos de dos horas hábiles.</span>
           </div>
         </div>
-
-        <!-- Formulario o Acción Rápida -->
-        <div class="rounded-2xl bg-neutral-950/80 border border-white/10 p-6 shadow-inner">
-          <form class="space-y-4" onsubmit="event.preventDefault();">
-            <div>
-              <label class="block text-xs font-medium text-neutral-300 mb-1.5">Tu Nombre o Empresa</label>
-              <input 
-                type="text" 
-                placeholder="Ej. Estudio Legal Rossi / Café Bistro" 
-                class="w-full px-3.5 py-2.5 rounded-xl bg-neutral-900 border border-white/10 text-white placeholder-neutral-500 text-xs focus:outline-none focus:border-red-500 transition-colors"
-              />
-            </div>
-
-            <div>
-              <label class="block text-xs font-medium text-neutral-300 mb-1.5">Rubro / Tipo de Negocio</label>
-              <select class="w-full px-3.5 py-2.5 rounded-xl bg-neutral-900 border border-white/10 text-neutral-300 text-xs focus:outline-none focus:border-red-500 transition-colors">
-                <option value="comercio">Comercio Local / Gastronomía</option>
-                <option value="juridico">Estudio Jurídico / Contable / Profesional</option>
-                <option value="ecommerce">Tienda Online / E-commerce</option>
-                <option value="ia">Automatización de Procesos con IA</option>
-                <option value="otro">Otro Proyecto</option>
-              </select>
-            </div>
-
-            <div>
-              <label class="block text-xs font-medium text-neutral-300 mb-1.5">Teléfono o WhatsApp de Contacto</label>
-              <input 
-                type="tel" 
-                placeholder="+54 9 11 ..." 
-                class="w-full px-3.5 py-2.5 rounded-xl bg-neutral-900 border border-white/10 text-white placeholder-neutral-500 text-xs focus:outline-none focus:border-red-500 transition-colors"
-              />
-            </div>
-
-            <button 
-              type="submit" 
-              class="w-full mt-2 py-3 px-4 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-bold tracking-wide transition-all duration-300 shadow-[0_0_20px_-3px_rgba(239,68,68,0.5)] flex items-center justify-center gap-2 group"
-            >
-              <span>Solicitar Diagnóstico Sin Costo</span>
-              <IconArrowRight class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <p class="text-[10px] text-neutral-500 text-center mt-2">
-              Respondemos habitualmente en menos de 2 horas hábiles.
-            </p>
-          </form>
-        </div>
       </div>
+
+      <!-- Lado Derecho: Formulario Sobrio -->
+      <div class="bg-[#0a0a0c] border border-white/[0.08] rounded-lg p-8 sm:p-10">
+        <form class="space-y-5" onsubmit="event.preventDefault();">
+          <div>
+            <label class="block text-[12px] font-mono uppercase tracking-wider text-neutral-400 mb-2">
+              Nombre o Empresa
+            </label>
+            <input 
+              type="text" 
+              required
+              placeholder="Ej. Estudio Jurídico Rossi" 
+              class="w-full px-4 py-3 bg-[#050505] border border-white/[0.08] rounded-md text-white text-[14px] placeholder-neutral-600 focus:outline-none focus:border-white/30 transition-colors duration-150"
+            />
+          </div>
+
+          <div>
+            <label class="block text-[12px] font-mono uppercase tracking-wider text-neutral-400 mb-2">
+              Sector del Negocio
+            </label>
+            <select class="w-full px-4 py-3 bg-[#050505] border border-white/[0.08] rounded-md text-neutral-300 text-[14px] focus:outline-none focus:border-white/30 transition-colors duration-150">
+              <option value="comercio">Comercio Local / Gastronomía</option>
+              <option value="juridico">Estudio Jurídico o Contable</option>
+              <option value="ecommerce">Tienda Online / E-commerce</option>
+              <option value="ia">Automatización de Procesos con IA</option>
+              <option value="otro">Otro proyecto a medida</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-[12px] font-mono uppercase tracking-wider text-neutral-400 mb-2">
+              WhatsApp o Correo de Contacto
+            </label>
+            <input 
+              type="text" 
+              required
+              placeholder="+54 9 11 ..." 
+              class="w-full px-4 py-3 bg-[#050505] border border-white/[0.08] rounded-md text-white text-[14px] placeholder-neutral-600 focus:outline-none focus:border-white/30 transition-colors duration-150"
+            />
+          </div>
+
+          <div>
+            <label class="block text-[12px] font-mono uppercase tracking-wider text-neutral-400 mb-2">
+              Breve descripción del objetivo (opcional)
+            </label>
+            <textarea 
+              rows="3"
+              placeholder="¿Qué problema buscas resolver o qué querés automatizar?" 
+              class="w-full px-4 py-3 bg-[#050505] border border-white/[0.08] rounded-md text-white text-[14px] placeholder-neutral-600 focus:outline-none focus:border-white/30 transition-colors duration-150 resize-none"
+            ></textarea>
+          </div>
+
+          <button 
+            type="submit" 
+            class="w-full py-3.5 px-6 bg-white text-[#050505] rounded-md text-[14px] font-medium hover:bg-neutral-200 transition-colors duration-150 flex items-center justify-center gap-2 group cursor-pointer"
+          >
+            <span>Solicitar Diagnóstico Sin Costo</span>
+            <IconArrowRight class="w-4 h-4 text-[#050505] group-hover:translate-x-0.5 transition-transform duration-150" />
+          </button>
+        </form>
+      </div>
+
     </div>
   </div>
 </section>

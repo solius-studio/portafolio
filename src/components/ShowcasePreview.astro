@@ -1,134 +1,96 @@
 ---
-import IconLegal from './icons/IconLegal.astro';
-import IconGastronomy from './icons/IconGastronomy.astro';
-import IconAI from './icons/IconAI.astro';
 import IconArrowRight from './icons/IconArrowRight.astro';
-
-const projects = [
-  {
-    title: "LexVanguard Abogados",
-    sector: "Estudio Jurídico & Asesoría Corporativa",
-    problem: "Demasiadas consultas informales por mensaje que consumían horas de los socios sin traducirse en honorarios.",
-    solution: "Portal institucional con triaje inteligente: califica el caso en 3 preguntas antes de agendar la consulta con el especialista.",
-    deliverables: ["Intake inteligente de clientes", "Carga en 0.4 segundos", "Pasarela de cobro de consultas"],
-    icon: IconLegal,
-    slug: "lexvanguard"
-  },
-  {
-    title: "Aura Bistro & Bar",
-    sector: "Gastronomía & Comercios de Cercanía",
-    problem: "Comisiones del 25% al 30% en plataformas de delivery y cartas en PDF pesadas que los clientes no querían descargar.",
-    solution: "Menú digital interactivo ultraliviano con selector de mesa y envío de comandas estructuradas directo al WhatsApp de cocina.",
-    deliverables: ["0% comisiones a apps", "Menú QR instantáneo", "Pedidos directos a WhatsApp"],
-    icon: IconGastronomy,
-    slug: "aura-bistro"
-  },
-  {
-    title: "NovaDesk AI Assistant",
-    sector: "Automatización & Atención al Cliente",
-    problem: "Prospectos calificados que escribían fuera de horario comercial y se iban con la competencia por falta de respuesta.",
-    solution: "Agente autónomo integrado a WhatsApp que responde preguntas de stock, cotiza servicios y reserva turnos las 24 horas.",
-    deliverables: ["Disponibilidad 24/7 sin fallas", "Conexión a Notion/Google Sheets", "Derivación a humanos en casos VIP"],
-    icon: IconAI,
-    slug: "novadesk-ai"
-  }
-];
 ---
 
-<section id="proyectos" class="py-24 px-6 lg:px-12 max-w-7xl mx-auto border-t border-white/[0.06]">
-  
-  <!-- Encabezado de Sección -->
-  <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-    <div>
-      <div class="flex items-center gap-2 mb-3">
-        <span class="w-2 h-2 rounded-full bg-red-600"></span>
-        <span class="text-xs font-mono uppercase tracking-widest text-neutral-400">02 // Casos de Estudio & Prototipos</span>
+<section id="proyectos" class="py-24 px-6 border-t border-white/[0.06]">
+  <div class="max-w-[1200px] mx-auto">
+
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+      <div>
+        <p class="text-[13px] text-neutral-500 mb-3 font-mono tracking-wide">Portafolio</p>
+        <h2 class="font-display text-[clamp(1.75rem,4vw,2.75rem)] font-bold tracking-[-0.03em] text-white leading-[1.15]">
+          Casos de estudio
+        </h2>
       </div>
-      <h2 class="text-3xl sm:text-5xl font-bold text-white tracking-tight leading-[1.15]">
-        Resultados tangibles para <br class="hidden sm:inline" />
-        negocios en el mundo real.
-      </h2>
-    </div>
-    <p class="text-sm text-neutral-400 max-w-md leading-relaxed">
-      Proyectos estructurados para resolver problemas comerciales concretos: tiempos de carga, fugas de comisiones y atención sin demoras.
-    </p>
-  </div>
-
-  <!-- Grilla de Casos de Estudio -->
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-    {projects.map((item) => {
-      const IconComponent = item.icon;
-      return (
-        <div class="rounded-xl bg-[#0c0c0f] border border-white/[0.08] hover:border-white/20 p-8 flex flex-col justify-between transition-all duration-300 group">
-          <div>
-            <!-- Cabecera -->
-            <div class="flex items-center justify-between mb-6">
-              <div class="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/10 flex items-center justify-center text-white">
-                <IconComponent class="w-5 h-5 text-neutral-300" />
-              </div>
-              <span class="text-xs font-mono px-2.5 py-1 rounded bg-white/[0.03] border border-white/10 text-neutral-300">
-                Caso de Muestra
-              </span>
-            </div>
-
-            <span class="text-xs font-mono text-neutral-400 uppercase tracking-wider block mb-2">
-              {item.sector}
-            </span>
-            <h3 class="text-2xl font-semibold text-white tracking-tight mb-4">
-              {item.title}
-            </h3>
-
-            <!-- Problema y Solución -->
-            <div class="space-y-3 mb-6 text-xs text-neutral-400 leading-relaxed">
-              <div class="p-3 rounded-lg bg-white/[0.02] border border-white/5">
-                <strong class="text-neutral-300 font-mono block mb-1">EL DESAFÍO:</strong>
-                {item.problem}
-              </div>
-              <div class="p-3 rounded-lg bg-white/[0.02] border border-white/5">
-                <strong class="text-neutral-300 font-mono block mb-1">LA SOLUCIÓN:</strong>
-                {item.solution}
-              </div>
-            </div>
-
-            <!-- Entregables Técnicos -->
-            <ul class="space-y-1.5 mb-8 text-xs font-mono text-neutral-300">
-              {item.deliverables.map(del => (
-                <li class="flex items-center gap-2">
-                  <span class="text-red-500">•</span>
-                  <span>{del}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <!-- Acción -->
-          <a 
-            href="#contacto" 
-            class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-white/[0.04] hover:bg-white text-neutral-200 hover:text-neutral-950 text-xs font-medium transition-all duration-200 border border-white/10 group/btn"
-          >
-            <span>Consultar Solución Similar</span>
-            <IconArrowRight class="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 transition-transform" />
-          </a>
-        </div>
-      );
-    })}
-  </div>
-
-  <!-- Franja de Diagnóstico Directo -->
-  <div class="mt-12 p-6 rounded-xl border border-white/[0.08] bg-[#0c0c0f] flex flex-col sm:flex-row items-center justify-between gap-4">
-    <div class="flex items-center gap-3">
-      <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-      <p class="text-sm text-neutral-300">
-        ¿Quieres una auditoría sin costo de la web o el flujo de atención de tu negocio?
+      <p class="text-[15px] text-neutral-400 max-w-md leading-relaxed">
+        Prototipos funcionales que resuelven problemas reales de negocios concretos.
       </p>
     </div>
-    <a 
-      href="#contacto" 
-      class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-white hover:text-neutral-300 transition-colors whitespace-nowrap"
-    >
-      <span>Solicitar diagnóstico gratuito</span>
-      <IconArrowRight class="w-3.5 h-3.5" />
-    </a>
-  </div>
 
+    <div class="space-y-0 border-t border-white/[0.06]">
+      
+      <!-- Case 1 -->
+      <div class="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 py-10 border-b border-white/[0.06] group">
+        <div>
+          <span class="text-[12px] font-mono text-neutral-600 block mb-2">Estudio Jurídico</span>
+          <h3 class="font-display text-xl font-semibold text-white tracking-tight group-hover:text-[#e54d2e] transition-colors duration-200">
+            LexVanguard Abogados
+          </h3>
+        </div>
+        <div>
+          <p class="text-[14px] text-neutral-400 leading-relaxed mb-4">
+            Plataforma institucional con sistema de admisión inteligente. Filtra consultas informales, califica la viabilidad del caso en tres preguntas y agenda solo con prospectos que pueden pagar los honorarios del estudio.
+          </p>
+          <div class="flex flex-wrap gap-x-6 gap-y-1 text-[12px] text-neutral-500 mb-4">
+            <span>Carga en 0.4s</span>
+            <span>Triaje automático</span>
+            <span>Cobro de consulta inicial</span>
+          </div>
+          <a href="#contacto" class="inline-flex items-center gap-1.5 text-[13px] text-neutral-300 hover:text-white transition-colors duration-150">
+            Consultar solución similar
+            <IconArrowRight class="w-3 h-3" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Case 2 -->
+      <div class="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 py-10 border-b border-white/[0.06] group">
+        <div>
+          <span class="text-[12px] font-mono text-neutral-600 block mb-2">Gastronomía</span>
+          <h3 class="font-display text-xl font-semibold text-white tracking-tight group-hover:text-[#e54d2e] transition-colors duration-200">
+            Aura Bistro & Bar
+          </h3>
+        </div>
+        <div>
+          <p class="text-[14px] text-neutral-400 leading-relaxed mb-4">
+            Menú digital interactivo que abre al instante desde un código QR. Los pedidos llegan formateados directo al WhatsApp de cocina, eliminando las comisiones del 25-30% que cobran las apps de delivery.
+          </p>
+          <div class="flex flex-wrap gap-x-6 gap-y-1 text-[12px] text-neutral-500 mb-4">
+            <span>Menú QR instantáneo</span>
+            <span>0% comisiones</span>
+            <span>Pedidos a WhatsApp</span>
+          </div>
+          <a href="#contacto" class="inline-flex items-center gap-1.5 text-[13px] text-neutral-300 hover:text-white transition-colors duration-150">
+            Consultar solución similar
+            <IconArrowRight class="w-3 h-3" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Case 3 -->
+      <div class="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 py-10 border-b border-white/[0.06] group">
+        <div>
+          <span class="text-[12px] font-mono text-neutral-600 block mb-2">Automatización</span>
+          <h3 class="font-display text-xl font-semibold text-white tracking-tight group-hover:text-[#e54d2e] transition-colors duration-200">
+            NovaDesk AI Assistant
+          </h3>
+        </div>
+        <div>
+          <p class="text-[14px] text-neutral-400 leading-relaxed mb-4">
+            Agente autónomo que responde preguntas frecuentes, cotiza servicios estándar y agenda reuniones comerciales las 24 horas por WhatsApp, sin perder un solo prospecto fuera de horario.
+          </p>
+          <div class="flex flex-wrap gap-x-6 gap-y-1 text-[12px] text-neutral-500 mb-4">
+            <span>Disponible 24/7</span>
+            <span>Respuesta en segundos</span>
+            <span>Conexión a CRM</span>
+          </div>
+          <a href="#contacto" class="inline-flex items-center gap-1.5 text-[13px] text-neutral-300 hover:text-white transition-colors duration-150">
+            Consultar solución similar
+            <IconArrowRight class="w-3 h-3" />
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>

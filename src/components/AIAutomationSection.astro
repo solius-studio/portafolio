@@ -1,164 +1,97 @@
 ---
-import IconAI from './icons/IconAI.astro';
-import IconChatAI from './icons/IconChatAI.astro';
-import IconSpeed from './icons/IconSpeed.astro';
-import IconShield from './icons/IconShield.astro';
-import IconSparkle from './icons/IconSparkle.astro';
 import IconArrowRight from './icons/IconArrowRight.astro';
 ---
 
-<section id="ia-automatizacion" class="py-24 px-4 relative overflow-hidden">
-  <div class="max-w-6xl mx-auto">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<section id="soluciones" class="py-24 px-6 border-t border-white/[0.06]">
+  <div class="max-w-[1200px] mx-auto">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
       
-      <!-- Lado Izquierdo: Explicación de valor de negocio -->
+      <!-- Left: Value Proposition -->
       <div>
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/60 border border-red-800/40 text-red-400 text-xs font-medium mb-6">
-          <IconSparkle class="w-3.5 h-3.5 text-red-400" />
-          <span>El Diferencial de Solius Studio</span>
-        </div>
-
-        <h2 class="text-3xl sm:text-5xl font-bold text-white tracking-tight leading-[1.15]">
-          Tu negocio atendiendo clientes, <br />
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-400">
-            incluso mientras dormís.
-          </span>
+        <p class="text-[13px] text-neutral-500 mb-3 font-mono tracking-wide">Automatización inteligente</p>
+        <h2 class="font-display text-[clamp(1.75rem,4vw,2.75rem)] font-bold tracking-[-0.03em] text-white leading-[1.15] mb-6">
+          Tu negocio atendiendo clientes incluso cuando no estás.
         </h2>
-
-        <p class="mt-6 text-sm sm:text-base text-neutral-400 leading-relaxed">
-          El 70% de los clientes compra en el primer negocio que le responde. Conectamos agentes de Inteligencia Artificial entrenados específicamente con los datos de tus servicios o productos para responder dudas complejas al instante por WhatsApp o web.
+        <p class="text-[15px] text-neutral-400 leading-relaxed mb-8">
+          El 70% de los clientes elige al primer negocio que responde. Nuestros agentes de IA contestan en segundos, con la información real de tus servicios, precios y disponibilidad.
         </p>
 
-        <!-- Beneficios en viñetas con iconos Solius -->
-        <div class="mt-8 space-y-4">
-          <div class="flex items-start gap-3">
-            <div class="w-7 h-7 rounded-lg bg-red-950/80 border border-red-800/50 flex items-center justify-center text-red-400 mt-0.5 shrink-0 shadow-inner">
-              <IconSpeed class="w-4 h-4 text-white" />
-            </div>
+        <div class="space-y-6 mb-10">
+          <div class="flex gap-4">
+            <span class="text-[#e54d2e] text-[15px] font-mono shrink-0 mt-0.5">→</span>
             <div>
-              <h4 class="text-sm font-semibold text-white">Respuestas en menos de 5 segundos</h4>
-              <p class="text-xs text-neutral-400 mt-0.5">Sin tiempos de espera. Tus clientes reciben información de precios, horarios o stock al instante.</p>
+              <h4 class="text-[15px] font-medium text-white mb-1">Respuestas inmediatas y precisas</h4>
+              <p class="text-[13px] text-neutral-500 leading-relaxed">Sin tiempos de espera. Información de precios, horarios y stock al instante por WhatsApp o web.</p>
             </div>
           </div>
-
-          <div class="flex items-start gap-3">
-            <div class="w-7 h-7 rounded-lg bg-red-950/80 border border-red-800/50 flex items-center justify-center text-red-400 mt-0.5 shrink-0 shadow-inner">
-              <IconAI class="w-4 h-4 text-white" />
-            </div>
+          <div class="flex gap-4">
+            <span class="text-[#e54d2e] text-[15px] font-mono shrink-0 mt-0.5">→</span>
             <div>
-              <h4 class="text-sm font-semibold text-white">Agendamiento y calificación sin intervención humana</h4>
-              <p class="text-xs text-neutral-400 mt-0.5">El agente hace las preguntas filtro, toma los datos del cliente y coordina el turno o envía el lead a tu teléfono.</p>
+              <h4 class="text-[15px] font-medium text-white mb-1">Calificación sin intervención humana</h4>
+              <p class="text-[13px] text-neutral-500 leading-relaxed">El agente hace las preguntas filtro, toma los datos y coordina el turno o deriva el lead a tu teléfono.</p>
             </div>
           </div>
-
-          <div class="flex items-start gap-3">
-            <div class="w-7 h-7 rounded-lg bg-red-950/80 border border-red-800/50 flex items-center justify-center text-red-400 mt-0.5 shrink-0 shadow-inner">
-              <IconShield class="w-4 h-4 text-white" />
-            </div>
+          <div class="flex gap-4">
+            <span class="text-[#e54d2e] text-[15px] font-mono shrink-0 mt-0.5">→</span>
             <div>
-              <h4 class="text-sm font-semibold text-white">Entrenado con tu información real</h4>
-              <p class="text-xs text-neutral-400 mt-0.5">No inventa respuestas ni alucina. Sigue tus políticas de atención, tarifas y catálogo.</p>
+              <h4 class="text-[15px] font-medium text-white mb-1">Entrenado con tu información real</h4>
+              <p class="text-[13px] text-neutral-500 leading-relaxed">No inventa respuestas. Sigue tus políticas de atención, tarifas y catálogo al pie de la letra.</p>
             </div>
           </div>
         </div>
 
-        <div class="mt-8">
-          <a href="#contacto" class="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-red-400 transition-colors group">
-            <span>Consultar por integración de IA para tu empresa</span>
-            <IconArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
-        </div>
+        <a href="#contacto" class="inline-flex items-center gap-2 text-[14px] text-white hover:text-neutral-300 transition-colors duration-150 group">
+          Consultar integración de IA
+          <IconArrowRight class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform duration-150" />
+        </a>
       </div>
 
-      <!-- Lado Derecho: Simulación de Chatbot / Agente en vivo (UI Apple Glass) -->
-      <div class="relative">
-        <!-- Glow ambiental -->
-        <div class="absolute inset-0 bg-red-600/10 rounded-3xl blur-3xl pointer-events-none"></div>
+      <!-- Right: Realistic chat simulation - editorial, not flashy -->
+      <div class="rounded-lg border border-white/[0.08] overflow-hidden bg-[#0a0a0a]">
+        
+        <div class="px-5 py-3.5 border-b border-white/[0.06] flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span class="text-[13px] text-neutral-300">Asistente — LexVanguard Abogados</span>
+          </div>
+          <span class="text-[11px] font-mono text-neutral-600">En línea</span>
+        </div>
 
-        <div class="relative rounded-3xl bg-neutral-900/90 border border-white/10 shadow-2xl overflow-hidden backdrop-blur-xl">
-          <!-- Header de la ventana -->
-          <div class="px-5 py-4 border-b border-white/10 flex items-center justify-between bg-black/40">
-            <div class="flex items-center gap-3">
-              <div class="relative">
-                <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-neutral-900 to-neutral-800 border border-red-500/40 flex items-center justify-center text-white shadow-md">
-                  <IconAI class="w-5 h-5 text-white" />
-                </div>
-                <div class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-neutral-900"></div>
-              </div>
-              <div>
-                <p class="text-xs font-bold text-white flex items-center gap-1.5">
-                  <span>Asistente Solius AI</span>
-                  <span class="text-[9px] px-1.5 py-0.5 rounded bg-red-950/80 text-red-400 border border-red-800/40">Activo</span>
-                </p>
-                <p class="text-[10px] text-neutral-400">Atención automatizada 24/7</p>
-              </div>
-            </div>
-
-            <div class="flex items-center gap-1.5">
-              <span class="w-2.5 h-2.5 rounded-full bg-white/20"></span>
-              <span class="w-2.5 h-2.5 rounded-full bg-white/20"></span>
-              <span class="w-2.5 h-2.5 rounded-full bg-white/20"></span>
+        <div class="p-5 space-y-4 text-[13px]">
+          
+          <div class="flex justify-end">
+            <div class="max-w-[75%] bg-white/[0.06] text-neutral-200 px-4 py-2.5 rounded-lg rounded-br-sm">
+              <p>Hola, necesito asesoramiento por un contrato comercial incumplido. ¿Tienen disponibilidad esta semana?</p>
+              <span class="block text-[11px] text-neutral-600 text-right mt-1.5">15:32</span>
             </div>
           </div>
 
-          <!-- Mensajes simulados -->
-          <div class="p-6 space-y-4 text-xs font-normal">
-            
-            <!-- Mensaje Cliente -->
-            <div class="flex justify-end">
-              <div class="max-w-[80%] rounded-2xl rounded-tr-sm bg-neutral-800 text-white p-3.5 border border-white/5">
-                <p>Hola, buenas tardes. Necesito asesoramiento por un litigio comercial. ¿Tienen turnos disponibles esta semana?</p>
-                <span class="block text-[9px] text-neutral-400 text-right mt-1">15:32</span>
-              </div>
+          <div class="flex justify-start">
+            <div class="max-w-[80%] bg-[#111] text-neutral-300 px-4 py-2.5 rounded-lg rounded-bl-sm border border-white/[0.04]">
+              <p>Buenas tardes. Sí, el departamento de Derecho Comercial tiene disponibilidad. Para asignarte el especialista adecuado: ¿se trata de un conflicto societario, cobranzas o incumplimiento contractual?</p>
+              <span class="block text-[11px] text-neutral-600 mt-1.5">15:32 · 1.2s</span>
             </div>
-
-            <!-- Respuesta Agente IA con IconChatAI propio -->
-            <div class="flex justify-start items-start gap-2.5">
-              <div class="w-7 h-7 rounded-full bg-neutral-900 text-red-400 flex items-center justify-center mt-1 shrink-0 border border-red-500/40 shadow-inner">
-                <IconChatAI class="w-4 h-4 text-white" />
-              </div>
-              <div class="max-w-[85%] rounded-2xl rounded-tl-sm bg-neutral-950/90 text-neutral-200 p-3.5 border border-white/10 shadow-md">
-                <p>¡Hola! Buenas tardes. Sí, en el departamento de Derecho Comercial atendemos consultas presenciales y virtuales.</p>
-                <p class="mt-2 text-neutral-400">Para asignarte el especialista adecuado: ¿se trata de un conflicto societario, cobranzas o contratos?</p>
-                <div class="mt-3 flex flex-wrap gap-1.5">
-                  <span class="px-2 py-1 rounded-md bg-neutral-900 border border-white/10 text-neutral-300 text-[10px]">Contratos</span>
-                  <span class="px-2 py-1 rounded-md bg-neutral-900 border border-white/10 text-neutral-300 text-[10px]">Societario</span>
-                  <span class="px-2 py-1 rounded-md bg-neutral-900 border border-white/10 text-neutral-300 text-[10px]">Cobranzas</span>
-                </div>
-                <span class="block text-[9px] text-neutral-500 mt-2">15:32 · Respondió en 1.2s</span>
-              </div>
-            </div>
-
-            <!-- Mensaje Cliente 2 -->
-            <div class="flex justify-end">
-              <div class="max-w-[80%] rounded-2xl rounded-tr-sm bg-neutral-800 text-white p-3.5 border border-white/5">
-                <p>Es por un contrato con un proveedor que no se cumplió.</p>
-                <span class="block text-[9px] text-neutral-400 text-right mt-1">15:33</span>
-              </div>
-            </div>
-
-            <!-- Respuesta Agente IA 2 -->
-            <div class="flex justify-start items-start gap-2.5">
-              <div class="w-7 h-7 rounded-full bg-neutral-900 text-red-400 flex items-center justify-center mt-1 shrink-0 border border-red-500/40 shadow-inner">
-                <IconChatAI class="w-4 h-4 text-white" />
-              </div>
-              <div class="max-w-[85%] rounded-2xl rounded-tl-sm bg-neutral-950/90 text-neutral-200 p-3.5 border border-white/10 shadow-md">
-                <p>Comprendido. Tenemos disponibilidad con el Dr. Martínez este <strong class="text-white">Jueves a las 16:30 hs</strong> vía Google Meet o presencial en nuestras oficinas.</p>
-                <p class="mt-2 text-neutral-400">¿Deseás que reservemos ese horario con tu nombre y número de contacto?</p>
-                <span class="block text-[9px] text-neutral-500 mt-2">15:33 · Automatizado</span>
-              </div>
-            </div>
-
           </div>
 
-          <!-- Footer interactivo del chat -->
-          <div class="p-3 bg-black/60 border-t border-white/10 flex items-center justify-between text-[11px] text-neutral-400 px-4">
-            <span class="flex items-center gap-1.5">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-              Listo para integrar con WhatsApp Business API
-            </span>
-            <span class="text-neutral-500 font-mono text-[10px]">Solius Engine v1.0</span>
+          <div class="flex justify-end">
+            <div class="max-w-[75%] bg-white/[0.06] text-neutral-200 px-4 py-2.5 rounded-lg rounded-br-sm">
+              <p>Incumplimiento de un proveedor.</p>
+              <span class="block text-[11px] text-neutral-600 text-right mt-1.5">15:33</span>
+            </div>
           </div>
+
+          <div class="flex justify-start">
+            <div class="max-w-[80%] bg-[#111] text-neutral-300 px-4 py-2.5 rounded-lg rounded-bl-sm border border-white/[0.04]">
+              <p>Entendido. El Dr. Martínez tiene disponibilidad el <strong class="text-white">jueves 16:30</strong> por videollamada o presencial. ¿Reservo ese horario con tu nombre y número de contacto?</p>
+              <span class="block text-[11px] text-neutral-600 mt-1.5">15:33 · Automatizado</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-5 py-3 border-t border-white/[0.06] text-[11px] text-neutral-600 font-mono flex items-center justify-between">
+          <span>Integrable con WhatsApp Business</span>
+          <span>Solius AI v1</span>
         </div>
       </div>
 

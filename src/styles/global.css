@@ -1,44 +1,44 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', monospace;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
     color-scheme: dark;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
 
   body {
-    background-color: #070709;
-    color: #f4f4f6;
+    background-color: #050505;
+    color: #d4d4d4;
+    font-family: var(--font-sans);
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   ::selection {
-    background-color: rgba(225, 29, 72, 0.35);
+    background-color: rgba(229, 77, 46, 0.25);
     color: #ffffff;
   }
-}
 
-/* Glassmorphism y utilidades estilo Apple */
-.apple-glass {
-  background: rgba(18, 18, 22, 0.7);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
+  /* Clean focus styles */
+  :focus-visible {
+    outline: 1px solid rgba(229, 77, 46, 0.6);
+    outline-offset: 2px;
+  }
 
-.apple-card {
-  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.03) 0%, rgba(14, 14, 17, 0.95) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
+  /* Smooth details/summary */
+  details summary {
+    list-style: none;
+    cursor: pointer;
+  }
 
-.apple-card:hover {
-  border-color: rgba(239, 68, 68, 0.25);
-  box-shadow: 0 10px 30px -10px rgba(220, 38, 38, 0.15);
-  transform: translateY(-2px);
-}
-
-.red-glow {
-  box-shadow: 0 0 25px -5px rgba(239, 68, 68, 0.4);
+  details summary::-webkit-details-marker {
+    display: none;
+  }
 }

@@ -7,8 +7,8 @@ interface Props {
 }
 
 const {
-  title = "Solius Studio | Estudio de Ingeniería Web & Automatización",
-  description = "Desarrollamos infraestructura web de alta velocidad y automatizaciones inteligentes a medida para empresas, comercios y profesionales."
+  title = "Solius Studio — Ingeniería Web & Automatización Inteligente",
+  description = "Desarrollamos plataformas web de alto rendimiento y automatizaciones con IA para empresas, comercios y profesionales."
 } = Astro.props;
 ---
 
@@ -22,22 +22,15 @@ const {
     <title>{title}</title>
     <meta name="description" content={description} />
 
-    <!-- Open Graph / Meta Social -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
 
-    <!-- Fuentes Tipográficas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
-  <body class="relative min-h-screen bg-[#070709] text-neutral-200 antialiased selection:bg-neutral-800 selection:text-white">
-    <!-- Fondo sobrio de alta gama (sin orbes de neón ni patrones ruidosos) -->
-    <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[350px] bg-gradient-to-b from-white/[0.03] to-transparent blur-3xl"></div>
-    </div>
-
+  <body class="min-h-screen antialiased">
     <slot />
   </body>
 </html>

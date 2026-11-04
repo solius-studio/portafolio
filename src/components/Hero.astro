@@ -1,136 +1,58 @@
 ---
 import IconArrowRight from './icons/IconArrowRight.astro';
-import IconCheck from './icons/IconCheck.astro';
-import IconGastronomy from './icons/IconGastronomy.astro';
-import IconLegal from './icons/IconLegal.astro';
-import IconEcommerce from './icons/IconEcommerce.astro';
-import IconShield from './icons/IconShield.astro';
 ---
 
-<section class="relative pt-28 pb-20 md:pt-36 md:pb-28 px-6 lg:px-12 max-w-7xl mx-auto">
-  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<section class="pt-32 pb-24 md:pt-44 md:pb-32 px-6">
+  <div class="max-w-[1200px] mx-auto">
     
-    <!-- Columna Izquierda: Mensaje Comercial Firme y Autoritario (Editorial) -->
-    <div class="lg:col-span-7 flex flex-col items-start text-left">
-      
-      <!-- Metadato de la Firma -->
-      <div class="flex items-center gap-2 mb-6">
-        <span class="w-2 h-2 rounded-full bg-red-600"></span>
-        <span class="text-xs font-mono uppercase tracking-widest text-neutral-400">
-          Solius Studio — Consultoría & Desarrollo a Medida
-        </span>
-      </div>
-
-      <!-- Titular Principal de Alto Impacto Comercial -->
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] max-w-2xl">
-        Webs que convierten. Automatizaciones que trabajan por tu negocio.
-      </h1>
-
-      <!-- Bajada Clara para Negocios Reales -->
-      <p class="mt-6 text-base sm:text-lg text-neutral-400 font-normal leading-relaxed max-w-xl">
-        Eliminamos la lentitud y los intermediarios costosos. Desarrollamos plataformas web de carga instantánea y agentes de IA que atienden, filtran y califican prospectos las 24 horas del día.
+    <div class="max-w-[680px]">
+      <p class="text-[13px] text-neutral-500 mb-6 font-mono tracking-wide">
+        Estudio de ingeniería web & automatización
       </p>
 
-      <!-- Botones de Acción Directos -->
-      <div class="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
+      <h1 class="font-display text-[clamp(2.25rem,5.5vw,4rem)] font-bold tracking-[-0.035em] text-white leading-[1.1]">
+        Diseñamos lo que tu negocio necesita para vender más y atender mejor.
+      </h1>
+
+      <p class="mt-6 text-[17px] leading-[1.7] text-neutral-400 max-w-[560px]">
+        Plataformas web de carga instantánea y agentes de inteligencia artificial que atienden, filtran y agendan clientes las 24 horas. Sin plantillas. Sin comisiones. Sin ataduras.
+      </p>
+
+      <div class="mt-10 flex flex-wrap items-center gap-4">
         <a 
           href="#contacto" 
-          class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-white text-neutral-950 font-medium text-sm hover:bg-neutral-200 transition-all duration-200 shadow-md group"
+          class="inline-flex items-center gap-2 px-5 py-3 text-[14px] font-medium text-[#050505] bg-white rounded-md hover:bg-neutral-200 transition-colors duration-150 group"
         >
-          <span>Hablar por WhatsApp con un Asesor</span>
-          <IconArrowRight class="w-4 h-4 text-neutral-950 group-hover:translate-x-0.5 transition-transform" />
+          Iniciar conversación
+          <IconArrowRight class="w-4 h-4 text-[#050505] group-hover:translate-x-0.5 transition-transform duration-150" />
         </a>
 
         <a 
           href="#proyectos" 
-          class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg border border-white/15 bg-white/[0.02] hover:bg-white/[0.06] text-neutral-200 hover:text-white font-medium text-sm transition-all duration-200"
+          class="inline-flex items-center gap-2 px-5 py-3 text-[14px] text-neutral-400 hover:text-white transition-colors duration-150"
         >
-          <span>Ver Casos de Estudio</span>
+          Ver portafolio
         </a>
       </div>
-
-      <!-- Garantías Comerciales Clave (Eliminación de Miedos) -->
-      <div class="mt-10 pt-8 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-4 w-full text-xs text-neutral-400">
-        <div class="flex items-center gap-2">
-          <IconCheck class="w-4 h-4 text-red-500 shrink-0" />
-          <span>Código 100% propio, sin alquiler ni ataduras</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <IconCheck class="w-4 h-4 text-red-500 shrink-0" />
-          <span>0% de comisiones por tus ventas</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <IconCheck class="w-4 h-4 text-red-500 shrink-0" />
-          <span>Entrega funcional en 7 a 10 días</span>
-        </div>
-      </div>
-
     </div>
 
-    <!-- Columna Derecha: Tarjeta de Soluciones Reales por Sector (Sin Clichés de IA) -->
-    <div class="lg:col-span-5 w-full">
-      <div class="rounded-2xl border border-white/10 bg-neutral-950 p-6 sm:p-8 shadow-2xl space-y-6">
-        
-        <div class="flex items-center justify-between border-b border-white/10 pb-4">
-          <div class="flex items-center gap-2">
-            <IconShield class="w-4 h-4 text-neutral-400" />
-            <span class="text-xs font-mono uppercase tracking-wider text-neutral-300">Soluciones para tu Sector</span>
-          </div>
-          <span class="text-[11px] font-mono text-emerald-400">EN PRODUCCIÓN</span>
-        </div>
-
-        <!-- Sector 1: Gastronomía & Comercios -->
-        <div class="p-4 rounded-xl border border-white/5 bg-white/[0.02] hover:border-white/15 transition-colors">
-          <div class="flex items-start gap-3">
-            <div class="p-2 rounded-lg bg-white/5 text-white shrink-0">
-              <IconGastronomy class="w-5 h-5 text-neutral-300" />
-            </div>
-            <div>
-              <h2 class="text-sm font-semibold text-white">Gastronomía & Comercios Locales</h2>
-              <p class="text-xs text-neutral-400 mt-1 leading-relaxed">
-                Menús digitales QR con pedidos directos a WhatsApp. Sin pagar 25-30% de comisiones a aplicaciones de terceros.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sector 2: Firmas Profesionales -->
-        <div class="p-4 rounded-xl border border-white/5 bg-white/[0.02] hover:border-white/15 transition-colors">
-          <div class="flex items-start gap-3">
-            <div class="p-2 rounded-lg bg-white/5 text-white shrink-0">
-              <IconLegal class="w-5 h-5 text-neutral-300" />
-            </div>
-            <div>
-              <h2 class="text-sm font-semibold text-white">Estudios Jurídicos & Contables</h2>
-              <p class="text-xs text-neutral-400 mt-1 leading-relaxed">
-                Admisión y calificación automática de clientes. Filtra consultas no rentables y agenda solo con prospectos viables.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sector 3: E-commerce de Alto Rendimiento -->
-        <div class="p-4 rounded-xl border border-white/5 bg-white/[0.02] hover:border-white/15 transition-colors">
-          <div class="flex items-start gap-3">
-            <div class="p-2 rounded-lg bg-white/5 text-white shrink-0">
-              <IconEcommerce class="w-5 h-5 text-neutral-300" />
-            </div>
-            <div>
-              <h2 class="text-sm font-semibold text-white">E-commerce de Carga Ultrarrápida</h2>
-              <p class="text-xs text-neutral-400 mt-1 leading-relaxed">
-                Tiendas estáticas que abren en 0.2 segundos. Cero carritos abandonados por lentitud de servidor.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Métricas Verificables al Pie -->
-        <div class="pt-2 flex items-center justify-between text-xs font-mono text-neutral-400">
-          <span>PageSpeed: <strong class="text-white">100/100</strong></span>
-          <span>Latencia: <strong class="text-white">&lt;0.3s</strong></span>
-          <span>Atención: <strong class="text-white">24/7</strong></span>
-        </div>
-
+    <!-- Metric strip: simple, typographic, no cards -->
+    <div class="mt-20 pt-8 border-t border-white/[0.06] grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-12">
+      <div>
+        <div class="font-display text-[28px] font-semibold text-white tracking-tight">100<span class="text-[#e54d2e]">/100</span></div>
+        <p class="text-[13px] text-neutral-500 mt-1">Google PageSpeed</p>
+      </div>
+      <div>
+        <div class="font-display text-[28px] font-semibold text-white tracking-tight">&lt;0.3s</div>
+        <p class="text-[13px] text-neutral-500 mt-1">Tiempo de carga</p>
+      </div>
+      <div>
+        <div class="font-display text-[28px] font-semibold text-white tracking-tight">24/7</div>
+        <p class="text-[13px] text-neutral-500 mt-1">Atención automatizada</p>
+      </div>
+      <div>
+        <div class="font-display text-[28px] font-semibold text-white tracking-tight">7–10d</div>
+        <p class="text-[13px] text-neutral-500 mt-1">Entrega funcional</p>
       </div>
     </div>
 
