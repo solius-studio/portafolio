@@ -4,6 +4,17 @@ Este archivo establece las directivas obligatorias para cualquier modelo o asist
 
 ---
 
+## 🧠 Skills Activas del Proyecto (`.agents/skills/` y `skills/`)
+
+Los agentes que trabajen en este repositorio deben adherirse a las convenciones y runbooks definidos en:
+- [`.agents/skills/solius-icons-and-design/SKILL.md`](./.agents/skills/solius-icons-and-design/SKILL.md): Guía de diseño, catálogo de iconos propios y prohibición de librerías genéricas.
+- [`.agents/skills/astro-tailwind-pro/SKILL.md`](./.agents/skills/astro-tailwind-pro/SKILL.md): Estándares de Astro v5/v7 y Tailwind v4, cero sobrecarga JS en cliente, SSG/SSR.
+- [`.agents/skills/ai-automations-agency/SKILL.md`](./.agents/skills/ai-automations-agency/SKILL.md): Agentes de IA comerciales, calificación de leads, webhooks WhatsApp y n8n.
+- [`.agents/skills/apple-dark-ui/SKILL.md`](./.agents/skills/apple-dark-ui/SKILL.md): Estética Apple dark mode, glassmorphism, bento grids y microinteracciones a 60 FPS.
+- [`.agents/skills/team-github-workflow/SKILL.md`](./.agents/skills/team-github-workflow/SKILL.md): Flujo colaborativo de ramas y convenciones para trabajo en equipo de 2 personas.
+
+---
+
 ## 1. ⚠️ DIRECTIVA CRÍTICA: ICONOS PROPIETARIOS (PROHIBIDO ICONOS GENÉRICOS)
 
 > **BAJO NINGUNA CIRCUNSTANCIA SE DEBEN IMPORTAR O INSTALAR LIBRERÍAS DE ICONOS EXTERNAS O GENÉRICAS** (por ejemplo: `lucide-astro`, `lucide-react`, `heroicons`, `font-awesome`, `react-icons`, etc.).
@@ -54,14 +65,7 @@ Si se requiere un icono nuevo que no existe en esta lista, **SE DEBE CREAR UN CO
 
 ---
 
-## 4. 🧠 Skills Disponibles
-
-Para procedimientos detallados, consultar la skill del proyecto:
-- [solius-icons-and-design](./skills/solius-icons-and-design/SKILL.md) o [versión en .agents](./.agents/skills/solius-icons-and-design/SKILL.md).
-
----
-
-## 5. ✅ Procedimiento de Verificación Obligatorio
+## 4. ✅ Procedimiento de Verificación Obligatorio
 
 Antes de finalizar cualquier tarea o hacer commit, el agente DEBE ejecutar:
 ```bash
