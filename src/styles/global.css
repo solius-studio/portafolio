@@ -2,8 +2,8 @@
 
 @theme {
   --color-warm-white: #F7F7F2;
-  --color-petrol: #245B65;
-  --color-petrol-dark: #1b464e;
+  --color-sienna: #8A3D28;
+  --color-sienna-dark: #6E2E1C;
   --color-coral: #E58B72;
   --color-coral-soft: #f4b2a1;
   --color-stone: #EAEAE4;
@@ -34,7 +34,7 @@
   }
 
   :focus-visible {
-    outline: 2px solid #245B65;
+    outline: 2px solid #8A3D28;
     outline-offset: 2px;
   }
 
@@ -56,7 +56,7 @@
 }
 
 .warm-card:hover {
-  border-color: rgba(36, 91, 101, 0.3);
+  border-color: rgba(138, 61, 40, 0.3);
   box-shadow: 0 12px 32px -8px rgba(37, 42, 41, 0.06);
   transform: translateY(-2px);
 }
