@@ -1,11 +1,15 @@
 ---
-import { ArrowRight, Bot, Zap, ShieldCheck, Sparkles, CheckCircle2 } from '@lucide/astro';
+import IconArrowRight from './icons/IconArrowRight.astro';
+import IconCheck from './icons/IconCheck.astro';
+import IconSpeed from './icons/IconSpeed.astro';
+import IconShield from './icons/IconShield.astro';
+import IconSparkle from './icons/IconSparkle.astro';
 ---
 
 <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 px-4 overflow-hidden">
   <div class="max-w-5xl mx-auto text-center flex flex-col items-center">
     
-    <!-- Tag superior estilo Apple -->
+    <!-- Tag superior estilo Apple con gema Solius -->
     <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900/80 border border-white/10 mb-8 backdrop-blur-md shadow-inner">
       <span class="flex h-2 w-2 relative">
         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
@@ -13,7 +17,10 @@ import { ArrowRight, Bot, Zap, ShieldCheck, Sparkles, CheckCircle2 } from '@luci
       </span>
       <span class="text-xs font-medium text-neutral-300">Desarrollo Web & Automatizaciones de Alta Precisión</span>
       <span class="text-neutral-600">|</span>
-      <span class="text-xs text-red-400 font-medium">Solius Studio</span>
+      <span class="text-xs text-red-400 font-medium flex items-center gap-1">
+        <IconSparkle class="w-3 h-3 text-red-400" />
+        Solius Studio
+      </span>
     </div>
 
     <!-- Título Principal -->
@@ -37,7 +44,7 @@ import { ArrowRight, Bot, Zap, ShieldCheck, Sparkles, CheckCircle2 } from '@luci
         class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-red-600 hover:bg-red-500 text-white font-medium text-sm transition-all duration-300 shadow-[0_0_30px_-5px_rgba(239,68,68,0.5)] hover:shadow-[0_0_40px_-2px_rgba(239,68,68,0.7)] group"
       >
         <span>Ver Demos y Casos de Estudio</span>
-        <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        <IconArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
       </a>
 
       <a 
@@ -48,18 +55,18 @@ import { ArrowRight, Bot, Zap, ShieldCheck, Sparkles, CheckCircle2 } from '@luci
       </a>
     </div>
 
-    <!-- Puntos de Confianza Rápidos -->
+    <!-- Puntos de Confianza Rápidos con IconCheck propio -->
     <div class="mt-12 flex flex-wrap items-center justify-center gap-y-3 gap-x-6 text-xs text-neutral-400">
-      <div class="flex items-center gap-1.5">
-        <CheckCircle2 class="w-4 h-4 text-red-500" />
+      <div class="flex items-center gap-2">
+        <IconCheck class="w-4 h-4 text-red-500" />
         <span>Optimizado para SEO en Google</span>
       </div>
-      <div class="flex items-center gap-1.5">
-        <CheckCircle2 class="w-4 h-4 text-red-500" />
+      <div class="flex items-center gap-2">
+        <IconCheck class="w-4 h-4 text-red-500" />
         <span>Tiempo de carga menor a 1 segundo</span>
       </div>
-      <div class="flex items-center gap-1.5">
-        <CheckCircle2 class="w-4 h-4 text-red-500" />
+      <div class="flex items-center gap-2">
+        <IconCheck class="w-4 h-4 text-red-500" />
         <span>Integración directa con WhatsApp</span>
       </div>
     </div>

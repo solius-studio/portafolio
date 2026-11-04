@@ -1,0 +1,34 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className = "w-6 h-6" } = Astro.props;
+---
+
+<svg 
+  viewBox="0 0 24 24" 
+  fill="none" 
+  xmlns="http://www.w3.org/2000/svg" 
+  class={className}
+>
+  <!-- Columna central -->
+  <line x1="12" y1="4" x2="12" y2="20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0.8" />
+  <!-- Base de la balanza -->
+  <path d="M8 20.5H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.9" />
+  
+  <!-- Viga de balance horizontal con pivote rojo -->
+  <path d="M4 8.5L12 6.5L20 8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.85" />
+  <circle cx="12" cy="6.5" r="1.5" fill="#ef4444" />
+  
+  <!-- Platillo Izquierdo -->
+  <path d="M4 8.5L2.5 14H7.5L6 8.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5" />
+  <path d="M2.5 14C2.5 15.4 3.6 16.5 5 16.5C6.4 16.5 7.5 15.4 7.5 14" stroke="currentColor" stroke-width="1.3" stroke-opacity="0.8" fill="currentColor" fill-opacity="0.1" />
+
+  <!-- Platillo Derecho (ligeramente más dinámico) -->
+  <path d="M20 8.5L18.5 14H23.5L22 8.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5" />
+  <path d="M18.5 14C18.5 15.4 19.6 16.5 21 16.5C22.4 16.5 23.5 15.4 23.5 14" stroke="currentColor" stroke-width="1.3" stroke-opacity="0.8" fill="currentColor" fill-opacity="0.1" />
+  
+  <!-- Acento de precisión -->
+  <circle cx="12" cy="3" r="1" fill="currentColor" fill-opacity="0.4" />
+</svg>

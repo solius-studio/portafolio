@@ -1,10 +1,11 @@
 ---
-import { Sparkles, ArrowRight } from '@lucide/astro';
+import IconSparkle from './icons/IconSparkle.astro';
+import IconArrowRight from './icons/IconArrowRight.astro';
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 py-4 sm:py-6 transition-all duration-300">
   <nav class="flex items-center justify-between w-full max-w-5xl px-5 py-3 rounded-full bg-neutral-950/75 backdrop-blur-xl border border-white/10 shadow-2xl shadow-black/80">
-    <!-- Logotipo Solius Studio -->
+    <!-- Logotipo Solius Studio con sello propio -->
     <a href="#" class="flex items-center gap-2 group">
       <div class="relative flex items-center justify-center w-7 h-7 rounded-lg bg-neutral-900 border border-white/10 group-hover:border-red-500/50 transition-colors">
         <div class="w-2.5 h-2.5 rounded-full bg-red-600 group-hover:scale-110 transition-transform shadow-[0_0_8px_rgba(239,68,68,0.8)]"></div>
@@ -27,14 +28,14 @@ import { Sparkles, ArrowRight } from '@lucide/astro';
       <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
     </div>
 
-    <!-- CTA Navbar -->
+    <!-- CTA Navbar con flecha propia -->
     <div class="flex items-center gap-3">
       <a 
         href="#contacto" 
-        class="group relative inline-flex items-center gap-1.5 px-4 py-2 text-xs sm:text-sm font-medium text-white rounded-full bg-gradient-to-r from-neutral-900 to-neutral-800 border border-white/15 hover:border-red-500/50 transition-all duration-300 hover:shadow-[0_0_20px_-3px_rgba(239,68,68,0.4)]"
+        class="group relative inline-flex items-center gap-2 px-4 py-2 text-xs sm:text-sm font-medium text-white rounded-full bg-gradient-to-r from-neutral-900 to-neutral-800 border border-white/15 hover:border-red-500/50 transition-all duration-300 hover:shadow-[0_0_20px_-3px_rgba(239,68,68,0.4)]"
       >
         <span>Agendar Consulta</span>
-        <ArrowRight class="w-3.5 h-3.5 text-neutral-400 group-hover:text-red-400 group-hover:translate-x-0.5 transition-all" />
+        <IconArrowRight class="w-3.5 h-3.5 text-neutral-400 group-hover:text-red-400 group-hover:translate-x-0.5 transition-all" />
       </a>
     </div>
   </nav>

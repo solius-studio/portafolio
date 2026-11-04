@@ -1,16 +1,9 @@
 ---
-import { 
-  Globe, 
-  ShoppingBag, 
-  Scale, 
-  Bot, 
-  Zap, 
-  Smartphone, 
-  ArrowUpRight,
-  Sparkles,
-  Database,
-  Cpu
-} from '@lucide/astro';
+import IconWeb from './icons/IconWeb.astro';
+import IconEcommerce from './icons/IconEcommerce.astro';
+import IconLegal from './icons/IconLegal.astro';
+import IconAI from './icons/IconAI.astro';
+import IconSparkle from './icons/IconSparkle.astro';
 ---
 
 <section id="servicios" class="py-24 px-4 relative">
@@ -30,14 +23,14 @@ import {
     <!-- Bento Grid -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-      <!-- Card 1: Comercios Locales (Col 1 y 2 en MD) -->
+      <!-- Card 1: Comercios Locales (Col 1 y 2 en MD) con IconWeb propio -->
       <div class="md:col-span-2 rounded-3xl p-8 bg-neutral-900/40 border border-white/10 hover:border-red-500/30 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between min-h-[340px]">
         <div class="absolute -right-8 -top-8 w-48 h-48 bg-red-600/10 rounded-full blur-3xl pointer-events-none group-hover:bg-red-600/20 transition-all"></div>
         
         <div>
           <div class="flex items-center justify-between mb-6">
-            <div class="w-12 h-12 rounded-2xl bg-neutral-900 border border-white/10 flex items-center justify-center text-red-500 group-hover:scale-105 transition-transform">
-              <Globe class="w-6 h-6" />
+            <div class="w-12 h-12 rounded-2xl bg-neutral-900 border border-white/10 flex items-center justify-center text-red-500 group-hover:scale-105 transition-transform shadow-inner">
+              <IconWeb class="w-6 h-6 text-white" />
             </div>
             <span class="text-xs font-medium px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neutral-300">
               Comercios & Negocios de Zona
@@ -59,12 +52,12 @@ import {
         </div>
       </div>
 
-      <!-- Card 2: E-Commerce -->
+      <!-- Card 2: E-Commerce con IconEcommerce propio -->
       <div class="rounded-3xl p-8 bg-neutral-900/40 border border-white/10 hover:border-red-500/30 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between min-h-[340px]">
         <div>
           <div class="flex items-center justify-between mb-6">
-            <div class="w-12 h-12 rounded-2xl bg-neutral-900 border border-white/10 flex items-center justify-center text-red-500 group-hover:scale-105 transition-transform">
-              <ShoppingBag class="w-6 h-6" />
+            <div class="w-12 h-12 rounded-2xl bg-neutral-900 border border-white/10 flex items-center justify-center text-red-500 group-hover:scale-105 transition-transform shadow-inner">
+              <IconEcommerce class="w-6 h-6 text-white" />
             </div>
             <span class="text-xs font-medium px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neutral-300">
               Ventas Online
@@ -85,12 +78,12 @@ import {
         </div>
       </div>
 
-      <!-- Card 3: Estudios Jurídicos y Profesionales -->
+      <!-- Card 3: Estudios Jurídicos y Profesionales con IconLegal propio -->
       <div class="rounded-3xl p-8 bg-neutral-900/40 border border-white/10 hover:border-red-500/30 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between min-h-[340px]">
         <div>
           <div class="flex items-center justify-between mb-6">
-            <div class="w-12 h-12 rounded-2xl bg-neutral-900 border border-white/10 flex items-center justify-center text-red-500 group-hover:scale-105 transition-transform">
-              <Scale class="w-6 h-6" />
+            <div class="w-12 h-12 rounded-2xl bg-neutral-900 border border-white/10 flex items-center justify-center text-red-500 group-hover:scale-105 transition-transform shadow-inner">
+              <IconLegal class="w-6 h-6 text-white" />
             </div>
             <span class="text-xs font-medium px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neutral-300">
               Servicios Profesionales
@@ -111,17 +104,17 @@ import {
         </div>
       </div>
 
-      <!-- Card 4: Automatizaciones con IA (Col 2 y 3 en MD - Destacado) -->
+      <!-- Card 4: Automatizaciones con IA con IconAI propio -->
       <div class="md:col-span-2 rounded-3xl p-8 bg-gradient-to-br from-neutral-900/80 via-neutral-900/30 to-red-950/20 border border-red-500/20 hover:border-red-500/40 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between min-h-[340px] shadow-lg shadow-red-950/20">
         <div class="absolute right-0 bottom-0 w-80 h-80 bg-red-600/10 rounded-full blur-3xl pointer-events-none group-hover:bg-red-600/20 transition-all"></div>
 
         <div>
           <div class="flex items-center justify-between mb-6">
             <div class="w-12 h-12 rounded-2xl bg-red-950/60 border border-red-500/40 flex items-center justify-center text-red-400 group-hover:scale-105 transition-transform">
-              <Bot class="w-6 h-6" />
+              <IconAI class="w-7 h-7 text-white" />
             </div>
             <span class="text-xs font-medium px-3 py-1 rounded-full bg-red-950/60 border border-red-700/50 text-red-300 flex items-center gap-1.5">
-              <Sparkles class="w-3.5 h-3.5" />
+              <IconSparkle class="w-3.5 h-3.5 text-red-400" />
               Especialidad Solius Studio
             </span>
           </div>

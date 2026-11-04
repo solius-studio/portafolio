@@ -1,5 +1,6 @@
 ---
-import { MessageSquare, ArrowRight, Mail, PhoneCall, ShieldCheck } from '@lucide/astro';
+import IconShield from './icons/IconShield.astro';
+import IconArrowRight from './icons/IconArrowRight.astro';
 ---
 
 <section id="contacto" class="py-24 px-4 relative">
@@ -20,12 +21,12 @@ import { MessageSquare, ArrowRight, Mail, PhoneCall, ShieldCheck } from '@lucide
           </p>
 
           <div class="mt-8 space-y-3 text-xs text-neutral-300">
-            <div class="flex items-center gap-2">
-              <ShieldCheck class="w-4 h-4 text-red-500" />
+            <div class="flex items-center gap-2.5">
+              <IconShield class="w-4 h-4 text-white" />
               <span>Presupuesto claro y cerrado, sin costos ocultos.</span>
             </div>
-            <div class="flex items-center gap-2">
-              <ShieldCheck class="w-4 h-4 text-red-500" />
+            <div class="flex items-center gap-2.5">
+              <IconShield class="w-4 h-4 text-white" />
               <span>Garantía de rendimiento y optimización en móviles.</span>
             </div>
           </div>
@@ -68,7 +69,7 @@ import { MessageSquare, ArrowRight, Mail, PhoneCall, ShieldCheck } from '@lucide
               class="w-full mt-2 py-3 px-4 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-bold tracking-wide transition-all duration-300 shadow-[0_0_20px_-3px_rgba(239,68,68,0.5)] flex items-center justify-center gap-2 group"
             >
               <span>Solicitar Diagnóstico Sin Costo</span>
-              <ArrowRight class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+              <IconArrowRight class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
             </button>
             <p class="text-[10px] text-neutral-500 text-center mt-2">
               Respondemos habitualmente en menos de 2 horas hábiles.

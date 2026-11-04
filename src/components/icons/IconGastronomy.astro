@@ -1,0 +1,36 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className = "w-6 h-6" } = Astro.props;
+---
+
+<svg 
+  viewBox="0 0 24 24" 
+  fill="none" 
+  xmlns="http://www.w3.org/2000/svg" 
+  class={className}
+>
+  <!-- Asa de la campana en rojo -->
+  <circle cx="12" cy="5" r="1.5" fill="#ef4444" />
+  <line x1="12" y1="6.5" x2="12" y2="8" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round" />
+
+  <!-- Campana gourmet -->
+  <path 
+    d="M3.5 16.5C4 11.5 7.5 8 12 8C16.5 8 20 11.5 20.5 16.5H3.5Z" 
+    stroke="currentColor" 
+    stroke-width="1.6" 
+    stroke-linejoin="round"
+    stroke-opacity="0.85"
+    fill="currentColor"
+    fill-opacity="0.08"
+  />
+
+  <!-- Plato base minimalista -->
+  <line x1="2" y1="19" x2="22" y2="19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.9" />
+  
+  <!-- Detalle sutil de vapor / aroma moderno -->
+  <path d="M9 12.5C9.5 13.5 10 14 11 14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-opacity="0.4" />
+  <circle cx="15" cy="13" r="0.9" fill="#ef4444" />
+</svg>

@@ -1,0 +1,33 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className = "w-6 h-6" } = Astro.props;
+---
+
+<svg 
+  viewBox="0 0 24 24" 
+  fill="none" 
+  xmlns="http://www.w3.org/2000/svg" 
+  class={className}
+>
+  <!-- Burbuja principal con esquinas asimétricas estilo Apple -->
+  <path 
+    d="M4 17.5V6.5C4 4.8 5.3 3.5 7 3.5H17C18.7 3.5 20 4.8 20 6.5V14.5C20 16.2 18.7 17.5 17 17.5H7.5L4 20.5V17.5Z" 
+    stroke="currentColor" 
+    stroke-width="1.6" 
+    stroke-linejoin="round"
+    stroke-opacity="0.85"
+    fill="currentColor"
+    fill-opacity="0.08"
+  />
+  
+  <!-- ONDA de procesamiento neuronal inteligente -->
+  <line x1="8" y1="10.5" x2="8" y2="10.51" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-opacity="0.6" />
+  <line x1="12" y1="9" x2="12" y2="12" stroke="#ef4444" stroke-width="2.2" stroke-linecap="round" />
+  <line x1="16" y1="10.5" x2="16" y2="10.51" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-opacity="0.6" />
+  
+  <!-- Nodo de estado activo exterior -->
+  <circle cx="19" cy="5" r="1.2" fill="#ef4444" />
+</svg>

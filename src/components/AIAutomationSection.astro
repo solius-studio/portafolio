@@ -1,5 +1,10 @@
 ---
-import { Bot, MessageSquare, Sparkles, Check, Zap, Clock, ShieldCheck, ArrowRight } from '@lucide/astro';
+import IconAI from './icons/IconAI.astro';
+import IconChatAI from './icons/IconChatAI.astro';
+import IconSpeed from './icons/IconSpeed.astro';
+import IconShield from './icons/IconShield.astro';
+import IconSparkle from './icons/IconSparkle.astro';
+import IconArrowRight from './icons/IconArrowRight.astro';
 ---
 
 <section id="ia-automatizacion" class="py-24 px-4 relative overflow-hidden">
@@ -9,7 +14,7 @@ import { Bot, MessageSquare, Sparkles, Check, Zap, Clock, ShieldCheck, ArrowRigh
       <!-- Lado Izquierdo: Explicación de valor de negocio -->
       <div>
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/60 border border-red-800/40 text-red-400 text-xs font-medium mb-6">
-          <Sparkles class="w-3.5 h-3.5" />
+          <IconSparkle class="w-3.5 h-3.5 text-red-400" />
           <span>El Diferencial de Solius Studio</span>
         </div>
 
@@ -24,11 +29,11 @@ import { Bot, MessageSquare, Sparkles, Check, Zap, Clock, ShieldCheck, ArrowRigh
           El 70% de los clientes compra en el primer negocio que le responde. Conectamos agentes de Inteligencia Artificial entrenados específicamente con los datos de tus servicios o productos para responder dudas complejas al instante por WhatsApp o web.
         </p>
 
-        <!-- Beneficios en viñetas -->
+        <!-- Beneficios en viñetas con iconos Solius -->
         <div class="mt-8 space-y-4">
           <div class="flex items-start gap-3">
-            <div class="w-6 h-6 rounded-lg bg-red-950/80 border border-red-800/50 flex items-center justify-center text-red-400 mt-0.5 shrink-0">
-              <Clock class="w-3.5 h-3.5" />
+            <div class="w-7 h-7 rounded-lg bg-red-950/80 border border-red-800/50 flex items-center justify-center text-red-400 mt-0.5 shrink-0 shadow-inner">
+              <IconSpeed class="w-4 h-4 text-white" />
             </div>
             <div>
               <h4 class="text-sm font-semibold text-white">Respuestas en menos de 5 segundos</h4>
@@ -37,8 +42,8 @@ import { Bot, MessageSquare, Sparkles, Check, Zap, Clock, ShieldCheck, ArrowRigh
           </div>
 
           <div class="flex items-start gap-3">
-            <div class="w-6 h-6 rounded-lg bg-red-950/80 border border-red-800/50 flex items-center justify-center text-red-400 mt-0.5 shrink-0">
-              <Zap class="w-3.5 h-3.5" />
+            <div class="w-7 h-7 rounded-lg bg-red-950/80 border border-red-800/50 flex items-center justify-center text-red-400 mt-0.5 shrink-0 shadow-inner">
+              <IconAI class="w-4 h-4 text-white" />
             </div>
             <div>
               <h4 class="text-sm font-semibold text-white">Agendamiento y calificación sin intervención humana</h4>
@@ -47,8 +52,8 @@ import { Bot, MessageSquare, Sparkles, Check, Zap, Clock, ShieldCheck, ArrowRigh
           </div>
 
           <div class="flex items-start gap-3">
-            <div class="w-6 h-6 rounded-lg bg-red-950/80 border border-red-800/50 flex items-center justify-center text-red-400 mt-0.5 shrink-0">
-              <ShieldCheck class="w-3.5 h-3.5" />
+            <div class="w-7 h-7 rounded-lg bg-red-950/80 border border-red-800/50 flex items-center justify-center text-red-400 mt-0.5 shrink-0 shadow-inner">
+              <IconShield class="w-4 h-4 text-white" />
             </div>
             <div>
               <h4 class="text-sm font-semibold text-white">Entrenado con tu información real</h4>
@@ -58,9 +63,9 @@ import { Bot, MessageSquare, Sparkles, Check, Zap, Clock, ShieldCheck, ArrowRigh
         </div>
 
         <div class="mt-8">
-          <a href="#contacto" class="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-red-400 transition-colors">
+          <a href="#contacto" class="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-red-400 transition-colors group">
             <span>Consultar por integración de IA para tu empresa</span>
-            <ArrowRight class="w-4 h-4" />
+            <IconArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
       </div>
@@ -75,8 +80,8 @@ import { Bot, MessageSquare, Sparkles, Check, Zap, Clock, ShieldCheck, ArrowRigh
           <div class="px-5 py-4 border-b border-white/10 flex items-center justify-between bg-black/40">
             <div class="flex items-center gap-3">
               <div class="relative">
-                <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-red-600 to-rose-400 flex items-center justify-center text-white shadow-md">
-                  <Bot class="w-5 h-5" />
+                <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-neutral-900 to-neutral-800 border border-red-500/40 flex items-center justify-center text-white shadow-md">
+                  <IconAI class="w-5 h-5 text-white" />
                 </div>
                 <div class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-neutral-900"></div>
               </div>
@@ -107,10 +112,10 @@ import { Bot, MessageSquare, Sparkles, Check, Zap, Clock, ShieldCheck, ArrowRigh
               </div>
             </div>
 
-            <!-- Respuesta Agente IA -->
+            <!-- Respuesta Agente IA con IconChatAI propio -->
             <div class="flex justify-start items-start gap-2.5">
-              <div class="w-6 h-6 rounded-full bg-red-600/20 text-red-400 flex items-center justify-center mt-1 shrink-0 border border-red-500/30">
-                <Bot class="w-3.5 h-3.5" />
+              <div class="w-7 h-7 rounded-full bg-neutral-900 text-red-400 flex items-center justify-center mt-1 shrink-0 border border-red-500/40 shadow-inner">
+                <IconChatAI class="w-4 h-4 text-white" />
               </div>
               <div class="max-w-[85%] rounded-2xl rounded-tl-sm bg-neutral-950/90 text-neutral-200 p-3.5 border border-white/10 shadow-md">
                 <p>¡Hola! Buenas tardes. Sí, en el departamento de Derecho Comercial atendemos consultas presenciales y virtuales.</p>
@@ -134,8 +139,8 @@ import { Bot, MessageSquare, Sparkles, Check, Zap, Clock, ShieldCheck, ArrowRigh
 
             <!-- Respuesta Agente IA 2 -->
             <div class="flex justify-start items-start gap-2.5">
-              <div class="w-6 h-6 rounded-full bg-red-600/20 text-red-400 flex items-center justify-center mt-1 shrink-0 border border-red-500/30">
-                <Bot class="w-3.5 h-3.5" />
+              <div class="w-7 h-7 rounded-full bg-neutral-900 text-red-400 flex items-center justify-center mt-1 shrink-0 border border-red-500/40 shadow-inner">
+                <IconChatAI class="w-4 h-4 text-white" />
               </div>
               <div class="max-w-[85%] rounded-2xl rounded-tl-sm bg-neutral-950/90 text-neutral-200 p-3.5 border border-white/10 shadow-md">
                 <p>Comprendido. Tenemos disponibilidad con el Dr. Martínez este <strong class="text-white">Jueves a las 16:30 hs</strong> vía Google Meet o presencial en nuestras oficinas.</p>
