@@ -12,6 +12,9 @@ Los agentes que trabajen en este repositorio deben adherirse a las convenciones 
 - [`.agents/skills/ai-automations-agency/SKILL.md`](./.agents/skills/ai-automations-agency/SKILL.md): Agentes de IA comerciales, calificación de leads, webhooks WhatsApp y n8n.
 - [`.agents/skills/apple-dark-ui/SKILL.md`](./.agents/skills/apple-dark-ui/SKILL.md): Estética Apple dark mode, glassmorphism, bento grids y microinteracciones a 60 FPS.
 - [`.agents/skills/team-github-workflow/SKILL.md`](./.agents/skills/team-github-workflow/SKILL.md): Flujo colaborativo de ramas y convenciones para trabajo en equipo de 2 personas.
+- [`.agents/skills/anti-generic-ui/SKILL.md`](./.agents/skills/anti-generic-ui/SKILL.md): Diseño de autor, erradicación de clichés de IA (anti-AI-slop), microtexturas e interfaces táctiles.
+- [`.agents/skills/trust-engineering/SKILL.md`](./.agents/skills/trust-engineering/SKILL.md): Telemetría de rendimiento real (100/100 Lighthouse), garantía de propiedad de código y comparativas antes/después.
+- [`.agents/skills/conversion-copywriting/SKILL.md`](./.agents/skills/conversion-copywriting/SKILL.md): Copywriting comercial persuasivo basado en dolores financieros reales del cliente y CTAs directos.
 
 ---
 
