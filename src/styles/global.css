@@ -1,20 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
-  --font-display: 'Space Grotesk', system-ui, sans-serif;
-  --font-mono: 'SF Mono', 'Fira Code', monospace;
+  --color-warm-white: #F7F7F2;
+  --color-petrol: #245B65;
+  --color-petrol-dark: #1b464e;
+  --color-coral: #E58B72;
+  --color-coral-soft: #f4b2a1;
+  --color-stone: #EAEAE4;
+  --color-graphite: #252A29;
+  --font-sans: 'Manrope', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Manrope', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
-    color-scheme: dark;
+    color-scheme: light;
   }
 
   body {
-    background-color: #050505;
-    color: #d4d4d4;
+    background-color: #F7F7F2;
+    color: #252A29;
     font-family: var(--font-sans);
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -22,17 +29,15 @@
   }
 
   ::selection {
-    background-color: rgba(229, 77, 46, 0.25);
-    color: #ffffff;
+    background-color: rgba(229, 139, 114, 0.35);
+    color: #252A29;
   }
 
-  /* Clean focus styles */
   :focus-visible {
-    outline: 1px solid rgba(229, 77, 46, 0.6);
+    outline: 2px solid #245B65;
     outline-offset: 2px;
   }
 
-  /* Smooth details/summary */
   details summary {
     list-style: none;
     cursor: pointer;
@@ -41,4 +46,17 @@
   details summary::-webkit-details-marker {
     display: none;
   }
+}
+
+/* Microinteracciones sutiles */
+.warm-card {
+  background-color: #FFFFFF;
+  border: 1px solid #EAEAE4;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.warm-card:hover {
+  border-color: rgba(36, 91, 101, 0.3);
+  box-shadow: 0 12px 32px -8px rgba(37, 42, 41, 0.06);
+  transform: translateY(-2px);
 }

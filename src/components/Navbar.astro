@@ -6,63 +6,82 @@ import IconClose from './icons/IconClose.astro';
 const links = [
   { label: "Servicios", href: "#servicios" },
   { label: "Portafolio", href: "#proyectos" },
+  { label: "Automatizaciones", href: "#automatizaciones" },
   { label: "Método", href: "#metodo" },
   { label: "FAQ", href: "#faq" },
 ];
 ---
 
-<header class="fixed top-0 inset-x-0 z-50 h-16 border-b border-white/[0.06]" style="background: rgba(5,5,5,0.92); backdrop-filter: saturate(180%) blur(16px); -webkit-backdrop-filter: saturate(180%) blur(16px);">
-  <div class="max-w-[1200px] mx-auto h-full px-6 flex items-center justify-between">
+<header class="fixed top-0 inset-x-0 z-50 h-20 border-b border-[#EAEAE4] bg-[#F7F7F2]/90 backdrop-blur-md transition-all duration-200">
+  <div class="max-w-[1240px] mx-auto h-full px-6 lg:px-10 flex items-center justify-between">
     
-    <a href="#" class="flex items-center gap-2.5 select-none">
-      <span class="w-[6px] h-[6px] rounded-full bg-[#e54d2e]"></span>
-      <span class="font-display text-[15px] font-semibold tracking-tight text-white">Solius Studio</span>
+    <!-- Logotipo Soluk Studio -->
+    <a href="#" class="flex items-center gap-2.5 group">
+      <div class="w-8 h-8 rounded-lg bg-[#245B65] flex items-center justify-center text-white font-bold text-sm tracking-tight transition-transform group-hover:scale-105 duration-200 shadow-sm">
+        S
+      </div>
+      <div class="flex items-baseline gap-1.5">
+        <span class="font-bold text-lg tracking-tight text-[#252A29] group-hover:text-[#245B65] transition-colors">
+          Soluk Studio
+        </span>
+        <span class="w-1.5 h-1.5 rounded-full bg-[#E58B72]"></span>
+      </div>
     </a>
 
-    <nav class="hidden md:flex items-center gap-8">
+    <!-- Enlaces Principales Desktop -->
+    <nav class="hidden md:flex items-center gap-8 text-[14px] font-medium text-[#252A29]/75">
       {links.map(link => (
-        <a href={link.href} class="text-[13px] text-neutral-400 hover:text-white transition-colors duration-150">
+        <a 
+          href={link.href} 
+          class="hover:text-[#245B65] transition-colors duration-150 relative py-1"
+        >
           {link.label}
         </a>
       ))}
     </nav>
 
+    <!-- Botón de Contacto y Menú Móvil -->
     <div class="flex items-center gap-3">
       <a 
         href="#contacto" 
-        class="hidden sm:inline-flex items-center gap-1.5 px-4 py-[7px] text-[13px] font-medium text-[#050505] bg-white rounded-md hover:bg-neutral-200 transition-colors duration-150"
+        class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-[#245B65] text-white text-[13px] font-semibold hover:bg-[#1b464e] transition-all duration-200 shadow-sm hover:shadow"
       >
-        Contactar
+        <span>Iniciar Proyecto</span>
+        <IconArrowRight class="w-3.5 h-3.5 text-white/90" />
       </a>
 
       <button 
         id="mobile-menu-btn"
         type="button" 
-        aria-label="Menú"
-        class="md:hidden flex items-center justify-center w-8 h-8 text-neutral-400 hover:text-white transition-colors"
+        aria-label="Abrir menú"
+        class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg border border-[#EAEAE4] text-[#252A29] hover:bg-[#EAEAE4]/50 transition-colors"
       >
-        <span id="menu-icon-open"><IconMenu class="w-[18px] h-[18px]" /></span>
-        <span id="menu-icon-close" class="hidden"><IconClose class="w-[18px] h-[18px]" /></span>
+        <span id="menu-icon-open"><IconMenu class="w-5 h-5" /></span>
+        <span id="menu-icon-close" class="hidden"><IconClose class="w-5 h-5" /></span>
       </button>
     </div>
   </div>
 
+  <!-- Panel Desplegable Móvil -->
   <div 
     id="mobile-drawer" 
-    class="hidden md:hidden border-t border-white/[0.06] bg-[#050505] px-6 py-8 flex flex-col gap-6"
+    class="hidden md:hidden border-t border-[#EAEAE4] bg-[#F7F7F2] px-6 py-6 flex flex-col gap-4 shadow-lg"
   >
     {links.map(link => (
-      <a href={link.href} class="mobile-nav-link text-[15px] text-neutral-300 hover:text-white transition-colors">
+      <a 
+        href={link.href} 
+        class="mobile-nav-link text-[15px] font-medium text-[#252A29] hover:text-[#245B65] py-2 border-b border-[#EAEAE4]/60 transition-colors"
+      >
         {link.label}
       </a>
     ))}
-    <div class="pt-4 border-t border-white/[0.06]">
+    <div class="pt-3">
       <a 
         href="#contacto" 
-        class="mobile-nav-link inline-flex items-center gap-2 text-[14px] font-medium text-white"
+        class="mobile-nav-link flex items-center justify-center gap-2 w-full py-3 rounded-md bg-[#245B65] text-white text-sm font-semibold hover:bg-[#1b464e] transition-colors"
       >
-        Contactar
-        <IconArrowRight class="w-3.5 h-3.5" />
+        <span>Iniciar Proyecto</span>
+        <IconArrowRight class="w-4 h-4 text-white" />
       </a>
     </div>
   </div>
@@ -77,7 +96,6 @@ const links = [
 
   if (menuBtn && drawer && iconOpen && iconClose) {
     menuBtn.addEventListener('click', () => {
-      const isClosed = drawer.classList.contains('hidden');
       drawer.classList.toggle('hidden');
       iconOpen.classList.toggle('hidden');
       iconClose.classList.toggle('hidden');

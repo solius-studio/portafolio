@@ -1,100 +1,134 @@
 ---
 import IconArrowRight from './icons/IconArrowRight.astro';
+import IconSpeed from './icons/IconSpeed.astro';
+import IconShield from './icons/IconShield.astro';
+import IconAI from './icons/IconAI.astro';
 ---
 
-<section id="soluciones" class="py-24 px-6 border-t border-white/[0.06]">
-  <div class="max-w-[1200px] mx-auto">
-
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-      
-      <!-- Left: Value Proposition -->
-      <div>
-        <p class="text-[13px] text-neutral-500 mb-3 font-mono tracking-wide">Automatización inteligente</p>
-        <h2 class="font-display text-[clamp(1.75rem,4vw,2.75rem)] font-bold tracking-[-0.03em] text-white leading-[1.15] mb-6">
-          Tu negocio atendiendo clientes incluso cuando no estás.
-        </h2>
-        <p class="text-[15px] text-neutral-400 leading-relaxed mb-8">
-          El 70% de los clientes elige al primer negocio que responde. Nuestros agentes de IA contestan en segundos, con la información real de tus servicios, precios y disponibilidad.
-        </p>
-
-        <div class="space-y-6 mb-10">
-          <div class="flex gap-4">
-            <span class="text-[#e54d2e] text-[15px] font-mono shrink-0 mt-0.5">→</span>
-            <div>
-              <h4 class="text-[15px] font-medium text-white mb-1">Respuestas inmediatas y precisas</h4>
-              <p class="text-[13px] text-neutral-500 leading-relaxed">Sin tiempos de espera. Información de precios, horarios y stock al instante por WhatsApp o web.</p>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-[#e54d2e] text-[15px] font-mono shrink-0 mt-0.5">→</span>
-            <div>
-              <h4 class="text-[15px] font-medium text-white mb-1">Calificación sin intervención humana</h4>
-              <p class="text-[13px] text-neutral-500 leading-relaxed">El agente hace las preguntas filtro, toma los datos y coordina el turno o deriva el lead a tu teléfono.</p>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-[#e54d2e] text-[15px] font-mono shrink-0 mt-0.5">→</span>
-            <div>
-              <h4 class="text-[15px] font-medium text-white mb-1">Entrenado con tu información real</h4>
-              <p class="text-[13px] text-neutral-500 leading-relaxed">No inventa respuestas. Sigue tus políticas de atención, tarifas y catálogo al pie de la letra.</p>
-            </div>
-          </div>
-        </div>
-
-        <a href="#contacto" class="inline-flex items-center gap-2 text-[14px] text-white hover:text-neutral-300 transition-colors duration-150 group">
-          Consultar integración de IA
-          <IconArrowRight class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform duration-150" />
-        </a>
+<section id="automatizaciones" class="py-24 px-6 lg:px-10 max-w-[1240px] mx-auto border-t border-[#EAEAE4]">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+    
+    <!-- Lado Izquierdo: Propuesta de Valor y Explicación Humana -->
+    <div class="lg:col-span-6 space-y-6">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="w-2 h-2 rounded-full bg-[#E58B72]"></span>
+        <span class="text-xs font-mono uppercase tracking-widest text-[#245B65]">03 // Automatizaciones & Agentes IA</span>
       </div>
 
-      <!-- Right: Realistic chat simulation - editorial, not flashy -->
-      <div class="rounded-lg border border-white/[0.08] overflow-hidden bg-[#0a0a0a]">
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-[#252A29] tracking-tight leading-[1.15]">
+        Tu empresa atendiendo y agendando, <br />
+        <span class="text-[#245B65]">incluso cuando no estás.</span>
+      </h2>
+
+      <p class="text-base text-[#252A29]/80 leading-relaxed">
+        El 70% de los clientes compra en el primer lugar que les responde. Diseñamos agentes de inteligencia artificial que se conectan a tu WhatsApp y responden con los datos exactos de tus servicios, tarifas y condiciones.
+      </p>
+
+      <!-- 3 Pasos del Funcionamiento -->
+      <div class="space-y-4 pt-4 border-t border-[#EAEAE4]">
         
-        <div class="px-5 py-3.5 border-b border-white/[0.06] flex items-center justify-between">
-          <div class="flex items-center gap-2.5">
-            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-            <span class="text-[13px] text-neutral-300">Asistente — LexVanguard Abogados</span>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-lg bg-[#245B65]/10 flex items-center justify-center text-[#245B65] font-mono font-bold text-xs shrink-0 mt-0.5">
+            1
           </div>
-          <span class="text-[11px] font-mono text-neutral-600">En línea</span>
-        </div>
-
-        <div class="p-5 space-y-4 text-[13px]">
-          
-          <div class="flex justify-end">
-            <div class="max-w-[75%] bg-white/[0.06] text-neutral-200 px-4 py-2.5 rounded-lg rounded-br-sm">
-              <p>Hola, necesito asesoramiento por un contrato comercial incumplido. ¿Tienen disponibilidad esta semana?</p>
-              <span class="block text-[11px] text-neutral-600 text-right mt-1.5">15:32</span>
-            </div>
-          </div>
-
-          <div class="flex justify-start">
-            <div class="max-w-[80%] bg-[#111] text-neutral-300 px-4 py-2.5 rounded-lg rounded-bl-sm border border-white/[0.04]">
-              <p>Buenas tardes. Sí, el departamento de Derecho Comercial tiene disponibilidad. Para asignarte el especialista adecuado: ¿se trata de un conflicto societario, cobranzas o incumplimiento contractual?</p>
-              <span class="block text-[11px] text-neutral-600 mt-1.5">15:32 · 1.2s</span>
-            </div>
-          </div>
-
-          <div class="flex justify-end">
-            <div class="max-w-[75%] bg-white/[0.06] text-neutral-200 px-4 py-2.5 rounded-lg rounded-br-sm">
-              <p>Incumplimiento de un proveedor.</p>
-              <span class="block text-[11px] text-neutral-600 text-right mt-1.5">15:33</span>
-            </div>
-          </div>
-
-          <div class="flex justify-start">
-            <div class="max-w-[80%] bg-[#111] text-neutral-300 px-4 py-2.5 rounded-lg rounded-bl-sm border border-white/[0.04]">
-              <p>Entendido. El Dr. Martínez tiene disponibilidad el <strong class="text-white">jueves 16:30</strong> por videollamada o presencial. ¿Reservo ese horario con tu nombre y número de contacto?</p>
-              <span class="block text-[11px] text-neutral-600 mt-1.5">15:33 · Automatizado</span>
-            </div>
+          <div>
+            <h4 class="text-sm font-bold text-[#252A29]">Entrenamiento con tu información real</h4>
+            <p class="text-xs text-[#252A29]/70 mt-1 leading-relaxed">
+              El agente no inventa respuestas. Se nutre exclusivamente de tu catálogo, listas de precios, políticas de cancelación y preguntas frecuentes.
+            </p>
           </div>
         </div>
 
-        <div class="px-5 py-3 border-t border-white/[0.06] text-[11px] text-neutral-600 font-mono flex items-center justify-between">
-          <span>Integrable con WhatsApp Business</span>
-          <span>Solius AI v1</span>
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-lg bg-[#245B65]/10 flex items-center justify-center text-[#245B65] font-mono font-bold text-xs shrink-0 mt-0.5">
+            2
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-[#252A29]">Filtro y calificación en tiempo real</h4>
+            <p class="text-xs text-[#252A29]/70 mt-1 leading-relaxed">
+              Hace las preguntas necesarias para saber si el prospecto tiene el presupuesto y la urgencia adecuada, evitando que pierdas horas atendiendo consultas vacías.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-lg bg-[#E58B72]/20 flex items-center justify-center text-[#E58B72] font-mono font-bold text-xs shrink-0 mt-0.5">
+            3
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-[#252A29]">Coordinación de cita y aviso a tu teléfono</h4>
+            <p class="text-xs text-[#252A29]/70 mt-1 leading-relaxed">
+              Agenda el turno directamente en Google Calendar y te notifica por WhatsApp con un resumen del cliente listo para ser atendido.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-4">
+        <a 
+          href="#contacto" 
+          class="inline-flex items-center gap-2 px-6 py-3.5 rounded-md bg-[#245B65] hover:bg-[#1b464e] text-white text-sm font-semibold transition-colors shadow-sm"
+        >
+          <span>Consultar por un Agente para mi Rubro</span>
+          <IconArrowRight class="w-4 h-4 text-white" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Lado Derecho: Demostración Visual del Flujo en Funcionamiento -->
+    <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-2xl border border-[#EAEAE4] shadow-md space-y-6">
+      
+      <!-- Cabecera del Panel de Automatización -->
+      <div class="flex items-center justify-between border-b border-[#EAEAE4] pb-4">
+        <div class="flex items-center gap-2.5">
+          <div class="w-3 h-3 rounded-full bg-[#E58B72] animate-ping"></div>
+          <span class="text-xs font-mono font-bold text-[#245B65] uppercase">Flujo en Vivo // WhatsApp Business</span>
+        </div>
+        <span class="text-[11px] font-mono px-2.5 py-1 rounded-full bg-[#EAEAE4] text-[#252A29]">
+          Latencia: 1.1s
+        </span>
+      </div>
+
+      <!-- Paso 1: Mensaje del Cliente -->
+      <div class="p-4 rounded-xl bg-[#F7F7F2] border border-[#EAEAE4] space-y-2">
+        <div class="flex items-center justify-between text-xs font-mono text-[#252A29]/60">
+          <span class="font-bold text-[#252A29]">1. Mensaje Entrante (Cliente)</span>
+          <span>Hoy 22:14 hs</span>
+        </div>
+        <p class="text-xs text-[#252A29] bg-white p-3 rounded-lg border border-[#EAEAE4] shadow-2xs">
+          "Buenas noches, tengo un restaurante en Palermo y quiero poner el menú QR directo a WhatsApp. ¿Cuánto demora la instalación?"
+        </p>
+      </div>
+
+      <!-- Paso 2: Análisis Autónomo del Agente -->
+      <div class="p-4 rounded-xl bg-[#245B65]/5 border border-[#245B65]/20 space-y-2">
+        <div class="flex items-center justify-between text-xs font-mono text-[#245B65]">
+          <span class="font-bold">2. Análisis del Agente Soluk AI</span>
+          <span class="text-[10px] bg-white px-2 py-0.5 rounded border border-[#245B65]/20">Procesado en 0.8s</span>
+        </div>
+        <div class="text-xs text-[#252A29]/80 space-y-1">
+          <p>• <strong>Rubro identificado:</strong> Gastronomía (Solución Aura Bistro).</p>
+          <p>• <strong>Base de conocimiento consultada:</strong> Plazo estimado 7 a 10 días, sin comisiones de delivery.</p>
+        </div>
+      </div>
+
+      <!-- Paso 3: Respuesta Inmediata y Acción Ejecutada -->
+      <div class="p-4 rounded-xl bg-white border border-[#E58B72]/40 space-y-2 shadow-xs">
+        <div class="flex items-center justify-between text-xs font-mono text-[#E58B72]">
+          <span class="font-bold">3. Respuesta Enviada & Agendamiento</span>
+          <span class="text-[#245B65]">✓ Entregado</span>
+        </div>
+        <p class="text-xs text-[#252A29] bg-[#F7F7F2] p-3 rounded-lg border border-[#EAEAE4]">
+          "¡Hola! Buenas noches. La puesta en marcha de un menú QR con comandas a WhatsApp toma de 7 a 10 días hábiles. Incluye código propio sin comisiones por pedido. ¿Deseás agendar una llamada de 15 minutos mañana a las 11:00 hs para ver la demo en vivo?"
+        </p>
+        <div class="pt-2 flex items-center justify-between text-[11px] font-mono text-[#245B65]">
+          <span>Lead calificado enviado a WhatsApp del titular</span>
+          <span class="font-bold text-[#E58B72]">Turno confirmado</span>
         </div>
       </div>
 
     </div>
+
   </div>
 </section>

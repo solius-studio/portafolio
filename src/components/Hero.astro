@@ -1,59 +1,132 @@
 ---
 import IconArrowRight from './icons/IconArrowRight.astro';
+import IconCheck from './icons/IconCheck.astro';
 ---
 
-<section class="pt-32 pb-24 md:pt-44 md:pb-32 px-6">
-  <div class="max-w-[1200px] mx-auto">
+<section class="relative pt-32 pb-20 md:pt-40 md:pb-28 px-6 lg:px-10 max-w-[1240px] mx-auto overflow-hidden">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
     
-    <div class="max-w-[680px]">
-      <p class="text-[13px] text-neutral-500 mb-6 font-mono tracking-wide">
-        Estudio de ingeniería web & automatización
-      </p>
+    <!-- Columna Izquierda: Mensaje y Titular Expresivo -->
+    <div class="lg:col-span-7 flex flex-col items-start text-left z-10">
+      
+      <!-- Badge de Identidad Cálido -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EAEAE4] border border-[#EAEAE4] mb-6">
+        <span class="w-2 h-2 rounded-full bg-[#E58B72] animate-pulse"></span>
+        <span class="text-xs font-semibold tracking-wide text-[#245B65] uppercase">
+          Estudio de Diseño Web & Automatización
+        </span>
+      </div>
 
-      <h1 class="font-display text-[clamp(2.25rem,5.5vw,4rem)] font-bold tracking-[-0.035em] text-white leading-[1.1]">
-        Diseñamos lo que tu negocio necesita para vender más y atender mejor.
+      <!-- Titular Principal Grande y Expresivo -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#252A29] leading-[1.12]">
+        Diseño digital con carácter. <br />
+        <span class="text-[#245B65]">Automatizaciones</span> que impulsan tu negocio.
       </h1>
 
-      <p class="mt-6 text-[17px] leading-[1.7] text-neutral-400 max-w-[560px]">
-        Plataformas web de carga instantánea y agentes de inteligencia artificial que atienden, filtran y agendan clientes las 24 horas. Sin plantillas. Sin comisiones. Sin ataduras.
+      <!-- Descripción Breve y Humana -->
+      <p class="mt-6 text-base sm:text-lg text-[#252A29]/80 font-normal leading-relaxed max-w-xl">
+        Creamos plataformas web rápidas, cuidadas al milímetro, y agentes de inteligencia artificial que atienden dudas, filtran prospectos y cierran reservas las 24 horas. Sin plantillas genéricas ni intermediarios costosos.
       </p>
 
-      <div class="mt-10 flex flex-wrap items-center gap-4">
+      <!-- Botones de Acción -->
+      <div class="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
         <a 
           href="#contacto" 
-          class="inline-flex items-center gap-2 px-5 py-3 text-[14px] font-medium text-[#050505] bg-white rounded-md hover:bg-neutral-200 transition-colors duration-150 group"
+          class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-md bg-[#245B65] hover:bg-[#1b464e] text-white font-semibold text-sm transition-all duration-200 shadow-sm hover:shadow group"
         >
-          Iniciar conversación
-          <IconArrowRight class="w-4 h-4 text-[#050505] group-hover:translate-x-0.5 transition-transform duration-150" />
+          <span>Conversar por WhatsApp</span>
+          <IconArrowRight class="w-4 h-4 text-white group-hover:translate-x-0.5 transition-transform" />
         </a>
 
         <a 
           href="#proyectos" 
-          class="inline-flex items-center gap-2 px-5 py-3 text-[14px] text-neutral-400 hover:text-white transition-colors duration-150"
+          class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-md border border-[#245B65]/25 bg-white/70 hover:bg-[#EAEAE4] text-[#245B65] font-semibold text-sm transition-all duration-200"
         >
-          Ver portafolio
+          <span>Ver Casos de Estudio</span>
         </a>
       </div>
+
+      <!-- Garantías Comerciales Claras -->
+      <div class="mt-12 pt-8 border-t border-[#EAEAE4] grid grid-cols-1 sm:grid-cols-3 gap-4 w-full text-xs text-[#252A29]/75 font-medium">
+        <div class="flex items-center gap-2">
+          <span class="w-4 h-4 rounded-full bg-[#E58B72]/20 flex items-center justify-center text-[#E58B72] shrink-0 font-bold text-[10px]">✓</span>
+          <span>Código 100% propio del cliente</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-4 h-4 rounded-full bg-[#E58B72]/20 flex items-center justify-center text-[#E58B72] shrink-0 font-bold text-[10px]">✓</span>
+          <span>0% de comisiones por tus ventas</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-4 h-4 rounded-full bg-[#E58B72]/20 flex items-center justify-center text-[#E58B72] shrink-0 font-bold text-[10px]">✓</span>
+          <span>Entrega funcional en 7 a 10 días</span>
+        </div>
+      </div>
+
     </div>
 
-    <!-- Metric strip: simple, typographic, no cards -->
-    <div class="mt-20 pt-8 border-t border-white/[0.06] grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-12">
-      <div>
-        <div class="font-display text-[28px] font-semibold text-white tracking-tight">100<span class="text-[#e54d2e]">/100</span></div>
-        <p class="text-[13px] text-neutral-500 mt-1">Google PageSpeed</p>
+    <!-- Columna Derecha: Composición Gráfica Original de Mockups Editoriales -->
+    <div class="lg:col-span-5 w-full relative">
+      
+      <!-- Fondo decorativo suave -->
+      <div class="absolute -inset-2 bg-[#EAEAE4]/70 rounded-2xl -rotate-1 pointer-events-none"></div>
+
+      <!-- Ventana Principal del Mockup (Representación de Solución Digital) -->
+      <div class="relative rounded-xl border border-[#EAEAE4] bg-white p-5 sm:p-6 shadow-xl space-y-5">
+        
+        <!-- Header de la ventana estilo Mac/Browser sobrio -->
+        <div class="flex items-center justify-between border-b border-[#EAEAE4] pb-3">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#E58B72]"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-[#EAEAE4]"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-[#245B65]/30"></span>
+            <span class="ml-2 text-xs font-mono text-[#252A29]/60">aurabistro.com/menu-qr</span>
+          </div>
+          <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-[#E58B72]/15 text-[#E58B72] font-semibold">
+            Activo · 0% Comisión
+          </span>
+        </div>
+
+        <!-- Vista previa de interfaz real: Carta digital + Pedido Directo -->
+        <div class="p-4 rounded-lg bg-[#F7F7F2] border border-[#EAEAE4] space-y-3">
+          <div class="flex justify-between items-start">
+            <div>
+              <p class="text-xs font-bold text-[#245B65] uppercase tracking-wide">Aura Bistro & Bar</p>
+              <h3 class="text-sm font-bold text-[#252A29] mt-0.5">Menú Digital & Comandas QR</h3>
+            </div>
+            <span class="text-xs font-mono font-bold text-[#245B65]">0.2s LCP</span>
+          </div>
+          <p class="text-xs text-[#252A29]/70 leading-relaxed">
+            Los comensales eligen desde la mesa y el pedido se envía formateado directo al WhatsApp de cocina con el número de mesa.
+          </p>
+          <div class="flex items-center gap-2 pt-1 text-[11px] font-mono text-[#245B65]">
+            <span class="px-2 py-0.5 rounded bg-white border border-[#EAEAE4]">Mesa 04</span>
+            <span class="px-2 py-0.5 rounded bg-white border border-[#EAEAE4]">2 platos principales</span>
+            <span class="px-2 py-0.5 rounded bg-[#245B65] text-white">Enviado</span>
+          </div>
+        </div>
+
+        <!-- Tarjeta Flotante Superpuesta: Agente Inteligente en Acción -->
+        <div class="p-4 rounded-lg border border-[#245B65]/20 bg-white shadow-md space-y-2">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-[#245B65]"></span>
+              <span class="text-xs font-bold text-[#252A29]">Soluk AI Coordinator</span>
+            </div>
+            <span class="text-[10px] font-mono text-[#252A29]/60">24/7 en línea</span>
+          </div>
+          <div class="text-xs text-[#252A29]/80 bg-[#F7F7F2] p-2.5 rounded border border-[#EAEAE4]/80">
+            <span class="text-[#245B65] font-semibold">Triaje Legal:</span> "Consulta sobre contrato comercial calificada con éxito. Turno agendado con el socio para el jueves 16:30 hs."
+          </div>
+        </div>
+
+        <!-- Telemetría y Métricas Reales -->
+        <div class="pt-1 flex items-center justify-between text-xs font-mono text-[#252A29]/70 border-t border-[#EAEAE4]/80">
+          <span>Google PageSpeed: <strong class="text-[#245B65]">100/100</strong></span>
+          <span>Infraestructura: <strong class="text-[#245B65]">CDN Edge</strong></span>
+        </div>
+
       </div>
-      <div>
-        <div class="font-display text-[28px] font-semibold text-white tracking-tight">&lt;0.3s</div>
-        <p class="text-[13px] text-neutral-500 mt-1">Tiempo de carga</p>
-      </div>
-      <div>
-        <div class="font-display text-[28px] font-semibold text-white tracking-tight">24/7</div>
-        <p class="text-[13px] text-neutral-500 mt-1">Atención automatizada</p>
-      </div>
-      <div>
-        <div class="font-display text-[28px] font-semibold text-white tracking-tight">7–10d</div>
-        <p class="text-[13px] text-neutral-500 mt-1">Entrega funcional</p>
-      </div>
+
     </div>
 
   </div>

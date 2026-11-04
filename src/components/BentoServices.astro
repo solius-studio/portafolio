@@ -1,112 +1,160 @@
 ---
+import IconWeb from './icons/IconWeb.astro';
+import IconEcommerce from './icons/IconEcommerce.astro';
+import IconLegal from './icons/IconLegal.astro';
+import IconAI from './icons/IconAI.astro';
 import IconArrowRight from './icons/IconArrowRight.astro';
 ---
 
-<section id="servicios" class="py-24 px-6 border-t border-white/[0.06]">
-  <div class="max-w-[1200px] mx-auto">
-    
-    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<section id="servicios" class="py-24 px-6 lg:px-10 max-w-[1240px] mx-auto border-t border-[#EAEAE4]">
+  
+  <!-- Encabezado de Sección Editorial -->
+  <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+    <div>
+      <div class="flex items-center gap-2 mb-3">
+        <span class="w-2 h-2 rounded-full bg-[#E58B72]"></span>
+        <span class="text-xs font-mono uppercase tracking-widest text-[#245B65]">01 // Servicios & Especialidades</span>
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-[#252A29] tracking-tight leading-[1.15]">
+        Soluciones diseñadas a medida. <br class="hidden sm:inline" />
+        Sin plantillas ni comisiones abusivas.
+      </h2>
+    </div>
+    <p class="text-sm text-[#252A29]/75 max-w-md leading-relaxed">
+      Combinamos ingeniería web de alto rendimiento y automatizaciones prácticas para que tu negocio sea más eficiente y multiplique sus ventas.
+    </p>
+  </div>
+
+  <!-- Grilla de Servicios con Fondos Alternados -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+
+    <!-- Tarjeta 1: Sitios Web (Fondo Blanco Cálido) -->
+    <div class="rounded-xl p-8 bg-white border border-[#EAEAE4] hover:border-[#245B65]/40 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between group">
       <div>
-        <p class="text-[13px] text-neutral-500 mb-3 font-mono tracking-wide">Servicios</p>
-        <h2 class="font-display text-[clamp(1.75rem,4vw,2.75rem)] font-bold tracking-[-0.03em] text-white leading-[1.15]">
-          Lo que hacemos
-        </h2>
+        <div class="flex items-center justify-between mb-8">
+          <div class="w-12 h-12 rounded-lg bg-[#F7F7F2] border border-[#EAEAE4] flex items-center justify-center text-[#245B65] group-hover:scale-105 transition-transform duration-200">
+            <IconWeb class="w-6 h-6 text-[#245B65]" />
+          </div>
+          <span class="font-mono text-sm font-bold text-[#245B65]">01</span>
+        </div>
+
+        <span class="text-xs font-mono uppercase tracking-wider text-[#E58B72] font-semibold block mb-1">
+          Presencia & Conversión
+        </span>
+        <h3 class="text-2xl font-bold text-[#252A29] tracking-tight mb-3">
+          Sitios Web & Landings de Alta Velocidad
+        </h3>
+        <p class="text-sm text-[#252A29]/75 leading-relaxed">
+          Páginas web optimizadas para abrir al instante en smartphones. Incluyen posicionamiento en Google Maps, llamados a la acción directos a WhatsApp y arquitectura estática invulnerable.
+        </p>
       </div>
-      <p class="text-[15px] text-neutral-400 max-w-md leading-relaxed">
-        Cada servicio está diseñado para resolver un problema comercial concreto, no para rellenar una página.
-      </p>
+
+      <div class="mt-8 pt-6 border-t border-[#EAEAE4]">
+        <p class="text-xs font-mono uppercase tracking-wider text-[#252A29]/60 mb-3">Soluciones incluidas:</p>
+        <div class="flex flex-wrap gap-2 text-xs font-medium text-[#245B65]">
+          <span class="px-3 py-1 rounded-md bg-[#F7F7F2] border border-[#EAEAE4]">Carga en &lt; 0.5s</span>
+          <span class="px-3 py-1 rounded-md bg-[#F7F7F2] border border-[#EAEAE4]">SEO Local Google</span>
+          <span class="px-3 py-1 rounded-md bg-[#F7F7F2] border border-[#EAEAE4]">Botón Directo WhatsApp</span>
+          <span class="px-3 py-1 rounded-md bg-[#F7F7F2] border border-[#EAEAE4]">Código 100% propio</span>
+        </div>
+      </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/[0.06] border border-white/[0.06] rounded-lg overflow-hidden">
-      
-      <!-- Servicio 1 -->
-      <div class="bg-[#050505] p-8 md:p-10 flex flex-col justify-between group">
-        <div>
-          <div class="flex items-center justify-between mb-8">
-            <span class="text-[13px] font-mono text-neutral-500">01</span>
+    <!-- Tarjeta 2: E-Commerce (Fondo Gris Suave) -->
+    <div class="rounded-xl p-8 bg-[#EAEAE4]/60 border border-[#EAEAE4] hover:border-[#245B65]/40 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between group">
+      <div>
+        <div class="flex items-center justify-between mb-8">
+          <div class="w-12 h-12 rounded-lg bg-white border border-[#EAEAE4] flex items-center justify-center text-[#245B65] group-hover:scale-105 transition-transform duration-200">
+            <IconEcommerce class="w-6 h-6 text-[#245B65]" />
           </div>
-          <h3 class="font-display text-xl font-semibold text-white tracking-tight mb-3">
-            Sitios Web & Landings
-          </h3>
-          <p class="text-[14px] text-neutral-400 leading-relaxed">
-            Plataformas de carga instantánea para que tus clientes te encuentren en Google, te contacten por WhatsApp y confíen en tu negocio desde el primer segundo.
-          </p>
+          <span class="font-mono text-sm font-bold text-[#245B65]">02</span>
         </div>
-        <div class="mt-8 pt-6 border-t border-white/[0.06]">
-          <div class="flex flex-wrap gap-x-6 gap-y-1 text-[12px] text-neutral-500">
-            <span>SEO Local</span>
-            <span>Carga &lt; 0.5s</span>
-            <span>WhatsApp directo</span>
-          </div>
-        </div>
+
+        <span class="text-xs font-mono uppercase tracking-wider text-[#E58B72] font-semibold block mb-1">
+          Venta Directa
+        </span>
+        <h3 class="text-2xl font-bold text-[#252A29] tracking-tight mb-3">
+          Tiendas E-Commerce & Catálogos Dinámicos
+        </h3>
+        <p class="text-sm text-[#252A29]/75 leading-relaxed">
+          Plataformas de venta online sin comisiones de terceros. Integración con pasarelas de pago locales (Mercado Pago, tarjetas, transferencias) y gestión de inventario ágil y sin fricción.
+        </p>
       </div>
 
-      <!-- Servicio 2 -->
-      <div class="bg-[#050505] p-8 md:p-10 flex flex-col justify-between group">
-        <div>
-          <div class="flex items-center justify-between mb-8">
-            <span class="text-[13px] font-mono text-neutral-500">02</span>
-          </div>
-          <h3 class="font-display text-xl font-semibold text-white tracking-tight mb-3">
-            E-Commerce & Catálogos
-          </h3>
-          <p class="text-[14px] text-neutral-400 leading-relaxed">
-            Tiendas online sin comisiones de plataforma. Catálogos rápidos con integración de cobros locales, control de stock propio y experiencia de compra sin fricción.
-          </p>
-        </div>
-        <div class="mt-8 pt-6 border-t border-white/[0.06]">
-          <div class="flex flex-wrap gap-x-6 gap-y-1 text-[12px] text-neutral-500">
-            <span>Mercado Pago</span>
-            <span>Stock propio</span>
-            <span>0% comisiones</span>
-          </div>
+      <div class="mt-8 pt-6 border-t border-[#EAEAE4]">
+        <p class="text-xs font-mono uppercase tracking-wider text-[#252A29]/60 mb-3">Soluciones incluidas:</p>
+        <div class="flex flex-wrap gap-2 text-xs font-medium text-[#245B65]">
+          <span class="px-3 py-1 rounded-md bg-white border border-[#EAEAE4]">0% comisiones a apps</span>
+          <span class="px-3 py-1 rounded-md bg-white border border-[#EAEAE4]">Mercado Pago & Tarjetas</span>
+          <span class="px-3 py-1 rounded-md bg-white border border-[#EAEAE4]">Checkout en 2 pasos</span>
+          <span class="px-3 py-1 rounded-md bg-white border border-[#EAEAE4]">Panel autogestionable</span>
         </div>
       </div>
-
-      <!-- Servicio 3 -->
-      <div class="bg-[#050505] p-8 md:p-10 flex flex-col justify-between group">
-        <div>
-          <div class="flex items-center justify-between mb-8">
-            <span class="text-[13px] font-mono text-neutral-500">03</span>
-          </div>
-          <h3 class="font-display text-xl font-semibold text-white tracking-tight mb-3">
-            Sistemas para Firmas Profesionales
-          </h3>
-          <p class="text-[14px] text-neutral-400 leading-relaxed">
-            Portales institucionales para estudios jurídicos y contables. Formularios de admisión que filtran consultas no viables y cobran la consulta inicial de forma automática.
-          </p>
-        </div>
-        <div class="mt-8 pt-6 border-t border-white/[0.06]">
-          <div class="flex flex-wrap gap-x-6 gap-y-1 text-[12px] text-neutral-500">
-            <span>Intake inteligente</span>
-            <span>Cobro de consultas</span>
-            <span>Agenda privada</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Servicio 4 -->
-      <div class="bg-[#050505] p-8 md:p-10 flex flex-col justify-between group">
-        <div>
-          <div class="flex items-center justify-between mb-8">
-            <span class="text-[13px] font-mono text-[#e54d2e]">04</span>
-          </div>
-          <h3 class="font-display text-xl font-semibold text-white tracking-tight mb-3">
-            Agentes de IA & Automatización
-          </h3>
-          <p class="text-[14px] text-neutral-400 leading-relaxed">
-            Asistentes entrenados con la información de tu negocio que responden consultas, cotizan servicios y agendan citas por WhatsApp, sin intervención humana.
-          </p>
-        </div>
-        <div class="mt-8 pt-6 border-t border-white/[0.06]">
-          <div class="flex flex-wrap gap-x-6 gap-y-1 text-[12px] text-neutral-500">
-            <span>WhatsApp 24/7</span>
-            <span>Calificación de leads</span>
-            <span>Conexión a CRM</span>
-          </div>
-        </div>
-      </div>
-
     </div>
+
+    <!-- Tarjeta 3: Firmas Profesionales (Fondo Gris Suave) -->
+    <div class="rounded-xl p-8 bg-[#EAEAE4]/60 border border-[#EAEAE4] hover:border-[#245B65]/40 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between group">
+      <div>
+        <div class="flex items-center justify-between mb-8">
+          <div class="w-12 h-12 rounded-lg bg-white border border-[#EAEAE4] flex items-center justify-center text-[#245B65] group-hover:scale-105 transition-transform duration-200">
+            <IconLegal class="w-6 h-6 text-[#245B65]" />
+          </div>
+          <span class="font-mono text-sm font-bold text-[#245B65]">03</span>
+        </div>
+
+        <span class="text-xs font-mono uppercase tracking-wider text-[#E58B72] font-semibold block mb-1">
+          Servicios Profesionales
+        </span>
+        <h3 class="text-2xl font-bold text-[#252A29] tracking-tight mb-3">
+          Sistemas de Admisión para Estudios
+        </h3>
+        <p class="text-sm text-[#252A29]/75 leading-relaxed">
+          Portales de máxima seriedad y prestigio para estudios jurídicos y contables. Formularios de evaluación inteligente que filtran consultas no viables y cobran consultas antes de la reunión.
+        </p>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-[#EAEAE4]">
+        <p class="text-xs font-mono uppercase tracking-wider text-[#252A29]/60 mb-3">Soluciones incluidas:</p>
+        <div class="flex flex-wrap gap-2 text-xs font-medium text-[#245B65]">
+          <span class="px-3 py-1 rounded-md bg-white border border-[#EAEAE4]">Triaje previo de casos</span>
+          <span class="px-3 py-1 rounded-md bg-white border border-[#EAEAE4]">Cobro de consulta inicial</span>
+          <span class="px-3 py-1 rounded-md bg-white border border-[#EAEAE4]">Agenda privada de socios</span>
+          <span class="px-3 py-1 rounded-md bg-white border border-[#EAEAE4]">Filtro de curiosos</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 4: Agentes de IA (Fondo Blanco Cálido con Acento Coral) -->
+    <div class="rounded-xl p-8 bg-white border-2 border-[#245B65]/20 hover:border-[#245B65] transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between group">
+      <div>
+        <div class="flex items-center justify-between mb-8">
+          <div class="w-12 h-12 rounded-lg bg-[#E58B72]/15 border border-[#E58B72]/30 flex items-center justify-center text-[#E58B72] group-hover:scale-105 transition-transform duration-200">
+            <IconAI class="w-6 h-6 text-[#E58B72]" />
+          </div>
+          <span class="font-mono text-sm font-bold text-[#E58B72]">04</span>
+        </div>
+
+        <span class="text-xs font-mono uppercase tracking-wider text-[#245B65] font-semibold block mb-1">
+          Automatización Inteligente
+        </span>
+        <h3 class="text-2xl font-bold text-[#252A29] tracking-tight mb-3">
+          Agentes de IA & Atención 24/7 en WhatsApp
+        </h3>
+        <p class="text-sm text-[#252A29]/75 leading-relaxed">
+          Asistentes entrenados con la documentación real de tu empresa. Responden dudas recurrentes sobre precios, horarios o servicios, toman datos del cliente y coordinan turnos sin intervención humana.
+        </p>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-[#EAEAE4]">
+        <p class="text-xs font-mono uppercase tracking-wider text-[#252A29]/60 mb-3">Soluciones incluidas:</p>
+        <div class="flex flex-wrap gap-2 text-xs font-medium text-[#245B65]">
+          <span class="px-3 py-1 rounded-md bg-[#F7F7F2] border border-[#EAEAE4]">Atención 24/7 sin demoras</span>
+          <span class="px-3 py-1 rounded-md bg-[#F7F7F2] border border-[#EAEAE4]">WhatsApp Business API</span>
+          <span class="px-3 py-1 rounded-md bg-[#F7F7F2] border border-[#EAEAE4]">Sincronización con CRM</span>
+          <span class="px-3 py-1 rounded-md bg-[#F7F7F2] border border-[#EAEAE4]">Cero respuestas inventadas</span>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>

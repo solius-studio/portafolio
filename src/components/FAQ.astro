@@ -1,53 +1,61 @@
 ---
 const faqs = [
   {
-    q: "¿Por qué invertir en un desarrollo a medida si ya vendo por redes sociales?",
-    a: "Las redes sociales son canales de distribución valiosos, pero están sujetos a cambios de algoritmo, comisiones de terceros y límites de personalización. Una plataforma web propia posiciona en Google para búsquedas de alta intención de compra, proyecta la solidez de una firma consolidada y permite captar y cerrar clientes directamente por WhatsApp o pasarelas locales sin intermediarios."
+    q: "¿Por qué invertir en una web a medida si ya vendo por Instagram o tengo redes sociales?",
+    a: "Las redes sociales son excelentes canales de descubrimiento, pero están sujetas a algoritmos cambiantes y no son de tu propiedad. Una web propia te posiciona en Google justo cuando un cliente local busca tu servicio con urgencia, transmite la autoridad de un negocio consolidado y permite cobrar o tomar pedidos por WhatsApp sin fricción ni intermediarios."
   },
   {
-    q: "¿Cómo funciona un agente de inteligencia artificial en la práctica?",
-    a: "El agente se entrena con la documentación real de tu negocio: cartas de servicios, políticas de precios, preguntas frecuentes y criterios de atención. Funciona como un coordinador digital en WhatsApp o en tu web que responde dudas técnicas, descarta curiosos y únicamente deriva a tu equipo las consultas de clientes calificados y listos para contratar."
+    q: "¿Qué implica tener un agente de IA y qué necesito para implementarlo?",
+    a: "No necesitás conocimientos técnicos. Nosotros configuramos el agente con la información de tu negocio (catálogo, tarifas, horarios, preguntas frecuentes y políticas de atención) y lo conectamos a tu WhatsApp o sitio web. El bot responde dudas inmediatas y únicamente te deriva a los clientes listos para cerrar o agendar."
   },
   {
-    q: "¿Cuáles son los plazos habituales de entrega?",
-    a: "Para sitios institucionales y plataformas comerciales, el plazo estándar es de 7 a 14 días hábiles con revisiones continuas. Desarrollos con flujos de agentes autónomos o catálogos dinámicos complejos suelen completarse en 2 a 3 semanas, entregando siempre un entorno funcional desde la primera etapa."
+    q: "¿Cuánto tiempo toma la entrega de un proyecto?",
+    a: "Una landing page o sitio institucional suele estar online y funcionando entre 7 y 14 días hábiles. Desarrollos con catálogo e-commerce o agentes de IA personalizados toman entre 2 y 3 semanas, con revisiones intermedias constantes para validar avances."
   },
   {
-    q: "¿El código y la infraestructura quedan a mi nombre?",
-    a: "Absolutamente. No trabajamos con modelos de alquiler ni código cautivo. Todo el repositorio, los accesos a servidores y las cuentas asociadas pertenecen 100% al cliente desde el momento de la entrega, sin costos ocultos de mantenimiento forzado."
+    q: "¿El código y la página son de mi propiedad?",
+    a: "Sí, de forma absoluta. Todo el código, las cuentas de servidor y los accesos te pertenecen desde el día uno. No cobramos tarifas forzadas de mantenimiento mensual ni te dejamos atado a nuestra agencia."
+  },
+  {
+    q: "¿Tengo que pagar un hosting mensual costoso?",
+    a: "No. Empleamos arquitectura estática moderna (Astro + CDN Edge) que permite alojar la gran mayoría de los sitios web con costo de servidor $0 o insignificante para pymes, garantizando máxima velocidad y seguridad."
   }
 ];
 ---
 
-<section id="faq" class="py-24 px-6 border-t border-white/[0.06]">
-  <div class="max-w-[1200px] mx-auto">
-
-    <div class="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12 lg:gap-20 items-start">
-      <div>
-        <p class="text-[13px] text-neutral-500 mb-3 font-mono tracking-wide">Preguntas frecuentes</p>
-        <h2 class="font-display text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold tracking-[-0.03em] text-white leading-[1.15] mb-4">
-          Claridad antes de empezar
-        </h2>
-        <p class="text-[14px] text-neutral-400 leading-relaxed max-w-sm">
-          Respuestas transparentes sobre tiempos, propiedad del código y funcionamiento operativo.
-        </p>
+<section id="faq" class="py-24 px-6 lg:px-10 max-w-[1240px] mx-auto border-t border-[#EAEAE4]">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+    
+    <!-- Lado Izquierdo: Título y Contexto -->
+    <div class="lg:col-span-5 space-y-4">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="w-2 h-2 rounded-full bg-[#E58B72]"></span>
+        <span class="text-xs font-mono uppercase tracking-widest text-[#245B65]">05 // Dudas Comunes</span>
       </div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-[#252A29] tracking-tight leading-[1.15]">
+        Claridad absoluta <br />
+        antes de comenzar.
+      </h2>
+      <p class="text-sm text-[#252A29]/75 leading-relaxed max-w-sm">
+        Respuestas honestas a las preguntas frecuentes sobre plazos, costos, propiedad del código y tecnología.
+      </p>
+    </div>
 
-      <div class="divide-y divide-white/[0.06] border-t border-b border-white/[0.06]">
-        {faqs.map((faq) => (
-          <details class="group py-6">
-            <summary class="flex items-start justify-between gap-6 text-[15px] font-medium text-white leading-snug cursor-pointer select-none">
-              <span>{faq.q}</span>
-              <span class="shrink-0 mt-0.5 text-neutral-500 group-open:rotate-45 transition-transform duration-200 text-lg leading-none font-mono">
-                +
-              </span>
-            </summary>
-            <p class="mt-4 text-[14px] text-neutral-400 leading-relaxed pr-6">
-              {faq.a}
-            </p>
-          </details>
-        ))}
-      </div>
+    <!-- Lado Derecho: Acordeón Desplegable Limpio -->
+    <div class="lg:col-span-7 divide-y divide-[#EAEAE4] border-t border-b border-[#EAEAE4]">
+      {faqs.map((faq) => (
+        <details class="group py-6">
+          <summary class="flex items-start justify-between gap-6 text-base font-bold text-[#252A29] group-open:text-[#245B65] transition-colors leading-snug cursor-pointer select-none">
+            <span>{faq.q}</span>
+            <span class="shrink-0 mt-0.5 w-6 h-6 rounded-full bg-[#EAEAE4] text-[#245B65] flex items-center justify-center text-sm font-bold font-mono group-open:rotate-45 group-open:bg-[#E58B72] group-open:text-white transition-all duration-200">
+              +
+            </span>
+          </summary>
+          <p class="mt-4 text-sm text-[#252A29]/80 leading-relaxed pr-6">
+            {faq.a}
+          </p>
+        </details>
+      ))}
     </div>
 
   </div>

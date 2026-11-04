@@ -3,46 +3,88 @@ const steps = [
   {
     num: "01",
     title: "Diagnóstico",
-    description: "Analizamos tu modelo de negocio, tus clientes y los puntos donde perdés ventas o tiempo operativo."
+    subtitle: "Estrategia & Alcance",
+    description: "Analizamos tu negocio, tus clientes frecuentes y los puntos exactos donde perdés ventas o tiempo en tareas repetitivas.",
+    deliverable: "Plan de arquitectura & cotización cerrada"
   },
   {
     num: "02",
     title: "Diseño",
-    description: "Prototipamos la experiencia visual y funcional, pensada para el usuario que navega desde el celular."
+    subtitle: "Identidad & Prototipo",
+    description: "Diseñamos una experiencia visual limpia, cálida y contemporánea, pensada principalmente para el cliente que navega desde el móvil.",
+    deliverable: "Prototipo interactivo navegable"
   },
   {
     num: "03",
     title: "Desarrollo",
-    description: "Programamos código limpio, implementamos los agentes inteligentes y conectamos WhatsApp y calendarios."
+    subtitle: "Código Limpio & IA",
+    description: "Programamos código ágil sin plantillas lentas e implementamos los agentes inteligentes conectados a WhatsApp y calendarios.",
+    deliverable: "Plataforma funcional con 100/100 PageSpeed"
   },
   {
     num: "04",
     title: "Lanzamiento",
-    description: "Desplegamos en servidores rápidos, optimizamos para Google y te enseñamos a monitorear los resultados."
+    subtitle: "Despliegue & Entrega",
+    description: "Ponemos en marcha la web en servidores ultrarrápidos, optimizamos el SEO para Google y te entregamos la propiedad total del código.",
+    deliverable: "Puesta en producción & soporte inicial"
   }
 ];
 ---
 
-<section id="metodo" class="py-24 px-6 border-t border-white/[0.06]">
-  <div class="max-w-[1200px] mx-auto">
-
-    <div class="max-w-lg mb-16">
-      <p class="text-[13px] text-neutral-500 mb-3 font-mono tracking-wide">Método de trabajo</p>
-      <h2 class="font-display text-[clamp(1.75rem,4vw,2.75rem)] font-bold tracking-[-0.03em] text-white leading-[1.15]">
-        Cómo llegamos del diagnóstico a la entrega
+<section id="metodo" class="py-24 px-6 lg:px-10 max-w-[1240px] mx-auto border-t border-[#EAEAE4]">
+  
+  <!-- Encabezado de Sección -->
+  <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
+    <div>
+      <div class="flex items-center gap-2 mb-3">
+        <span class="w-2 h-2 rounded-full bg-[#E58B72]"></span>
+        <span class="text-xs font-mono uppercase tracking-widest text-[#245B65]">04 // Metodología de Trabajo</span>
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-[#252A29] tracking-tight leading-[1.15]">
+        Un proceso transparente <br class="hidden sm:inline" />
+        de principio a fin.
       </h2>
     </div>
+    <p class="text-sm text-[#252A29]/75 max-w-md leading-relaxed">
+      Sin tecnicismos innecesarios, sin demoras imprevistas y con entregas funcionales verificadas en cada etapa.
+    </p>
+  </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-white/[0.06]">
-      {steps.map((step, i) => (
-        <div class={`py-8 ${i < 3 ? 'lg:border-r lg:border-white/[0.06]' : ''} ${i < 3 ? 'lg:pr-8' : ''} ${i > 0 ? 'lg:pl-8' : ''} border-b md:border-b-0 border-white/[0.06] last:border-b-0`}>
-          <span class="font-mono text-[13px] text-neutral-600 block mb-4">{step.num}</span>
-          <h3 class="font-display text-lg font-semibold text-white tracking-tight mb-2">
-            {step.title}
-          </h3>
-          <p class="text-[13px] text-neutral-500 leading-relaxed">
-            {step.description}
-          </p>
+  <!-- Composición Visual Conectada (Línea de Continuidad) -->
+  <div class="relative">
+    
+    <!-- Línea Horizontal de Conexión (Desktop) -->
+    <div class="hidden lg:block absolute top-7 left-8 right-8 h-0.5 bg-[#EAEAE4] -z-0"></div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+      {steps.map((step, index) => (
+        <div class="bg-white p-7 rounded-xl border border-[#EAEAE4] hover:border-[#245B65]/30 transition-all duration-200 shadow-sm flex flex-col justify-between group">
+          
+          <div>
+            <!-- Nodo Conector con Número y Acento Coral -->
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-10 h-10 rounded-full bg-[#F7F7F2] border-2 border-[#245B65] flex items-center justify-center font-mono font-bold text-sm text-[#245B65] group-hover:bg-[#245B65] group-hover:text-white transition-colors duration-200">
+                {step.num}
+              </div>
+              <span class="w-2.5 h-2.5 rounded-full bg-[#E58B72]"></span>
+            </div>
+
+            <span class="text-xs font-mono uppercase tracking-wider text-[#245B65] font-semibold block mb-1">
+              {step.subtitle}
+            </span>
+            <h3 class="text-xl font-bold text-[#252A29] tracking-tight mb-3">
+              {step.title}
+            </h3>
+            <p class="text-xs sm:text-sm text-[#252A29]/75 leading-relaxed">
+              {step.description}
+            </p>
+          </div>
+
+          <!-- Entregable Tangible de la Etapa -->
+          <div class="mt-6 pt-4 border-t border-[#EAEAE4] text-[11px] font-mono text-[#245B65] bg-[#F7F7F2] p-2.5 rounded">
+            <strong>Entregable:</strong> {step.deliverable}
+          </div>
+
         </div>
       ))}
     </div>
