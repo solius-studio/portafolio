@@ -1,0 +1,40 @@
+---
+const items = [
+  "100/100 GOOGLE PAGESPEED",
+  "AUTOMATIZACIÓN WHATSAPP 24/7",
+  "ARQUITECTURA ASTRO SIN SOBRECARGA JS",
+  "CAPTACIÓN & TRIAJE PARA ESTUDIOS JURÍDICOS",
+  "CARTAS QR & PEDIDOS DIRECTOS",
+  "E-COMMERCE DE ALTA CONVERSIÓN",
+  "CERO PLANTILLAS GENÉRICAS",
+  "RETORNO DE INVERSIÓN COMERCIAL MEDIBLE"
+];
+---
+
+<div class="w-full overflow-hidden border-y border-[#EAEAE4] dark:border-white/10 bg-[#FFFFFF] dark:bg-[#0A0A0E] py-4 select-none relative">
+  <!-- Máscaras de desvanecimiento en los bordes para look cinematográfico -->
+  <div class="pointer-events-none absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-[#FFFFFF] dark:from-[#0A0A0E] to-transparent z-10"></div>
+  <div class="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-[#FFFFFF] dark:from-[#0A0A0E] to-transparent z-10"></div>
+
+  <div class="animate-marquee flex items-center gap-8 whitespace-nowrap">
+    <!-- Secuencia 1 -->
+    {items.map((item) => (
+      <div class="flex items-center gap-8">
+        <span class="text-xs font-mono font-semibold tracking-wider text-[#252A29]/70 dark:text-neutral-400 uppercase">
+          {item}
+        </span>
+        <span class="w-1.5 h-1.5 rounded-full bg-[#8A3D28] dark:bg-red-500"></span>
+      </div>
+    ))}
+    
+    <!-- Secuencia 2 (Duplicada para bucle continuo infinito) -->
+    {items.map((item) => (
+      <div class="flex items-center gap-8">
+        <span class="text-xs font-mono font-semibold tracking-wider text-[#252A29]/70 dark:text-neutral-400 uppercase">
+          {item}
+        </span>
+        <span class="w-1.5 h-1.5 rounded-full bg-[#8A3D28] dark:bg-red-500"></span>
+      </div>
+    ))}
+  </div>
+</div>

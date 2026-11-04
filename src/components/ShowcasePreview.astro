@@ -3,345 +3,448 @@ import IconArrowRight from './icons/IconArrowRight.astro';
 import IconLegal from './icons/IconLegal.astro';
 import IconGastronomy from './icons/IconGastronomy.astro';
 import IconAI from './icons/IconAI.astro';
+import IconCheck from './icons/IconCheck.astro';
+import IconSparkle from './icons/IconSparkle.astro';
 ---
 
-<section id="proyectos" class="py-24 px-6 lg:px-10 max-w-[1240px] mx-auto border-t border-[#EAEAE4]">
+<section id="proyectos" class="py-24 px-4 sm:px-6 lg:px-10 max-w-[1240px] mx-auto border-t border-[#EAEAE4] dark:border-white/10 relative overflow-hidden">
   
-  <!-- Encabezado de la Sección Portfolio -->
-  <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
+  <!-- Encabezado de la Sección Portfolio + Controles del Carrusel -->
+  <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
     <div>
       <div class="flex items-center gap-2 mb-3">
-        <span class="w-2 h-2 rounded-full bg-[#E58B72]"></span>
-        <span class="text-xs font-mono uppercase tracking-widest text-[#8A3D28]">02 // Casos de Estudio & Prototipos</span>
+        <span class="w-2 h-2 rounded-full bg-[#E58B72] dark:bg-red-500 animate-pulse"></span>
+        <span class="text-xs font-mono uppercase tracking-widest text-[#8A3D28] dark:text-red-400 font-semibold">02 // Showcase Interactivo</span>
       </div>
-      <h2 class="text-3xl sm:text-5xl font-extrabold text-[#252A29] tracking-tight leading-[1.15]">
-        Proyectos diseñados para <br class="hidden sm:inline" />
-        producir impacto real.
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-[#252A29] dark:text-white tracking-tight leading-[1.15]">
+        Demos y Prototipos en Vivo.
       </h2>
-    </div>
-    <p class="text-sm text-[#252A29]/75 max-w-md leading-relaxed">
-      Cada desarrollo responde a un desafío comercial concreto: eliminar intermediarios, capturar prospectos y garantizar velocidad absoluta.
-    </p>
-  </div>
-
-  <div class="space-y-16 lg:space-y-24">
-
-    <!-- CASO DE ESTUDIO 01: LexVanguard Abogados -->
-    <article class="rounded-2xl border border-[#EAEAE4] bg-white p-6 sm:p-10 lg:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-      
-      <!-- Columna Izquierda: Información Editorial del Caso -->
-      <div class="lg:col-span-6 space-y-6">
-        <div class="flex items-center gap-3">
-          <span class="px-3 py-1 rounded-full bg-[#8A3D28]/10 text-[#8A3D28] text-xs font-mono font-semibold uppercase">
-            Estudios Jurídicos
-          </span>
-          <span class="text-xs font-mono text-[#252A29]/50">Caso 01</span>
-        </div>
-
-        <div>
-          <h3 class="text-3xl font-extrabold text-[#252A29] tracking-tight mb-2">
-            LexVanguard Abogados
-          </h3>
-          <p class="text-sm font-medium text-[#8A3D28]">
-            Portal institucional con sistema de admisión y calificación de casos
-          </p>
-        </div>
-
-        <div class="space-y-3 text-xs sm:text-sm text-[#252A29]/80 leading-relaxed">
-          <div class="p-4 rounded-lg bg-[#F7F7F2] border border-[#EAEAE4]">
-            <strong class="text-[#8A3D28] font-semibold block mb-1">El Desafío:</strong>
-            Los socios perdían más de 10 horas semanales respondiendo consultas informales que no podían costear los honorarios de la firma.
-          </div>
-          <div class="p-4 rounded-lg bg-[#F7F7F2] border border-[#EAEAE4]">
-            <strong class="text-[#8A3D28] font-semibold block mb-1">La Solución Solius:</strong>
-            Diseñamos un portal corporativo sobrio con triaje previo: el cliente califica la materia de su litigio en 3 pasos antes de acceder a la agenda del socio.
-          </div>
-        </div>
-
-        <!-- Resultados e Indicadores Clave -->
-        <div class="grid grid-cols-3 gap-3 pt-2 font-mono text-center">
-          <div class="p-3 rounded-lg bg-[#EAEAE4]/50 border border-[#EAEAE4]">
-            <span class="text-lg font-bold text-[#8A3D28] block">0.4s</span>
-            <span class="text-[11px] text-[#252A29]/70">Carga Total</span>
-          </div>
-          <div class="p-3 rounded-lg bg-[#EAEAE4]/50 border border-[#EAEAE4]">
-            <span class="text-lg font-bold text-[#8A3D28] block">100%</span>
-            <span class="text-[11px] text-[#252A29]/70">Filtro Spam</span>
-          </div>
-          <div class="p-3 rounded-lg bg-[#EAEAE4]/50 border border-[#EAEAE4]">
-            <span class="text-lg font-bold text-[#E58B72] block">Previo</span>
-            <span class="text-[11px] text-[#252A29]/70">Cobro Cita</span>
-          </div>
-        </div>
-
-        <div class="pt-2">
-          <a href="#contacto" class="inline-flex items-center gap-2 text-sm font-semibold text-[#8A3D28] hover:text-[#6E2E1C] group">
-            <span>Consultar desarrollo para estudio profesional</span>
-            <IconArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
-        </div>
-      </div>
-
-      <!-- Columna Derecha: Mockup Visual de Interfaz Editorial -->
-      <div class="lg:col-span-6 bg-[#F7F7F2] p-5 sm:p-7 rounded-xl border border-[#EAEAE4] space-y-4 shadow-inner">
-        
-        <div class="flex items-center justify-between border-b border-[#EAEAE4] pb-3">
-          <div class="flex items-center gap-2">
-            <span class="w-2.5 h-2.5 rounded-full bg-[#E58B72]"></span>
-            <span class="w-2.5 h-2.5 rounded-full bg-[#EAEAE4]"></span>
-            <span class="w-2.5 h-2.5 rounded-full bg-[#8A3D28]/30"></span>
-            <span class="ml-2 font-mono text-xs text-[#252A29]/60">lexvanguard.legal/admision</span>
-          </div>
-          <span class="text-[11px] font-mono font-semibold text-[#8A3D28]">Triaje Seguro</span>
-        </div>
-
-        <!-- Mockup de Interfaz de Evaluación de Casos -->
-        <div class="bg-white p-5 rounded-lg border border-[#EAEAE4] space-y-4 shadow-sm">
-          <div class="flex justify-between items-center pb-2 border-b border-[#EAEAE4]/60">
-            <div>
-              <p class="text-xs font-mono uppercase text-[#8A3D28]">Paso 02 de 03</p>
-              <h4 class="text-sm font-bold text-[#252A29]">Evaluación de Litigio Corporativo</h4>
-            </div>
-            <span class="px-2 py-0.5 rounded bg-[#EAEAE4] text-[11px] font-mono text-[#252A29]/80">Turno privado</span>
-          </div>
-
-          <div class="space-y-2">
-            <div class="p-3 rounded-md bg-[#F7F7F2] border border-[#8A3D28]/30 flex items-center justify-between text-xs">
-              <span class="font-medium text-[#252A29]">✓ Conflicto Societario / Accionistas</span>
-              <span class="text-[#8A3D28] font-bold">Seleccionado</span>
-            </div>
-            <div class="p-3 rounded-md bg-white border border-[#EAEAE4] flex items-center justify-between text-xs text-[#252A29]/60">
-              <span>Incumplimiento de Contrato Comercial</span>
-              <span>Seleccionar</span>
-            </div>
-          </div>
-
-          <div class="p-3 rounded-md bg-[#8A3D28]/5 border border-[#8A3D28]/20 flex items-center justify-between text-xs">
-            <span class="text-[#8A3D28] font-medium">Disponibilidad con Dr. Martínez:</span>
-            <span class="font-bold text-[#252A29] font-mono">Jueves 16:30 hs</span>
-          </div>
-        </div>
-
-      </div>
-
-    </article>
-
-
-    <!-- CASO DE ESTUDIO 02: Aura Bistro & Bar -->
-    <article class="rounded-2xl border border-[#EAEAE4] bg-white p-6 sm:p-10 lg:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-      
-      <!-- Columna Izquierda: Mockup Visual de Smartphone y Menú QR -->
-      <div class="lg:col-span-6 order-2 lg:order-1 bg-[#F7F7F2] p-5 sm:p-7 rounded-xl border border-[#EAEAE4] space-y-4 shadow-inner">
-        
-        <div class="flex items-center justify-between border-b border-[#EAEAE4] pb-3">
-          <div class="flex items-center gap-2">
-            <span class="w-2.5 h-2.5 rounded-full bg-[#E58B72]"></span>
-            <span class="w-2.5 h-2.5 rounded-full bg-[#EAEAE4]"></span>
-            <span class="w-2.5 h-2.5 rounded-full bg-[#8A3D28]/30"></span>
-            <span class="ml-2 font-mono text-xs text-[#252A29]/60">aurabistro.com/carta-qr</span>
-          </div>
-          <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-[#E58B72]/15 text-[#E58B72]">
-            Mesa 04 Activa
-          </span>
-        </div>
-
-        <!-- Mockup de Pedido Directo a WhatsApp -->
-        <div class="bg-white p-5 rounded-lg border border-[#EAEAE4] space-y-3 shadow-sm">
-          <div class="flex items-center justify-between">
-            <div>
-              <span class="text-[11px] font-mono uppercase text-[#E58B72]">Cocina en Vivo</span>
-              <h4 class="text-sm font-bold text-[#252A29]">Comanda Formateada para WhatsApp</h4>
-            </div>
-            <span class="text-xs font-mono font-bold text-[#8A3D28]">Directo</span>
-          </div>
-
-          <div class="p-3 rounded-md bg-[#F7F7F2] border border-[#EAEAE4] text-xs font-mono text-[#252A29]/80 space-y-1">
-            <p class="font-bold text-[#8A3D28]">📋 NUEVO PEDIDO — MESA 04</p>
-            <p>• 1x Ojo de Bife 45 días (A punto)</p>
-            <p>• 1x Risotto de Hongos Silvestres</p>
-            <p>• 2x Copas Malbec Reserva</p>
-            <p class="text-[#E58B72] font-bold pt-1">Total: $34.500 // Sin comisión de app</p>
-          </div>
-
-          <div class="flex items-center justify-between pt-1 text-[11px] font-mono text-[#252A29]/70">
-            <span>Envío instantáneo a WhatsApp</span>
-            <span class="text-[#8A3D28] font-semibold">0% comisión externa</span>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Columna Derecha: Información Editorial del Caso -->
-      <div class="lg:col-span-6 order-1 lg:order-2 space-y-6">
-        <div class="flex items-center gap-3">
-          <span class="px-3 py-1 rounded-full bg-[#E58B72]/15 text-[#E58B72] text-xs font-mono font-semibold uppercase">
-            Gastronomía & Locales
-          </span>
-          <span class="text-xs font-mono text-[#252A29]/50">Caso 02</span>
-        </div>
-
-        <div>
-          <h3 class="text-3xl font-extrabold text-[#252A29] tracking-tight mb-2">
-            Aura Bistro & Bar
-          </h3>
-          <p class="text-sm font-medium text-[#8A3D28]">
-            Menú digital QR ultraliviano con comanda directa a cocina
-          </p>
-        </div>
-
-        <div class="space-y-3 text-xs sm:text-sm text-[#252A29]/80 leading-relaxed">
-          <div class="p-4 rounded-lg bg-[#F7F7F2] border border-[#EAEAE4]">
-            <strong class="text-[#8A3D28] font-semibold block mb-1">El Desafío:</strong>
-            Las apps de delivery cobraban un 28% de comisión por pedido y la carta en PDF pesaba 15 MB, tardando hasta 30 segundos en cargar en los teléfonos de los clientes.
-          </div>
-          <div class="p-4 rounded-lg bg-[#F7F7F2] border border-[#EAEAE4]">
-            <strong class="text-[#8A3D28] font-semibold block mb-1">La Solución Solius:</strong>
-            Desarrollamos una web app ultrarrápida que abre en 0.2 segundos al escanear el código QR de la mesa y despacha el pedido formateado directo a la cocina.
-          </div>
-        </div>
-
-        <div class="grid grid-cols-3 gap-3 pt-2 font-mono text-center">
-          <div class="p-3 rounded-lg bg-[#EAEAE4]/50 border border-[#EAEAE4]">
-            <span class="text-lg font-bold text-[#8A3D28] block">0%</span>
-            <span class="text-[11px] text-[#252A29]/70">Comisiones</span>
-          </div>
-          <div class="p-3 rounded-lg bg-[#EAEAE4]/50 border border-[#EAEAE4]">
-            <span class="text-lg font-bold text-[#8A3D28] block">&lt;0.2s</span>
-            <span class="text-[11px] text-[#252A29]/70">Carga QR</span>
-          </div>
-          <div class="p-3 rounded-lg bg-[#EAEAE4]/50 border border-[#EAEAE4]">
-            <span class="text-lg font-bold text-[#E58B72] block">+32%</span>
-            <span class="text-[11px] text-[#252A29]/70">Ticket Medio</span>
-          </div>
-        </div>
-
-        <div class="pt-2">
-          <a href="#contacto" class="inline-flex items-center gap-2 text-sm font-semibold text-[#8A3D28] hover:text-[#6E2E1C] group">
-            <span>Consultar menú digital para gastronomía</span>
-            <IconArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
-        </div>
-      </div>
-
-    </article>
-
-
-    <!-- CASO DE ESTUDIO 03: NovaDesk AI Assistant -->
-    <article class="rounded-2xl border border-[#EAEAE4] bg-white p-6 sm:p-10 lg:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-      
-      <!-- Columna Izquierda: Información Editorial del Caso -->
-      <div class="lg:col-span-6 space-y-6">
-        <div class="flex items-center gap-3">
-          <span class="px-3 py-1 rounded-full bg-[#8A3D28]/10 text-[#8A3D28] text-xs font-mono font-semibold uppercase">
-            Inteligencia Artificial
-          </span>
-          <span class="text-xs font-mono text-[#252A29]/50">Caso 03</span>
-        </div>
-
-        <div>
-          <h3 class="text-3xl font-extrabold text-[#252A29] tracking-tight mb-2">
-            NovaDesk AI Assistant
-          </h3>
-          <p class="text-sm font-medium text-[#8A3D28]">
-            Agente conversacional autónomo para atención y captación de clientes 24/7
-          </p>
-        </div>
-
-        <div class="space-y-3 text-xs sm:text-sm text-[#252A29]/80 leading-relaxed">
-          <div class="p-4 rounded-lg bg-[#F7F7F2] border border-[#EAEAE4]">
-            <strong class="text-[#8A3D28] font-semibold block mb-1">El Desafío:</strong>
-            El 65% de los prospectos escribían después de las 20:00 hs o en fines de semana, perdiéndose con competidores por falta de respuesta inmediata.
-          </div>
-          <div class="p-4 rounded-lg bg-[#F7F7F2] border border-[#EAEAE4]">
-            <strong class="text-[#8A3D28] font-semibold block mb-1">La Solución Solius:</strong>
-            Implementamos un agente de IA entrenado con la documentación de la empresa que responde dudas, califica el presupuesto y agenda reuniones en el acto.
-          </div>
-        </div>
-
-        <div class="grid grid-cols-3 gap-3 pt-2 font-mono text-center">
-          <div class="p-3 rounded-lg bg-[#EAEAE4]/50 border border-[#EAEAE4]">
-            <span class="text-lg font-bold text-[#8A3D28] block">24/7</span>
-            <span class="text-[11px] text-[#252A29]/70">Operativo</span>
-          </div>
-          <div class="p-3 rounded-lg bg-[#EAEAE4]/50 border border-[#EAEAE4]">
-            <span class="text-lg font-bold text-[#8A3D28] block">&lt;2s</span>
-            <span class="text-[11px] text-[#252A29]/70">Respuesta</span>
-          </div>
-          <div class="p-3 rounded-lg bg-[#EAEAE4]/50 border border-[#EAEAE4]">
-            <span class="text-lg font-bold text-[#E58B72] block">Auto</span>
-            <span class="text-[11px] text-[#252A29]/70">Sync CRM</span>
-          </div>
-        </div>
-
-        <div class="pt-2">
-          <a href="#contacto" class="inline-flex items-center gap-2 text-sm font-semibold text-[#8A3D28] hover:text-[#6E2E1C] group">
-            <span>Consultar agente de IA para tu negocio</span>
-            <IconArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
-        </div>
-      </div>
-
-      <!-- Columna Derecha: Mockup Visual de Agente de IA Conversacional -->
-      <div class="lg:col-span-6 bg-[#F7F7F2] p-5 sm:p-7 rounded-xl border border-[#EAEAE4] space-y-4 shadow-inner">
-        
-        <div class="flex items-center justify-between border-b border-[#EAEAE4] pb-3">
-          <div class="flex items-center gap-2">
-            <span class="w-2.5 h-2.5 rounded-full bg-[#E58B72]"></span>
-            <span class="w-2.5 h-2.5 rounded-full bg-[#EAEAE4]"></span>
-            <span class="w-2.5 h-2.5 rounded-full bg-[#8A3D28]/30"></span>
-            <span class="ml-2 font-mono text-xs text-[#252A29]/60">WhatsApp Business API</span>
-          </div>
-          <span class="text-[11px] font-mono font-semibold text-emerald-600">● En vivo</span>
-        </div>
-
-        <!-- Conversación Simulada en Paleta Cálida -->
-        <div class="bg-white p-5 rounded-lg border border-[#EAEAE4] space-y-3 shadow-sm text-xs">
-          
-          <div class="flex justify-end">
-            <div class="max-w-[80%] rounded-lg bg-[#EAEAE4] text-[#252A29] p-3">
-              <p>Hola, buenas noches. Quería consultar precios para automatizar el ingreso de clientes a mi estudio contable.</p>
-              <span class="block text-[10px] text-[#252A29]/50 text-right mt-1">21:40</span>
-            </div>
-          </div>
-
-          <div class="flex justify-start">
-            <div class="max-w-[85%] rounded-lg bg-[#8A3D28]/10 text-[#252A29] p-3 border border-[#8A3D28]/15">
-              <p>¡Hola! Buenas noches. Claro que sí. Tenemos flujos diseñados específicamente para estudios contables que clasifican consultas fiscales y societarias.</p>
-              <p class="mt-2 text-[#8A3D28] font-medium">¿Manejás actualmente más de 20 consultas semanales por WhatsApp?</p>
-              <span class="block text-[10px] text-[#252A29]/50 mt-1">21:40 · Respondió en 1.1s</span>
-            </div>
-          </div>
-
-          <div class="flex items-center justify-between pt-2 border-t border-[#EAEAE4] text-[11px] font-mono text-[#252A29]/70">
-            <span>Calificación automática</span>
-            <span class="text-[#8A3D28] font-semibold">Turno coordinado en Google Meet</span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </article>
-
-  </div>
-
-  <!-- Franja de Diagnóstico Directo -->
-  <div class="mt-16 p-8 rounded-xl border border-[#EAEAE4] bg-[#EAEAE4]/40 flex flex-col sm:flex-row items-center justify-between gap-6">
-    <div>
-      <h4 class="text-base font-bold text-[#252A29]">
-        ¿Querés saber cómo aplicaría una de estas soluciones a tu caso particular?
-      </h4>
-      <p class="text-xs text-[#252A29]/70 mt-1">
-        Revisamos tu flujo actual de ventas o atención sin costo alguno.
+      <p class="mt-3 text-sm text-[#252A29]/75 dark:text-neutral-400 max-w-lg leading-relaxed">
+        Deslizá para explorar cada solución: interfaces reales para celulares y computadoras, preparadas para generar confianza inmediata en tus clientes.
       </p>
     </div>
-    <a 
-      href="#contacto" 
-      class="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-[#8A3D28] hover:bg-[#6E2E1C] text-white text-xs font-semibold tracking-wide transition-colors whitespace-nowrap shadow-sm"
-    >
-      <span>Solicitar Diagnóstico Sin Costo</span>
-      <IconArrowRight class="w-3.5 h-3.5 text-white" />
-    </a>
+
+    <!-- Controles del Carrusel (Flechas + Indicador de diapositiva) -->
+    <div class="flex items-center gap-3">
+      <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-[#EAEAE4] dark:border-white/10 bg-white dark:bg-neutral-900 text-xs font-mono font-medium text-[#252A29] dark:text-neutral-300">
+        <span id="carousel-current">1</span>
+        <span class="text-[#252A29]/40 dark:text-neutral-500">/</span>
+        <span>3</span>
+      </div>
+
+      <button 
+        id="carousel-prev" 
+        type="button"
+        aria-label="Proyecto anterior"
+        class="w-10 h-10 rounded-full border border-[#EAEAE4] dark:border-white/10 bg-white dark:bg-neutral-900 flex items-center justify-center text-[#252A29] dark:text-white hover:bg-[#8A3D28] hover:text-white dark:hover:bg-red-600 transition-all duration-200 shadow-sm active:scale-95"
+      >
+        <svg class="w-4 h-4 rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+
+      <button 
+        id="carousel-next" 
+        type="button"
+        aria-label="Siguiente proyecto"
+        class="w-10 h-10 rounded-full border border-[#EAEAE4] dark:border-white/10 bg-white dark:bg-neutral-900 flex items-center justify-center text-[#252A29] dark:text-white hover:bg-[#8A3D28] hover:text-white dark:hover:bg-red-600 transition-all duration-200 shadow-sm active:scale-95"
+      >
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Pestañas de Navegación Rápida de Proyectos -->
+  <div class="flex items-center gap-2 mb-8 overflow-x-auto pb-2 scrollbar-none">
+    <button class="project-pill active px-4 py-2 rounded-full text-xs font-medium transition-all duration-200 whitespace-nowrap bg-[#8A3D28] dark:bg-red-600 text-white shadow-sm" data-slide="0">
+      01. LexVanguard (Estudio Jurídico)
+    </button>
+    <button class="project-pill px-4 py-2 rounded-full text-xs font-medium transition-all duration-200 whitespace-nowrap bg-white dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10 text-[#252A29] dark:text-neutral-300 hover:border-[#8A3D28] dark:hover:border-red-500" data-slide="1">
+      02. Aura Bistro (Comercio & QR)
+    </button>
+    <button class="project-pill px-4 py-2 rounded-full text-xs font-medium transition-all duration-200 whitespace-nowrap bg-white dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10 text-[#252A29] dark:text-neutral-300 hover:border-[#8A3D28] dark:hover:border-red-500" data-slide="2">
+      03. NovaDesk AI (Agente Autónomo)
+    </button>
+  </div>
+
+  <!-- Contenedor del Carrusel (Swipeable + Scroll Snap) -->
+  <div 
+    id="showcase-carousel" 
+    class="flex gap-6 overflow-x-auto carousel-snap pb-6 scrollbar-none transition-all duration-300"
+  >
+
+    <!-- SLIDE 1: LexVanguard Abogados -->
+    <div class="carousel-snap-item min-w-full lg:min-w-[100%] rounded-3xl border border-[#EAEAE4] dark:border-white/10 bg-white dark:bg-[#0E0E12] p-6 sm:p-10 shadow-md dark:shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      
+      <!-- Detalle Editorial -->
+      <div class="lg:col-span-6 space-y-6">
+        <div class="flex items-center gap-3">
+          <span class="px-3 py-1 rounded-full bg-[#8A3D28]/10 dark:bg-red-950/60 text-[#8A3D28] dark:text-red-400 border border-[#8A3D28]/20 dark:border-red-800/40 text-xs font-mono font-semibold uppercase">
+            Estudios Jurídicos
+          </span>
+          <span class="text-xs font-mono text-[#252A29]/50 dark:text-neutral-500">Caso de Estudio 01</span>
+        </div>
+
+        <div>
+          <h3 class="text-2xl sm:text-3xl font-bold text-[#252A29] dark:text-white tracking-tight">
+            LexVanguard — Firma Legal & Consultoría
+          </h3>
+          <p class="mt-3 text-sm text-[#252A29]/75 dark:text-neutral-400 leading-relaxed">
+            Plataforma institucional sobria diseñada para despachos de abogados que buscan transmitir autoridad instantánea y filtrar consultas spam antes de la primera llamada.
+          </p>
+        </div>
+
+        <!-- Métricas Clave -->
+        <div class="grid grid-cols-3 gap-3 p-4 rounded-2xl bg-[#F8F8F5] dark:bg-neutral-950/80 border border-[#EAEAE4] dark:border-white/5">
+          <div>
+            <p class="text-lg font-bold text-[#8A3D28] dark:text-red-400">0.6s</p>
+            <p class="text-[10px] text-[#252A29]/60 dark:text-neutral-400 uppercase tracking-wider font-mono">Carga Celular</p>
+          </div>
+          <div>
+            <p class="text-lg font-bold text-[#252A29] dark:text-white">+65%</p>
+            <p class="text-[10px] text-[#252A29]/60 dark:text-neutral-400 uppercase tracking-wider font-mono">Leads Calificados</p>
+          </div>
+          <div>
+            <p class="text-lg font-bold text-[#252A29] dark:text-white">0%</p>
+            <p class="text-[10px] text-[#252A29]/60 dark:text-neutral-400 uppercase tracking-wider font-mono">Spam en Agenda</p>
+          </div>
+        </div>
+
+        <!-- Características Resueltas -->
+        <div class="space-y-2 text-xs text-[#252A29]/80 dark:text-neutral-300">
+          <div class="flex items-center gap-2">
+            <IconCheck class="w-4 h-4 text-[#8A3D28] dark:text-red-500 shrink-0" />
+            <span>Formulario de Intake: clasifica la rama del derecho y la urgencia.</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <IconCheck class="w-4 h-4 text-[#8A3D28] dark:text-red-500 shrink-0" />
+            <span>Sincronización directa con Google Calendar y aviso al abogado.</span>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <a 
+            href="#contacto" 
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#252A29] dark:bg-white text-white dark:text-black text-xs font-bold tracking-wide hover:bg-[#8A3D28] dark:hover:bg-red-500 dark:hover:text-white transition-all shadow-sm"
+          >
+            <span>Solicitar Demo para tu Estudio</span>
+            <IconArrowRight class="w-3.5 h-3.5" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Mockup Visual Interactivo (Laptop Frame) -->
+      <div class="lg:col-span-6">
+        <div class="rounded-2xl border border-[#EAEAE4] dark:border-white/10 bg-[#F8F8F5] dark:bg-[#070709] p-3 shadow-xl relative overflow-hidden group">
+          <!-- Barra de navegación del navegador simulado -->
+          <div class="flex items-center justify-between px-3 py-2 border-b border-[#EAEAE4] dark:border-white/10 mb-3 bg-white dark:bg-neutral-900 rounded-lg">
+            <div class="flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+            </div>
+            <div class="text-[11px] font-mono text-[#252A29]/60 dark:text-neutral-400 bg-[#F8F8F5] dark:bg-neutral-950 px-4 py-0.5 rounded-md border border-[#EAEAE4] dark:border-white/5">
+              https://lexvanguard.legal
+            </div>
+            <div class="w-4"></div>
+          </div>
+
+          <!-- Contenido visual del sitio simulado -->
+          <div class="p-6 bg-white dark:bg-neutral-950 rounded-xl border border-[#EAEAE4] dark:border-white/5 space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <IconLegal class="w-5 h-5 text-[#8A3D28] dark:text-red-500" />
+                <span class="font-bold text-sm text-[#252A29] dark:text-white tracking-wider">LEXVANGUARD</span>
+              </div>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-400 font-mono">Citas Disponibles</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-[#F8F8F5] dark:bg-neutral-900/70 border border-[#EAEAE4] dark:border-white/10 space-y-2">
+              <p class="text-xs font-bold text-[#252A29] dark:text-white">Evaluación Previa de Causa</p>
+              <div class="grid grid-cols-2 gap-2 text-[10px]">
+                <div class="p-2 rounded bg-white dark:bg-neutral-950 border border-[#8A3D28] dark:border-red-500 text-[#8A3D28] dark:text-red-400 font-semibold text-center">Derecho Corporativo</div>
+                <div class="p-2 rounded bg-white dark:bg-neutral-950 border border-[#EAEAE4] dark:border-white/10 text-neutral-500 text-center">Litigios Laborales</div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between text-[11px] text-[#252A29]/60 dark:text-neutral-400 pt-2">
+              <span>Turnos virtuales vía Google Meet</span>
+              <span class="font-semibold text-[#8A3D28] dark:text-red-400">Ver Agenda →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SLIDE 2: Aura Bistro & Bar -->
+    <div class="carousel-snap-item min-w-full lg:min-w-[100%] rounded-3xl border border-[#EAEAE4] dark:border-white/10 bg-white dark:bg-[#0E0E12] p-6 sm:p-10 shadow-md dark:shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      
+      <!-- Detalle Editorial -->
+      <div class="lg:col-span-6 space-y-6">
+        <div class="flex items-center gap-3">
+          <span class="px-3 py-1 rounded-full bg-[#8A3D28]/10 dark:bg-red-950/60 text-[#8A3D28] dark:text-red-400 border border-[#8A3D28]/20 dark:border-red-800/40 text-xs font-mono font-semibold uppercase">
+            Comercios & Gastronomía
+          </span>
+          <span class="text-xs font-mono text-[#252A29]/50 dark:text-neutral-500">Caso de Estudio 02</span>
+        </div>
+
+        <div>
+          <h3 class="text-2xl sm:text-3xl font-bold text-[#252A29] dark:text-white tracking-tight">
+            Aura Bistro & Bar — Menú QR & Pedidos
+          </h3>
+          <p class="mt-3 text-sm text-[#252A29]/75 dark:text-neutral-400 leading-relaxed">
+            Menú digital interactivo en alta definición sin PDFs pesados. El cliente escanea el QR en la mesa o desde su casa, arma su pedido y lo envía formateado directo al WhatsApp del local.
+          </p>
+        </div>
+
+        <!-- Métricas Clave -->
+        <div class="grid grid-cols-3 gap-3 p-4 rounded-2xl bg-[#F8F8F5] dark:bg-neutral-950/80 border border-[#EAEAE4] dark:border-white/5">
+          <div>
+            <p class="text-lg font-bold text-[#8A3D28] dark:text-red-400">&lt;0.4s</p>
+            <p class="text-[10px] text-[#252A29]/60 dark:text-neutral-400 uppercase tracking-wider font-mono">Carga con 4G</p>
+          </div>
+          <div>
+            <p class="text-lg font-bold text-[#252A29] dark:text-white">+30%</p>
+            <p class="text-[10px] text-[#252A29]/60 dark:text-neutral-400 uppercase tracking-wider font-mono">Ticket Promedio</p>
+          </div>
+          <div>
+            <p class="text-lg font-bold text-[#252A29] dark:text-white">0 seg</p>
+            <p class="text-[10px] text-[#252A29]/60 dark:text-neutral-400 uppercase tracking-wider font-mono">Esperas de Carta</p>
+          </div>
+        </div>
+
+        <!-- Características Resueltas -->
+        <div class="space-y-2 text-xs text-[#252A29]/80 dark:text-neutral-300">
+          <div class="flex items-center gap-2">
+            <IconCheck class="w-4 h-4 text-[#8A3D28] dark:text-red-500 shrink-0" />
+            <span>Filtros instantáneos: Celíacos, Veganos, Tragos de Autor.</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <IconCheck class="w-4 h-4 text-[#8A3D28] dark:text-red-500 shrink-0" />
+            <span>Mensaje de WhatsApp estructurado con número de mesa y extras.</span>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <a 
+            href="#contacto" 
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#252A29] dark:bg-white text-white dark:text-black text-xs font-bold tracking-wide hover:bg-[#8A3D28] dark:hover:bg-red-500 dark:hover:text-white transition-all shadow-sm"
+          >
+            <span>Solicitar Menú QR para tu Local</span>
+            <IconArrowRight class="w-3.5 h-3.5" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Mockup Visual (Smartphone Frame) -->
+      <div class="lg:col-span-6 flex justify-center">
+        <div class="w-full max-w-[320px] rounded-[36px] border-[5px] border-[#252A29] dark:border-neutral-800 bg-[#F8F8F5] dark:bg-black p-3 shadow-2xl relative">
+          <!-- Dynamic Island -->
+          <div class="w-24 h-4 rounded-full bg-[#252A29] dark:bg-neutral-800 mx-auto mb-3"></div>
+
+          <div class="bg-white dark:bg-neutral-950 rounded-[24px] p-4 space-y-3 border border-[#EAEAE4] dark:border-white/5">
+            <div class="flex items-center justify-between border-b border-[#EAEAE4] dark:border-white/10 pb-2">
+              <div class="flex items-center gap-1.5">
+                <IconGastronomy class="w-4 h-4 text-[#8A3D28] dark:text-red-500" />
+                <span class="text-xs font-bold text-[#252A29] dark:text-white">AURA BISTRO</span>
+              </div>
+              <span class="text-[9px] font-mono bg-[#8A3D28]/10 dark:bg-red-950/60 text-[#8A3D28] dark:text-red-400 px-2 py-0.5 rounded-full">Mesa 04</span>
+            </div>
+
+            <!-- Plato 1 -->
+            <div class="flex items-center justify-between p-2 rounded-xl bg-[#F8F8F5] dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/5">
+              <div>
+                <p class="text-[11px] font-bold text-[#252A29] dark:text-white">Bife de Chorizo Madurado</p>
+                <p class="text-[9px] text-[#252A29]/60 dark:text-neutral-400">Papas rústicas + chimichurri</p>
+              </div>
+              <span class="text-[11px] font-bold text-[#8A3D28] dark:text-red-400">$14.500</span>
+            </div>
+
+            <!-- Plato 2 -->
+            <div class="flex items-center justify-between p-2 rounded-xl bg-[#F8F8F5] dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/5">
+              <div>
+                <p class="text-[11px] font-bold text-[#252A29] dark:text-white">Negroni Ahumado</p>
+                <p class="text-[9px] text-[#252A29]/60 dark:text-neutral-400">Gin artesanal + bitter</p>
+              </div>
+              <span class="text-[11px] font-bold text-[#8A3D28] dark:text-red-400">$5.800</span>
+            </div>
+
+            <!-- Botón WhatsApp -->
+            <div class="pt-2">
+              <div class="w-full py-2 rounded-xl bg-emerald-600 text-white text-[10px] font-bold flex items-center justify-center gap-1 shadow-sm">
+                <span>Enviar Pedido a Cocina (WhatsApp)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SLIDE 3: NovaDesk AI -->
+    <div class="carousel-snap-item min-w-full lg:min-w-[100%] rounded-3xl border border-[#EAEAE4] dark:border-white/10 bg-white dark:bg-[#0E0E12] p-6 sm:p-10 shadow-md dark:shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      
+      <!-- Detalle Editorial -->
+      <div class="lg:col-span-6 space-y-6">
+        <div class="flex items-center gap-3">
+          <span class="px-3 py-1 rounded-full bg-[#8A3D28]/10 dark:bg-red-950/60 text-[#8A3D28] dark:text-red-400 border border-[#8A3D28]/20 dark:border-red-800/40 text-xs font-mono font-semibold uppercase">
+            Inteligencia Artificial
+          </span>
+          <span class="text-xs font-mono text-[#252A29]/50 dark:text-neutral-500">Caso de Estudio 03</span>
+        </div>
+
+        <div>
+          <h3 class="text-2xl sm:text-3xl font-bold text-[#252A29] dark:text-white tracking-tight">
+            NovaDesk AI — Triaje & Respuestas 24/7
+          </h3>
+          <p class="mt-3 text-sm text-[#252A29]/75 dark:text-neutral-400 leading-relaxed">
+            Agente comercial autónomo conectado a WhatsApp y a la base de datos de tu empresa. Responde dudas técnicas, cotiza al instante y deriva únicamente clientes listos para pagar.
+          </p>
+        </div>
+
+        <!-- Métricas Clave -->
+        <div class="grid grid-cols-3 gap-3 p-4 rounded-2xl bg-[#F8F8F5] dark:bg-neutral-950/80 border border-[#EAEAE4] dark:border-white/5">
+          <div>
+            <p class="text-lg font-bold text-[#8A3D28] dark:text-red-400">&lt;2s</p>
+            <p class="text-[10px] text-[#252A29]/60 dark:text-neutral-400 uppercase tracking-wider font-mono">Tiempo Respuesta</p>
+          </div>
+          <div>
+            <p class="text-lg font-bold text-[#252A29] dark:text-white">24/7</p>
+            <p class="text-[10px] text-[#252A29]/60 dark:text-neutral-400 uppercase tracking-wider font-mono">Sin Feriados</p>
+          </div>
+          <div>
+            <p class="text-lg font-bold text-[#252A29] dark:text-white">100%</p>
+            <p class="text-[10px] text-[#252A29]/60 dark:text-neutral-400 uppercase tracking-wider font-mono">Tus Políticas</p>
+          </div>
+        </div>
+
+        <!-- Características Resueltas -->
+        <div class="space-y-2 text-xs text-[#252A29]/80 dark:text-neutral-300">
+          <div class="flex items-center gap-2">
+            <IconCheck class="w-4 h-4 text-[#8A3D28] dark:text-red-500 shrink-0" />
+            <span>Sin alucinaciones: responde solo lo que vos autorizás.</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <IconCheck class="w-4 h-4 text-[#8A3D28] dark:text-red-500 shrink-0" />
+            <span>Envío automático de resumen al teléfono del dueño o CRM.</span>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <a 
+            href="#contacto" 
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#252A29] dark:bg-white text-white dark:text-black text-xs font-bold tracking-wide hover:bg-[#8A3D28] dark:hover:bg-red-500 dark:hover:text-white transition-all shadow-sm"
+          >
+            <span>Configurar Agente para tu Negocio</span>
+            <IconArrowRight class="w-3.5 h-3.5" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Mockup Visual (AI Terminal Console) -->
+      <div class="lg:col-span-6">
+        <div class="rounded-2xl border border-[#EAEAE4] dark:border-white/10 bg-[#121316] text-white p-5 shadow-2xl space-y-4 font-mono text-xs">
+          <!-- Terminal Header -->
+          <div class="flex items-center justify-between border-b border-white/10 pb-3">
+            <div class="flex items-center gap-2">
+              <IconAI class="w-4 h-4 text-red-500" />
+              <span class="text-neutral-300 text-[11px]">novadesk-engine-v1.4</span>
+            </div>
+            <span class="flex items-center gap-1 text-[10px] text-emerald-400">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+              WhatsApp Webhook Activo
+            </span>
+          </div>
+
+          <!-- Conversación Simulada -->
+          <div class="space-y-2.5 text-[11px] font-sans">
+            <div class="p-2.5 rounded-lg bg-white/5 border border-white/5">
+              <span class="text-neutral-400 text-[9px] uppercase font-mono block mb-1">Cliente entrante:</span>
+              <p class="text-neutral-200">"Hola, ¿cuánto cuesta desarrollar una landing para una inmobiliaria y qué incluye?"</p>
+            </div>
+
+            <div class="p-2.5 rounded-lg bg-red-950/40 border border-red-500/30">
+              <span class="text-red-400 text-[9px] uppercase font-mono block mb-1">NovaDesk IA (Respuesta en 1.1s):</span>
+              <p class="text-neutral-100">"¡Hola! Para inmobiliarias desarrollamos landings con carga menor a 1 segundo, botón de WhatsApp directo en cada propiedad y formulario de tasación. ¿Buscás promocionar un loteo específico o el catálogo completo?"</p>
+            </div>
+
+            <div class="p-2.5 rounded-lg bg-emerald-950/40 border border-emerald-500/30 text-[10px] font-mono text-emerald-300 flex items-center justify-between">
+              <span>➔ Lead Calificado: Rubro Inmobiliario</span>
+              <span>Alerta enviada a WhatsApp del dueño ✓</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 
 </section>
+
+<script>
+  // Lógica del Carrusel Interactivo
+  const carousel = document.getElementById('showcase-carousel');
+  const prevBtn = document.getElementById('carousel-prev');
+  const nextBtn = document.getElementById('carousel-next');
+  const currentIndicator = document.getElementById('carousel-current');
+  const pills = document.querySelectorAll('.project-pill');
+
+  let activeIndex = 0;
+  const totalSlides = 3;
+
+  function updateCarousel(index: number) {
+    if (!carousel) return;
+    activeIndex = Math.max(0, Math.min(index, totalSlides - 1));
+    const slideWidth = carousel.clientWidth;
+    carousel.scrollTo({
+      left: activeIndex * slideWidth,
+      behavior: 'smooth'
+    });
+
+    if (currentIndicator) {
+      currentIndicator.textContent = String(activeIndex + 1);
+    }
+
+    pills.forEach((pill, i) => {
+      if (i === activeIndex) {
+        pill.classList.remove('bg-white', 'dark:bg-neutral-900', 'border', 'border-[#EAEAE4]', 'dark:border-white/10', 'text-[#252A29]', 'dark:text-neutral-300');
+        pill.classList.add('bg-[#8A3D28]', 'dark:bg-red-600', 'text-white');
+      } else {
+        pill.classList.remove('bg-[#8A3D28]', 'dark:bg-red-600', 'text-white');
+        pill.classList.add('bg-white', 'dark:bg-neutral-900', 'border', 'border-[#EAEAE4]', 'dark:border-white/10', 'text-[#252A29]', 'dark:text-neutral-300');
+      }
+    });
+  }
+
+  if (prevBtn && nextBtn && carousel) {
+    prevBtn.addEventListener('click', () => updateCarousel(activeIndex - 1));
+    nextBtn.addEventListener('click', () => updateCarousel(activeIndex + 1));
+
+    pills.forEach((pill) => {
+      pill.addEventListener('click', () => {
+        const slideIdx = Number(pill.getAttribute('data-slide'));
+        updateCarousel(slideIdx);
+      });
+    });
+
+    // Detectar scroll táctil en smartphones
+    carousel.addEventListener('scroll', () => {
+      const scrollPos = carousel.scrollLeft;
+      const slideWidth = carousel.clientWidth;
+      const detectedIndex = Math.round(scrollPos / slideWidth);
+      if (detectedIndex !== activeIndex && detectedIndex >= 0 && detectedIndex < totalSlides) {
+        activeIndex = detectedIndex;
+        if (currentIndicator) currentIndicator.textContent = String(activeIndex + 1);
+        pills.forEach((pill, i) => {
+          if (i === activeIndex) {
+            pill.classList.remove('bg-white', 'dark:bg-neutral-900', 'border', 'border-[#EAEAE4]', 'dark:border-white/10', 'text-[#252A29]', 'dark:text-neutral-300');
+            pill.classList.add('bg-[#8A3D28]', 'dark:bg-red-600', 'text-white');
+          } else {
+            pill.classList.remove('bg-[#8A3D28]', 'dark:bg-red-600', 'text-white');
+            pill.classList.add('bg-white', 'dark:bg-neutral-900', 'border', 'border-[#EAEAE4]', 'dark:border-white/10', 'text-[#252A29]', 'dark:text-neutral-300');
+          }
+        });
+      }
+    }, { passive: true });
+  }
+</script>

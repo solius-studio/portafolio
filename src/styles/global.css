@@ -1,13 +1,21 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  --color-warm-white: #F7F7F2;
+  --color-warm-white: #F8F8F5;
   --color-sienna: #8A3D28;
   --color-sienna-dark: #6E2E1C;
   --color-coral: #E58B72;
   --color-coral-soft: #f4b2a1;
   --color-stone: #EAEAE4;
   --color-graphite: #252A29;
+  
+  --color-dark-bg: #070709;
+  --color-dark-surface: #0E0E12;
+  --color-dark-border: rgba(255, 255, 255, 0.08);
+  --color-solius-red: #EF4444;
+
   --font-sans: 'Manrope', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-display: 'Manrope', 'Plus Jakarta Sans', system-ui, sans-serif;
   --font-mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
@@ -19,23 +27,37 @@
     color-scheme: light;
   }
 
+  html.dark {
+    color-scheme: dark;
+  }
+
   body {
-    background-color: #F7F7F2;
+    background-color: #F8F8F5;
     color: #252A29;
     font-family: var(--font-sans);
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  html.dark body {
+    background-color: #070709;
+    color: #F4F4F6;
   }
 
   ::selection {
-    background-color: rgba(229, 139, 114, 0.35);
-    color: #252A29;
+    background-color: rgba(239, 68, 68, 0.25);
+    color: inherit;
   }
 
   :focus-visible {
     outline: 2px solid #8A3D28;
     outline-offset: 2px;
+  }
+
+  html.dark :focus-visible {
+    outline-color: #EF4444;
   }
 
   details summary {
@@ -48,15 +70,64 @@
   }
 }
 
-/* Microinteracciones sutiles */
-.warm-card {
+/* Microinteracciones y utilidades de estilo */
+.solius-card {
   background-color: #FFFFFF;
   border: 1px solid #EAEAE4;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.warm-card:hover {
+html.dark .solius-card {
+  background-color: #0E0E12;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.solius-card:hover {
   border-color: rgba(138, 61, 40, 0.3);
-  box-shadow: 0 12px 32px -8px rgba(37, 42, 41, 0.06);
+  box-shadow: 0 16px 36px -10px rgba(37, 42, 41, 0.07);
   transform: translateY(-2px);
+}
+
+html.dark .solius-card:hover {
+  border-color: rgba(239, 68, 68, 0.3);
+  box-shadow: 0 16px 36px -10px rgba(239, 68, 68, 0.15);
+}
+
+/* Animación Marquee Infinito */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Carrusel Scroll Snap */
+.carousel-snap {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel-snap-item {
+  scroll-snap-align: center;
+}
+
+/* Glassmorphism adaptable */
+.solius-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+html.dark .solius-glass {
+  background: rgba(10, 10, 14, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }

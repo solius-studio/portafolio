@@ -7,13 +7,13 @@ interface Props {
 }
 
 const {
-  title = "Solius Studio — Diseño Web & Automatizaciones Inteligentes",
-  description = "Estudio independiente de desarrollo web y automatización con IA. Creamos plataformas con identidad propia, veloces y orientadas a resultados comerciales reales."
+  title = "Solius Studio — Ingeniería Web & Automatizaciones con IA",
+  description = "Estudio digital de desarrollo web de alto rendimiento y automatización inteligente con IA para comercios, e-commerce y firmas profesionales."
 } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,9 +29,39 @@ const {
     <!-- Google Fonts: Manrope & Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Script de inicialización de Tema (Predeterminado: Light) -->
+    <script is:inline>
+      const theme = (() => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('solius-theme')) {
+          return localStorage.getItem('solius-theme');
+        }
+        return 'light'; // Predeterminado blanco/cálido
+      })();
+
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
   </head>
-  <body class="min-h-screen bg-[#F7F7F2] text-[#252A29] antialiased selection:bg-[#E58B72]/30 selection:text-[#252A29]">
+  <body class="min-h-screen bg-[#F8F8F5] text-[#252A29] dark:bg-[#070709] dark:text-[#F4F4F6] antialiased transition-colors duration-300 relative selection:bg-red-500/20 selection:text-inherit">
+    
+    <!-- Luces de fondo ambientales sutiles adaptables -->
+    <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+      <!-- Light mode ambient aura -->
+      <div class="absolute -top-[20%] left-1/2 -translate-x-1/2 w-[750px] h-[450px] rounded-full bg-gradient-to-b from-[#E58B72]/10 via-[#8A3D28]/5 to-transparent blur-3xl opacity-70 dark:hidden"></div>
+      
+      <!-- Dark mode ambient aura (Apple Crimson) -->
+      <div class="hidden dark:block absolute -top-[25%] left-1/2 -translate-x-1/2 w-[700px] h-[500px] rounded-full bg-gradient-to-b from-red-600/15 via-red-900/5 to-transparent blur-3xl opacity-80"></div>
+      <div class="hidden dark:block absolute top-[50%] -left-[10%] w-[500px] h-[500px] rounded-full bg-neutral-900/40 blur-3xl"></div>
+      
+      <!-- Grilla sutil de fondo -->
+      <div class="absolute inset-0 bg-[linear-gradient(to_right,#00000008_1px,transparent_1px),linear-gradient(to_bottom,#00000008_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:3.5rem_3.5rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+    </div>
+
     <slot />
   </body>
 </html>

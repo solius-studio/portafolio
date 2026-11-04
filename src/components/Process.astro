@@ -31,57 +31,57 @@ const steps = [
 ];
 ---
 
-<section id="metodo" class="py-24 px-6 lg:px-10 max-w-[1240px] mx-auto border-t border-[#EAEAE4]">
+<section id="metodo" class="py-24 px-6 lg:px-10 max-w-[1240px] mx-auto border-t border-[#EAEAE4] dark:border-white/10">
   
   <!-- Encabezado de Sección -->
   <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
     <div>
       <div class="flex items-center gap-2 mb-3">
-        <span class="w-2 h-2 rounded-full bg-[#E58B72]"></span>
-        <span class="text-xs font-mono uppercase tracking-widest text-[#8A3D28]">04 // Metodología de Trabajo</span>
+        <span class="w-2 h-2 rounded-full bg-[#E58B72] dark:bg-red-500 animate-pulse"></span>
+        <span class="text-xs font-mono uppercase tracking-widest text-[#8A3D28] dark:text-red-400 font-semibold">05 // Metodología de Trabajo</span>
       </div>
-      <h2 class="text-3xl sm:text-5xl font-extrabold text-[#252A29] tracking-tight leading-[1.15]">
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-[#252A29] dark:text-white tracking-tight leading-[1.15]">
         Un proceso transparente <br class="hidden sm:inline" />
         de principio a fin.
       </h2>
     </div>
-    <p class="text-sm text-[#252A29]/75 max-w-md leading-relaxed">
+    <p class="text-sm text-[#252A29]/75 dark:text-neutral-400 max-w-md leading-relaxed">
       Sin tecnicismos innecesarios, sin demoras imprevistas y con entregas funcionales verificadas en cada etapa.
     </p>
   </div>
 
-  <!-- Composición Visual Conectada (Línea de Continuidad) -->
+  <!-- Composición Visual Conectada -->
   <div class="relative">
     
     <!-- Línea Horizontal de Conexión (Desktop) -->
-    <div class="hidden lg:block absolute top-7 left-8 right-8 h-0.5 bg-[#EAEAE4] -z-0"></div>
+    <div class="hidden lg:block absolute top-7 left-8 right-8 h-0.5 bg-[#EAEAE4] dark:bg-white/10 -z-0"></div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
-      {steps.map((step, index) => (
-        <div class="bg-white p-7 rounded-xl border border-[#EAEAE4] hover:border-[#8A3D28]/30 transition-all duration-200 shadow-sm flex flex-col justify-between group">
+      {steps.map((step) => (
+        <div class="bg-white dark:bg-[#0E0E12] p-7 rounded-2xl border border-[#EAEAE4] dark:border-white/10 hover:border-[#8A3D28]/30 dark:hover:border-red-500/30 transition-all duration-200 shadow-sm flex flex-col justify-between group">
           
           <div>
-            <!-- Nodo Conector con Número y Acento Coral -->
+            <!-- Nodo Conector con Número -->
             <div class="flex items-center justify-between mb-6">
-              <div class="w-10 h-10 rounded-full bg-[#F7F7F2] border-2 border-[#8A3D28] flex items-center justify-center font-mono font-bold text-sm text-[#8A3D28] group-hover:bg-[#8A3D28] group-hover:text-white transition-colors duration-200">
+              <div class="w-10 h-10 rounded-full bg-[#F8F8F5] dark:bg-neutral-900 border-2 border-[#8A3D28] dark:border-red-500 flex items-center justify-center font-mono font-bold text-sm text-[#8A3D28] dark:text-red-400 group-hover:bg-[#8A3D28] dark:group-hover:bg-red-600 group-hover:text-white transition-colors duration-200">
                 {step.num}
               </div>
-              <span class="w-2.5 h-2.5 rounded-full bg-[#E58B72]"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-[#E58B72] dark:bg-red-500"></span>
             </div>
 
-            <span class="text-xs font-mono uppercase tracking-wider text-[#8A3D28] font-semibold block mb-1">
+            <span class="text-xs font-mono uppercase tracking-wider text-[#8A3D28] dark:text-red-400 font-semibold block mb-1">
               {step.subtitle}
             </span>
-            <h3 class="text-xl font-bold text-[#252A29] tracking-tight mb-3">
+            <h3 class="text-xl font-bold text-[#252A29] dark:text-white tracking-tight mb-3">
               {step.title}
             </h3>
-            <p class="text-xs sm:text-sm text-[#252A29]/75 leading-relaxed">
+            <p class="text-xs sm:text-sm text-[#252A29]/75 dark:text-neutral-400 leading-relaxed">
               {step.description}
             </p>
           </div>
 
           <!-- Entregable Tangible de la Etapa -->
-          <div class="mt-6 pt-4 border-t border-[#EAEAE4] text-[11px] font-mono text-[#8A3D28] bg-[#F7F7F2] p-2.5 rounded">
+          <div class="mt-6 pt-4 border-t border-[#EAEAE4] dark:border-white/10 text-[11px] font-mono text-[#8A3D28] dark:text-neutral-300 bg-[#F8F8F5] dark:bg-neutral-950 p-2.5 rounded-lg border border-[#EAEAE4] dark:border-white/5">
             <strong>Entregable:</strong> {step.deliverable}
           </div>
 

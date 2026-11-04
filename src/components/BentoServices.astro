@@ -6,152 +6,152 @@ import IconAI from './icons/IconAI.astro';
 import IconArrowRight from './icons/IconArrowRight.astro';
 ---
 
-<section id="servicios" class="py-24 px-6 lg:px-10 max-w-[1240px] mx-auto border-t border-[#EAEAE4]">
+<section id="servicios" class="py-24 px-6 lg:px-10 max-w-[1240px] mx-auto border-t border-[#EAEAE4] dark:border-white/10">
   
   <!-- Encabezado de Sección Editorial -->
   <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
     <div>
       <div class="flex items-center gap-2 mb-3">
-        <span class="w-2 h-2 rounded-full bg-[#E58B72]"></span>
-        <span class="text-xs font-mono uppercase tracking-widest text-[#8A3D28]">01 // Servicios & Especialidades</span>
+        <span class="w-2 h-2 rounded-full bg-[#E58B72] dark:bg-red-500 animate-pulse"></span>
+        <span class="text-xs font-mono uppercase tracking-widest text-[#8A3D28] dark:text-red-400 font-semibold">01 // Servicios & Especialidades</span>
       </div>
-      <h2 class="text-3xl sm:text-5xl font-extrabold text-[#252A29] tracking-tight leading-[1.15]">
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-[#252A29] dark:text-white tracking-tight leading-[1.15]">
         Soluciones diseñadas a medida. <br class="hidden sm:inline" />
         Sin plantillas ni comisiones abusivas.
       </h2>
     </div>
-    <p class="text-sm text-[#252A29]/75 max-w-md leading-relaxed">
+    <p class="text-sm text-[#252A29]/75 dark:text-neutral-400 max-w-md leading-relaxed">
       Combinamos ingeniería web de alto rendimiento y automatizaciones prácticas para que tu negocio sea más eficiente y multiplique sus ventas.
     </p>
   </div>
 
-  <!-- Grilla de Servicios con Fondos Alternados -->
+  <!-- Grilla de Servicios con Fondos Adaptables -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
 
-    <!-- Tarjeta 1: Sitios Web (Fondo Blanco Cálido) -->
-    <div class="rounded-xl p-8 bg-white border border-[#EAEAE4] hover:border-[#8A3D28]/40 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between group">
+    <!-- Tarjeta 1: Sitios Web -->
+    <div class="rounded-2xl p-8 bg-white dark:bg-[#0E0E12] border border-[#EAEAE4] dark:border-white/10 hover:border-[#8A3D28]/40 dark:hover:border-red-500/40 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between group">
       <div>
         <div class="flex items-center justify-between mb-8">
-          <div class="w-12 h-12 rounded-lg bg-[#F7F7F2] border border-[#EAEAE4] flex items-center justify-center text-[#8A3D28] group-hover:scale-105 transition-transform duration-200">
-            <IconWeb class="w-6 h-6 text-[#8A3D28]" />
+          <div class="w-12 h-12 rounded-xl bg-[#F8F8F5] dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10 flex items-center justify-center text-[#8A3D28] dark:text-red-400 group-hover:scale-105 transition-transform duration-200">
+            <IconWeb class="w-6 h-6 text-[#8A3D28] dark:text-white" />
           </div>
-          <span class="font-mono text-sm font-bold text-[#8A3D28]">01</span>
+          <span class="font-mono text-sm font-bold text-[#8A3D28] dark:text-red-400">01</span>
         </div>
 
-        <span class="text-xs font-mono uppercase tracking-wider text-[#E58B72] font-semibold block mb-1">
+        <span class="text-xs font-mono uppercase tracking-wider text-[#E58B72] dark:text-red-400 font-semibold block mb-1">
           Presencia & Conversión
         </span>
-        <h3 class="text-2xl font-bold text-[#252A29] tracking-tight mb-3">
+        <h3 class="text-2xl font-bold text-[#252A29] dark:text-white tracking-tight mb-3">
           Sitios Web & Landings de Alta Velocidad
         </h3>
-        <p class="text-sm text-[#252A29]/75 leading-relaxed">
+        <p class="text-sm text-[#252A29]/75 dark:text-neutral-400 leading-relaxed">
           Páginas web optimizadas para abrir al instante en smartphones. Incluyen posicionamiento en Google Maps, llamados a la acción directos a WhatsApp y arquitectura estática invulnerable.
         </p>
       </div>
 
-      <div class="mt-8 pt-6 border-t border-[#EAEAE4]">
-        <p class="text-xs font-mono uppercase tracking-wider text-[#252A29]/60 mb-3">Soluciones incluidas:</p>
-        <div class="flex flex-wrap gap-2 text-xs font-medium text-[#8A3D28]">
-          <span class="px-3 py-1 rounded-md bg-[#F7F7F2] border border-[#EAEAE4]">Carga en &lt; 0.5s</span>
-          <span class="px-3 py-1 rounded-md bg-[#F7F7F2] border border-[#EAEAE4]">SEO Local Google</span>
-          <span class="px-3 py-1 rounded-md bg-[#F7F7F2] border border-[#EAEAE4]">Botón Directo WhatsApp</span>
-          <span class="px-3 py-1 rounded-md bg-[#F7F7F2] border border-[#EAEAE4]">Código 100% propio</span>
+      <div class="mt-8 pt-6 border-t border-[#EAEAE4] dark:border-white/10">
+        <p class="text-xs font-mono uppercase tracking-wider text-[#252A29]/60 dark:text-neutral-500 mb-3">Soluciones incluidas:</p>
+        <div class="flex flex-wrap gap-2 text-xs font-medium text-[#8A3D28] dark:text-neutral-300">
+          <span class="px-3 py-1 rounded-md bg-[#F8F8F5] dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10">Carga en &lt; 0.5s</span>
+          <span class="px-3 py-1 rounded-md bg-[#F8F8F5] dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10">SEO Local Google</span>
+          <span class="px-3 py-1 rounded-md bg-[#F8F8F5] dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10">WhatsApp Directo</span>
+          <span class="px-3 py-1 rounded-md bg-[#F8F8F5] dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10">Código 100% propio</span>
         </div>
       </div>
     </div>
 
-    <!-- Tarjeta 2: E-Commerce (Fondo Gris Suave) -->
-    <div class="rounded-xl p-8 bg-[#EAEAE4]/60 border border-[#EAEAE4] hover:border-[#8A3D28]/40 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between group">
+    <!-- Tarjeta 2: E-Commerce -->
+    <div class="rounded-2xl p-8 bg-[#F8F8F5] dark:bg-[#0E0E12] border border-[#EAEAE4] dark:border-white/10 hover:border-[#8A3D28]/40 dark:hover:border-red-500/40 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between group">
       <div>
         <div class="flex items-center justify-between mb-8">
-          <div class="w-12 h-12 rounded-lg bg-white border border-[#EAEAE4] flex items-center justify-center text-[#8A3D28] group-hover:scale-105 transition-transform duration-200">
-            <IconEcommerce class="w-6 h-6 text-[#8A3D28]" />
+          <div class="w-12 h-12 rounded-xl bg-white dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10 flex items-center justify-center text-[#8A3D28] dark:text-red-400 group-hover:scale-105 transition-transform duration-200">
+            <IconEcommerce class="w-6 h-6 text-[#8A3D28] dark:text-white" />
           </div>
-          <span class="font-mono text-sm font-bold text-[#8A3D28]">02</span>
+          <span class="font-mono text-sm font-bold text-[#8A3D28] dark:text-red-400">02</span>
         </div>
 
-        <span class="text-xs font-mono uppercase tracking-wider text-[#E58B72] font-semibold block mb-1">
+        <span class="text-xs font-mono uppercase tracking-wider text-[#E58B72] dark:text-red-400 font-semibold block mb-1">
           Venta Directa
         </span>
-        <h3 class="text-2xl font-bold text-[#252A29] tracking-tight mb-3">
+        <h3 class="text-2xl font-bold text-[#252A29] dark:text-white tracking-tight mb-3">
           Tiendas E-Commerce & Catálogos Dinámicos
         </h3>
-        <p class="text-sm text-[#252A29]/75 leading-relaxed">
+        <p class="text-sm text-[#252A29]/75 dark:text-neutral-400 leading-relaxed">
           Plataformas de venta online sin comisiones de terceros. Integración con pasarelas de pago locales (Mercado Pago, tarjetas, transferencias) y gestión de inventario ágil y sin fricción.
         </p>
       </div>
 
-      <div class="mt-8 pt-6 border-t border-[#EAEAE4]">
-        <p class="text-xs font-mono uppercase tracking-wider text-[#252A29]/60 mb-3">Soluciones incluidas:</p>
-        <div class="flex flex-wrap gap-2 text-xs font-medium text-[#8A3D28]">
-          <span class="px-3 py-1 rounded-md bg-white border border-[#EAEAE4]">0% comisiones a apps</span>
-          <span class="px-3 py-1 rounded-md bg-white border border-[#EAEAE4]">Mercado Pago & Tarjetas</span>
-          <span class="px-3 py-1 rounded-md bg-white border border-[#EAEAE4]">Checkout en 2 pasos</span>
-          <span class="px-3 py-1 rounded-md bg-white border border-[#EAEAE4]">Panel autogestionable</span>
+      <div class="mt-8 pt-6 border-t border-[#EAEAE4] dark:border-white/10">
+        <p class="text-xs font-mono uppercase tracking-wider text-[#252A29]/60 dark:text-neutral-500 mb-3">Soluciones incluidas:</p>
+        <div class="flex flex-wrap gap-2 text-xs font-medium text-[#8A3D28] dark:text-neutral-300">
+          <span class="px-3 py-1 rounded-md bg-white dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10">0% comisiones a apps</span>
+          <span class="px-3 py-1 rounded-md bg-white dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10">Mercado Pago & Tarjetas</span>
+          <span class="px-3 py-1 rounded-md bg-white dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10">Checkout en 2 pasos</span>
+          <span class="px-3 py-1 rounded-md bg-white dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10">Panel autogestionable</span>
         </div>
       </div>
     </div>
 
-    <!-- Tarjeta 3: Firmas Profesionales (Fondo Gris Suave) -->
-    <div class="rounded-xl p-8 bg-[#EAEAE4]/60 border border-[#EAEAE4] hover:border-[#8A3D28]/40 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between group">
+    <!-- Tarjeta 3: Firmas Profesionales -->
+    <div class="rounded-2xl p-8 bg-[#F8F8F5] dark:bg-[#0E0E12] border border-[#EAEAE4] dark:border-white/10 hover:border-[#8A3D28]/40 dark:hover:border-red-500/40 transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between group">
       <div>
         <div class="flex items-center justify-between mb-8">
-          <div class="w-12 h-12 rounded-lg bg-white border border-[#EAEAE4] flex items-center justify-center text-[#8A3D28] group-hover:scale-105 transition-transform duration-200">
-            <IconLegal class="w-6 h-6 text-[#8A3D28]" />
+          <div class="w-12 h-12 rounded-xl bg-white dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10 flex items-center justify-center text-[#8A3D28] dark:text-red-400 group-hover:scale-105 transition-transform duration-200">
+            <IconLegal class="w-6 h-6 text-[#8A3D28] dark:text-white" />
           </div>
-          <span class="font-mono text-sm font-bold text-[#8A3D28]">03</span>
+          <span class="font-mono text-sm font-bold text-[#8A3D28] dark:text-red-400">03</span>
         </div>
 
-        <span class="text-xs font-mono uppercase tracking-wider text-[#E58B72] font-semibold block mb-1">
+        <span class="text-xs font-mono uppercase tracking-wider text-[#E58B72] dark:text-red-400 font-semibold block mb-1">
           Servicios Profesionales
         </span>
-        <h3 class="text-2xl font-bold text-[#252A29] tracking-tight mb-3">
+        <h3 class="text-2xl font-bold text-[#252A29] dark:text-white tracking-tight mb-3">
           Sistemas de Admisión para Estudios
         </h3>
-        <p class="text-sm text-[#252A29]/75 leading-relaxed">
-          Portales de máxima seriedad y prestigio para estudios jurídicos y contables. Formularios de evaluación inteligente que filtran consultas no viables y cobran consultas antes de la reunión.
+        <p class="text-sm text-[#252A29]/75 dark:text-neutral-400 leading-relaxed">
+          Portales de máxima seriedad y prestigio para estudios jurídicos y contables. Formularios de evaluación inteligente que filtran consultas no viables y coordinan citas previas.
         </p>
       </div>
 
-      <div class="mt-8 pt-6 border-t border-[#EAEAE4]">
-        <p class="text-xs font-mono uppercase tracking-wider text-[#252A29]/60 mb-3">Soluciones incluidas:</p>
-        <div class="flex flex-wrap gap-2 text-xs font-medium text-[#8A3D28]">
-          <span class="px-3 py-1 rounded-md bg-white border border-[#EAEAE4]">Triaje previo de casos</span>
-          <span class="px-3 py-1 rounded-md bg-white border border-[#EAEAE4]">Cobro de consulta inicial</span>
-          <span class="px-3 py-1 rounded-md bg-white border border-[#EAEAE4]">Agenda privada de socios</span>
-          <span class="px-3 py-1 rounded-md bg-white border border-[#EAEAE4]">Filtro de curiosos</span>
+      <div class="mt-8 pt-6 border-t border-[#EAEAE4] dark:border-white/10">
+        <p class="text-xs font-mono uppercase tracking-wider text-[#252A29]/60 dark:text-neutral-500 mb-3">Soluciones incluidas:</p>
+        <div class="flex flex-wrap gap-2 text-xs font-medium text-[#8A3D28] dark:text-neutral-300">
+          <span class="px-3 py-1 rounded-md bg-white dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10">Triaje previo de casos</span>
+          <span class="px-3 py-1 rounded-md bg-white dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10">Cobro de consulta inicial</span>
+          <span class="px-3 py-1 rounded-md bg-white dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10">Agenda privada de socios</span>
+          <span class="px-3 py-1 rounded-md bg-white dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10">Filtro anti-spam</span>
         </div>
       </div>
     </div>
 
-    <!-- Tarjeta 4: Agentes de IA (Fondo Blanco Cálido con Acento Coral) -->
-    <div class="rounded-xl p-8 bg-white border-2 border-[#8A3D28]/20 hover:border-[#8A3D28] transition-all duration-300 shadow-sm hover:shadow-md flex flex-col justify-between group">
+    <!-- Tarjeta 4: Agentes de IA -->
+    <div class="rounded-2xl p-8 bg-white dark:bg-[#0E0E12] border-2 border-[#8A3D28]/30 dark:border-red-500/40 hover:border-[#8A3D28] dark:hover:border-red-500 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col justify-between group">
       <div>
         <div class="flex items-center justify-between mb-8">
-          <div class="w-12 h-12 rounded-lg bg-[#E58B72]/15 border border-[#E58B72]/30 flex items-center justify-center text-[#E58B72] group-hover:scale-105 transition-transform duration-200">
-            <IconAI class="w-6 h-6 text-[#E58B72]" />
+          <div class="w-12 h-12 rounded-xl bg-[#E58B72]/15 dark:bg-red-950/60 border border-[#E58B72]/30 dark:border-red-500/40 flex items-center justify-center text-[#E58B72] dark:text-red-400 group-hover:scale-105 transition-transform duration-200">
+            <IconAI class="w-6 h-6 text-[#8A3D28] dark:text-white" />
           </div>
-          <span class="font-mono text-sm font-bold text-[#E58B72]">04</span>
+          <span class="font-mono text-sm font-bold text-[#8A3D28] dark:text-red-400">04</span>
         </div>
 
-        <span class="text-xs font-mono uppercase tracking-wider text-[#8A3D28] font-semibold block mb-1">
+        <span class="text-xs font-mono uppercase tracking-wider text-[#8A3D28] dark:text-red-400 font-semibold block mb-1">
           Automatización Inteligente
         </span>
-        <h3 class="text-2xl font-bold text-[#252A29] tracking-tight mb-3">
+        <h3 class="text-2xl font-bold text-[#252A29] dark:text-white tracking-tight mb-3">
           Agentes de IA & Atención 24/7 en WhatsApp
         </h3>
-        <p class="text-sm text-[#252A29]/75 leading-relaxed">
+        <p class="text-sm text-[#252A29]/75 dark:text-neutral-400 leading-relaxed">
           Asistentes entrenados con la documentación real de tu empresa. Responden dudas recurrentes sobre precios, horarios o servicios, toman datos del cliente y coordinan turnos sin intervención humana.
         </p>
       </div>
 
-      <div class="mt-8 pt-6 border-t border-[#EAEAE4]">
-        <p class="text-xs font-mono uppercase tracking-wider text-[#252A29]/60 mb-3">Soluciones incluidas:</p>
-        <div class="flex flex-wrap gap-2 text-xs font-medium text-[#8A3D28]">
-          <span class="px-3 py-1 rounded-md bg-[#F7F7F2] border border-[#EAEAE4]">Atención 24/7 sin demoras</span>
-          <span class="px-3 py-1 rounded-md bg-[#F7F7F2] border border-[#EAEAE4]">WhatsApp Business API</span>
-          <span class="px-3 py-1 rounded-md bg-[#F7F7F2] border border-[#EAEAE4]">Sincronización con CRM</span>
-          <span class="px-3 py-1 rounded-md bg-[#F7F7F2] border border-[#EAEAE4]">Cero respuestas inventadas</span>
+      <div class="mt-8 pt-6 border-t border-[#EAEAE4] dark:border-white/10">
+        <p class="text-xs font-mono uppercase tracking-wider text-[#252A29]/60 dark:text-neutral-500 mb-3">Soluciones incluidas:</p>
+        <div class="flex flex-wrap gap-2 text-xs font-medium text-[#8A3D28] dark:text-neutral-300">
+          <span class="px-3 py-1 rounded-md bg-[#F8F8F5] dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10">Atención 24/7 sin demoras</span>
+          <span class="px-3 py-1 rounded-md bg-[#F8F8F5] dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10">WhatsApp Business API</span>
+          <span class="px-3 py-1 rounded-md bg-[#F8F8F5] dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10">Sincronización con CRM</span>
+          <span class="px-3 py-1 rounded-md bg-[#F8F8F5] dark:bg-neutral-900 border border-[#EAEAE4] dark:border-white/10">Cero respuestas inventadas</span>
         </div>
       </div>
     </div>
