@@ -7,141 +7,128 @@ import IconArrowRight from './icons/IconArrowRight.astro';
 const projects = [
   {
     title: "LexVanguard Abogados",
-    category: "Estudio Jurídico & Asesoría Legal",
-    description: "Plataforma institucional para firma legal con sistema de intake y triaje de casos. Filtra consultas spam y califica clientes antes de la primera llamada.",
-    tag: "Caso de Estudio",
-    metrics: [
-      { label: "Tiempo de carga", val: "0.6s" },
-      { label: "Filtro de consultas", val: "Intake Inteligente" },
-      { label: "Enfoque", val: "Alta Conversión" }
-    ],
-    accentColor: "border-neutral-700/50 hover:border-red-500/40",
-    badgeBg: "bg-neutral-800 text-neutral-300",
+    sector: "Estudio Jurídico & Asesoría Corporativa",
+    problem: "Demasiadas consultas informales por mensaje que consumían horas de los socios sin traducirse en honorarios.",
+    solution: "Portal institucional con triaje inteligente: califica el caso en 3 preguntas antes de agendar la consulta con el especialista.",
+    deliverables: ["Intake inteligente de clientes", "Carga en 0.4 segundos", "Pasarela de cobro de consultas"],
     icon: IconLegal,
-    link: "#",
-    slug: "demo-estudio-juridico"
+    slug: "lexvanguard"
   },
   {
     title: "Aura Bistro & Bar",
-    category: "Gastronomía & Comercio Local",
-    description: "Menú digital interactivo en alta definición sin necesidad de descargar PDFs pesados. Integra reservas automáticas y pedidos directos a WhatsApp.",
-    tag: "Caso de Estudio",
-    metrics: [
-      { label: "Optimización móvil", val: "100%" },
-      { label: "Integración", val: "WhatsApp Business" },
-      { label: "Carta Digital", val: "QR Dinámico" }
-    ],
-    accentColor: "border-neutral-700/50 hover:border-red-500/40",
-    badgeBg: "bg-neutral-800 text-neutral-300",
+    sector: "Gastronomía & Comercios de Cercanía",
+    problem: "Comisiones del 25% al 30% en plataformas de delivery y cartas en PDF pesadas que los clientes no querían descargar.",
+    solution: "Menú digital interactivo ultraliviano con selector de mesa y envío de comandas estructuradas directo al WhatsApp de cocina.",
+    deliverables: ["0% comisiones a apps", "Menú QR instantáneo", "Pedidos directos a WhatsApp"],
     icon: IconGastronomy,
-    link: "#",
-    slug: "demo-comercio-gastronomia"
+    slug: "aura-bistro"
   },
   {
-    title: "NovaDesk AI Lead Assistant",
-    category: "Automatización & Inteligencia Artificial",
-    description: "Agente conversacional de atención para negocios. Responde preguntas frecuentes, cotiza servicios estándar y agenda llamadas comerciales de forma autónoma.",
-    tag: "Prototipo Interactivo",
-    metrics: [
-      { label: "Disponibilidad", val: "24/7 sin descanso" },
-      { label: "Tiempo de respuesta", val: "Inmediato" },
-      { label: "Conexión", val: "Webhook / CRM" }
-    ],
-    accentColor: "border-red-800/40 hover:border-red-500/60",
-    badgeBg: "bg-red-950/80 text-red-300 border border-red-800/50",
+    title: "NovaDesk AI Assistant",
+    sector: "Automatización & Atención al Cliente",
+    problem: "Prospectos calificados que escribían fuera de horario comercial y se iban con la competencia por falta de respuesta.",
+    solution: "Agente autónomo integrado a WhatsApp que responde preguntas de stock, cotiza servicios y reserva turnos las 24 horas.",
+    deliverables: ["Disponibilidad 24/7 sin fallas", "Conexión a Notion/Google Sheets", "Derivación a humanos en casos VIP"],
     icon: IconAI,
-    link: "#",
-    slug: "demo-automatizacion-ia"
+    slug: "novadesk-ai"
   }
 ];
 ---
 
-<section id="proyectos" class="py-24 px-4 bg-neutral-950/60 relative">
-  <div class="max-w-6xl mx-auto">
-    <!-- Header -->
-    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-      <div>
-        <span class="text-xs font-semibold uppercase tracking-widest text-red-500">Casos de Éxito & Demos</span>
-        <h2 class="mt-3 text-3xl sm:text-5xl font-bold text-white tracking-tight">
-          Nuestros Proyectos de Muestra.
-        </h2>
-        <p class="mt-4 text-sm sm:text-base text-neutral-400 max-w-xl">
-          Estructurados para demostrar resultados reales: velocidad de carga extrema, diseño pulido y automatización de clientes.
-        </p>
+<section id="proyectos" class="py-24 px-6 lg:px-12 max-w-7xl mx-auto border-t border-white/[0.06]">
+  
+  <!-- Encabezado de Sección -->
+  <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+    <div>
+      <div class="flex items-center gap-2 mb-3">
+        <span class="w-2 h-2 rounded-full bg-red-600"></span>
+        <span class="text-xs font-mono uppercase tracking-widest text-neutral-400">02 // Casos de Estudio & Prototipos</span>
       </div>
-
-      <div class="flex items-center gap-2">
-        <span class="text-xs text-neutral-400 bg-neutral-900 border border-white/10 px-3.5 py-1.5 rounded-full">
-          Demos 100% navegables
-        </span>
-      </div>
+      <h2 class="text-3xl sm:text-5xl font-bold text-white tracking-tight leading-[1.15]">
+        Resultados tangibles para <br class="hidden sm:inline" />
+        negocios en el mundo real.
+      </h2>
     </div>
-
-    <!-- Lista de Proyectos -->
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-      {projects.map((item) => {
-        const IconComponent = item.icon;
-        return (
-          <div class={`rounded-3xl bg-neutral-900/50 border ${item.accentColor} p-7 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 group backdrop-blur-sm relative overflow-hidden shadow-xl`}>
-            <div>
-              <!-- Cabecera de la tarjeta con icono propio -->
-              <div class="flex items-center justify-between mb-6">
-                <div class="w-12 h-12 rounded-xl bg-neutral-800/80 border border-white/10 flex items-center justify-center text-white group-hover:text-red-400 transition-colors shadow-inner">
-                  <IconComponent class="w-6 h-6 text-white group-hover:text-red-400" />
-                </div>
-                <span class={`text-[11px] font-medium px-3 py-1 rounded-full ${item.badgeBg}`}>
-                  {item.tag}
-                </span>
-              </div>
-
-              <!-- Categoría y Título -->
-              <p class="text-xs uppercase tracking-wider text-red-500 font-semibold mb-1">{item.category}</p>
-              <h3 class="text-2xl font-bold text-white tracking-tight mb-3 group-hover:text-red-400 transition-colors">
-                {item.title}
-              </h3>
-              <p class="text-sm text-neutral-400 leading-relaxed mb-6">
-                {item.description}
-              </p>
-            </div>
-
-            <div>
-              <!-- Métricas clave del caso -->
-              <div class="p-3.5 rounded-xl bg-black/40 border border-white/5 space-y-2 mb-6">
-                {item.metrics.map(metric => (
-                  <div class="flex items-center justify-between text-xs">
-                    <span class="text-neutral-400">{metric.label}:</span>
-                    <span class="font-medium text-neutral-200">{metric.val}</span>
-                  </div>
-                ))}
-              </div>
-
-              <!-- Botón Ver Proyecto -->
-              <a 
-                href={`#${item.slug}`} 
-                class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-neutral-800 hover:bg-red-600 text-white text-xs font-semibold tracking-wide transition-all duration-300 border border-white/10 hover:border-red-500 shadow-sm group/btn"
-              >
-                <span>Explorar Caso de Estudio</span>
-                <IconArrowRight class="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
-              </a>
-            </div>
-          </div>
-        );
-      })}
-    </div>
-
-    <!-- Banner explicativo para el cliente -->
-    <div class="mt-12 p-6 rounded-2xl bg-neutral-900/60 border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div class="flex items-center gap-3">
-        <div class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></div>
-        <p class="text-xs sm:text-sm text-neutral-300">
-          ¿Querés ver cómo se adaptaría una de estas soluciones a tu negocio específico?
-        </p>
-      </div>
-      <a href="#contacto" class="text-xs font-semibold text-red-400 hover:text-red-300 flex items-center gap-1.5 transition-colors whitespace-nowrap">
-        <span>Solicitar diagnóstico gratuito</span>
-        <IconArrowRight class="w-3.5 h-3.5" />
-      </a>
-    </div>
-
+    <p class="text-sm text-neutral-400 max-w-md leading-relaxed">
+      Proyectos estructurados para resolver problemas comerciales concretos: tiempos de carga, fugas de comisiones y atención sin demoras.
+    </p>
   </div>
+
+  <!-- Grilla de Casos de Estudio -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    {projects.map((item) => {
+      const IconComponent = item.icon;
+      return (
+        <div class="rounded-xl bg-[#0c0c0f] border border-white/[0.08] hover:border-white/20 p-8 flex flex-col justify-between transition-all duration-300 group">
+          <div>
+            <!-- Cabecera -->
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/10 flex items-center justify-center text-white">
+                <IconComponent class="w-5 h-5 text-neutral-300" />
+              </div>
+              <span class="text-xs font-mono px-2.5 py-1 rounded bg-white/[0.03] border border-white/10 text-neutral-300">
+                Caso de Muestra
+              </span>
+            </div>
+
+            <span class="text-xs font-mono text-neutral-400 uppercase tracking-wider block mb-2">
+              {item.sector}
+            </span>
+            <h3 class="text-2xl font-semibold text-white tracking-tight mb-4">
+              {item.title}
+            </h3>
+
+            <!-- Problema y Solución -->
+            <div class="space-y-3 mb-6 text-xs text-neutral-400 leading-relaxed">
+              <div class="p-3 rounded-lg bg-white/[0.02] border border-white/5">
+                <strong class="text-neutral-300 font-mono block mb-1">EL DESAFÍO:</strong>
+                {item.problem}
+              </div>
+              <div class="p-3 rounded-lg bg-white/[0.02] border border-white/5">
+                <strong class="text-neutral-300 font-mono block mb-1">LA SOLUCIÓN:</strong>
+                {item.solution}
+              </div>
+            </div>
+
+            <!-- Entregables Técnicos -->
+            <ul class="space-y-1.5 mb-8 text-xs font-mono text-neutral-300">
+              {item.deliverables.map(del => (
+                <li class="flex items-center gap-2">
+                  <span class="text-red-500">•</span>
+                  <span>{del}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <!-- Acción -->
+          <a 
+            href="#contacto" 
+            class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-white/[0.04] hover:bg-white text-neutral-200 hover:text-neutral-950 text-xs font-medium transition-all duration-200 border border-white/10 group/btn"
+          >
+            <span>Consultar Solución Similar</span>
+            <IconArrowRight class="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 transition-transform" />
+          </a>
+        </div>
+      );
+    })}
+  </div>
+
+  <!-- Franja de Diagnóstico Directo -->
+  <div class="mt-12 p-6 rounded-xl border border-white/[0.08] bg-[#0c0c0f] flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+      <p class="text-sm text-neutral-300">
+        ¿Quieres una auditoría sin costo de la web o el flujo de atención de tu negocio?
+      </p>
+    </div>
+    <a 
+      href="#contacto" 
+      class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-white hover:text-neutral-300 transition-colors whitespace-nowrap"
+    >
+      <span>Solicitar diagnóstico gratuito</span>
+      <IconArrowRight class="w-3.5 h-3.5" />
+    </a>
+  </div>
+
 </section>

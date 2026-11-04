@@ -3,137 +3,142 @@ import IconWeb from './icons/IconWeb.astro';
 import IconEcommerce from './icons/IconEcommerce.astro';
 import IconLegal from './icons/IconLegal.astro';
 import IconAI from './icons/IconAI.astro';
-import IconSparkle from './icons/IconSparkle.astro';
+import IconArrowRight from './icons/IconArrowRight.astro';
 ---
 
-<section id="servicios" class="py-24 px-4 relative">
-  <div class="max-w-6xl mx-auto">
-    <!-- Encabezado de sección -->
-    <div class="text-center max-w-2xl mx-auto mb-16">
-      <span class="text-xs font-semibold uppercase tracking-widest text-red-500">Nuestros Servicios</span>
-      <h2 class="mt-3 text-3xl sm:text-5xl font-bold text-white tracking-tight">
-        Soluciones diseñadas para <br class="hidden sm:inline" />
-        hacer crecer tu facturación.
+<section id="servicios" class="py-24 px-6 lg:px-12 max-w-7xl mx-auto border-t border-white/[0.06]">
+  
+  <!-- Encabezado de Sección Editorial -->
+  <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+    <div>
+      <div class="flex items-center gap-2 mb-3">
+        <span class="w-2 h-2 rounded-full bg-red-600"></span>
+        <span class="text-xs font-mono uppercase tracking-widest text-neutral-400">01 // Capacidades & Servicios</span>
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-bold text-white tracking-tight leading-[1.15]">
+        Infraestructura comercial a medida. <br class="hidden sm:inline" />
+        Sin plantillas ni intermediarios.
       </h2>
-      <p class="mt-4 text-sm sm:text-base text-neutral-400">
-        Combinamos arquitectura web moderna con herramientas de automatización para que tu negocio sea más visible y eficiente.
-      </p>
+    </div>
+    <p class="text-sm text-neutral-400 max-w-md leading-relaxed">
+      Diseñamos plataformas digitales y automatizaciones orientadas estrictamente a aumentar la rentabilidad de comercios y firmas profesionales.
+    </p>
+  </div>
+
+  <!-- Bento Grid Sobrio y Estructurado -->
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+
+    <!-- Card 1: Sitios Web y Landings de Alta Conversión (8 cols) -->
+    <div class="md:col-span-7 rounded-xl p-8 bg-[#0c0c0f] border border-white/[0.08] hover:border-white/20 transition-all duration-300 flex flex-col justify-between group">
+      <div>
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/10 flex items-center justify-center text-white">
+              <IconWeb class="w-5 h-5 text-neutral-200" />
+            </div>
+            <span class="font-mono text-xs uppercase tracking-wider text-neutral-400">// Plataformas Web</span>
+          </div>
+          <span class="text-xs font-mono px-2.5 py-1 rounded bg-white/[0.03] border border-white/10 text-neutral-300">
+            Carga &lt; 0.5s
+          </span>
+        </div>
+
+        <h3 class="text-2xl font-semibold text-white tracking-tight">
+          Sitios Web y Landings de Carga Instantánea
+        </h3>
+        <p class="mt-3 text-sm text-neutral-400 leading-relaxed">
+          Cada segundo que tarda una página web en abrir expulsa al 10% de tus clientes potenciales. Diseñamos con arquitectura moderna que carga al instante en smartphones, con llamado directo a WhatsApp y posicionamiento en Google Maps.
+        </p>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-white/[0.06] grid grid-cols-2 sm:grid-cols-3 gap-3 font-mono text-xs text-neutral-300">
+        <div>• Cero dependencias lentas</div>
+        <div>• SEO Local en Google</div>
+        <div>• Checkout a WhatsApp</div>
+      </div>
     </div>
 
-    <!-- Bento Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-      <!-- Card 1: Comercios Locales (Col 1 y 2 en MD) con IconWeb propio -->
-      <div class="md:col-span-2 rounded-3xl p-8 bg-neutral-900/40 border border-white/10 hover:border-red-500/30 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between min-h-[340px]">
-        <div class="absolute -right-8 -top-8 w-48 h-48 bg-red-600/10 rounded-full blur-3xl pointer-events-none group-hover:bg-red-600/20 transition-all"></div>
-        
-        <div>
-          <div class="flex items-center justify-between mb-6">
-            <div class="w-12 h-12 rounded-2xl bg-neutral-900 border border-white/10 flex items-center justify-center text-red-500 group-hover:scale-105 transition-transform shadow-inner">
-              <IconWeb class="w-6 h-6 text-white" />
+    <!-- Card 2: E-Commerce y Catálogos Dinámicos (5 cols) -->
+    <div class="md:col-span-5 rounded-xl p-8 bg-[#0c0c0f] border border-white/[0.08] hover:border-white/20 transition-all duration-300 flex flex-col justify-between group">
+      <div>
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/10 flex items-center justify-center text-white">
+              <IconEcommerce class="w-5 h-5 text-neutral-200" />
             </div>
-            <span class="text-xs font-medium px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neutral-300">
-              Comercios & Negocios de Zona
-            </span>
+            <span class="font-mono text-xs uppercase tracking-wider text-neutral-400">// Venta Online</span>
           </div>
-
-          <h3 class="text-2xl font-bold text-white tracking-tight">
-            Sitios Web & Landings de Alta Velocidad
-          </h3>
-          <p class="mt-3 text-sm text-neutral-400 max-w-xl leading-relaxed">
-            Tu negocio no puede perder clientes por una página lenta. Creamos sitios optimizados para celulares con botones directos a WhatsApp, ubicación en Google Maps y SEO local para que te encuentren primero.
-          </p>
         </div>
 
-        <div class="mt-8 flex flex-wrap items-center gap-2 pt-4 border-t border-white/5">
-          <span class="text-xs px-2.5 py-1 rounded-lg bg-neutral-950 border border-white/10 text-neutral-300">Google Local SEO</span>
-          <span class="text-xs px-2.5 py-1 rounded-lg bg-neutral-950 border border-white/10 text-neutral-300">WhatsApp Instantáneo</span>
-          <span class="text-xs px-2.5 py-1 rounded-lg bg-neutral-950 border border-white/10 text-neutral-300">Carga &lt; 1s</span>
-        </div>
+        <h3 class="text-xl font-semibold text-white tracking-tight">
+          Tiendas E-Commerce sin Fricción
+        </h3>
+        <p class="mt-3 text-sm text-neutral-400 leading-relaxed">
+          Catálogos digitales ultra rápidos con integración de cobros locales (Mercado Pago, tarjetas y transferencias) sin comisiones mensuales de plataforma.
+        </p>
       </div>
 
-      <!-- Card 2: E-Commerce con IconEcommerce propio -->
-      <div class="rounded-3xl p-8 bg-neutral-900/40 border border-white/10 hover:border-red-500/30 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between min-h-[340px]">
-        <div>
-          <div class="flex items-center justify-between mb-6">
-            <div class="w-12 h-12 rounded-2xl bg-neutral-900 border border-white/10 flex items-center justify-center text-red-500 group-hover:scale-105 transition-transform shadow-inner">
-              <IconEcommerce class="w-6 h-6 text-white" />
-            </div>
-            <span class="text-xs font-medium px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neutral-300">
-              Ventas Online
-            </span>
-          </div>
-
-          <h3 class="text-xl font-bold text-white tracking-tight">
-            E-Commerce & Catálogos Dinámicos
-          </h3>
-          <p class="mt-3 text-sm text-neutral-400 leading-relaxed">
-            Tiendas online optimizadas para checkout sin fricción, pagos con Mercado Pago o tarjetas, y administración de productos simple y sin complicaciones.
-          </p>
-        </div>
-
-        <div class="mt-8 pt-4 border-t border-white/5 flex items-center gap-2">
-          <span class="text-xs px-2.5 py-1 rounded-lg bg-neutral-950 border border-white/10 text-neutral-300">Pasarelas de Pago</span>
-          <span class="text-xs px-2.5 py-1 rounded-lg bg-neutral-950 border border-white/10 text-neutral-300">Stock en tiempo real</span>
-        </div>
+      <div class="mt-8 pt-6 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-neutral-400">
+        <span>Control total de stock</span>
+        <span class="text-white">0% comisión propia</span>
       </div>
-
-      <!-- Card 3: Estudios Jurídicos y Profesionales con IconLegal propio -->
-      <div class="rounded-3xl p-8 bg-neutral-900/40 border border-white/10 hover:border-red-500/30 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between min-h-[340px]">
-        <div>
-          <div class="flex items-center justify-between mb-6">
-            <div class="w-12 h-12 rounded-2xl bg-neutral-900 border border-white/10 flex items-center justify-center text-red-500 group-hover:scale-105 transition-transform shadow-inner">
-              <IconLegal class="w-6 h-6 text-white" />
-            </div>
-            <span class="text-xs font-medium px-3 py-1 rounded-full bg-white/5 border border-white/10 text-neutral-300">
-              Servicios Profesionales
-            </span>
-          </div>
-
-          <h3 class="text-xl font-bold text-white tracking-tight">
-            Estudios Jurídicos & Consultorías
-          </h3>
-          <p class="mt-3 text-sm text-neutral-400 leading-relaxed">
-            Plataformas institucionales con diseño sobrio y de máxima seriedad. Formularios de evaluación de casos, agendamiento de turnos y generación de autoridad para firmas de abogados y contadores.
-          </p>
-        </div>
-
-        <div class="mt-8 pt-4 border-t border-white/5 flex items-center gap-2">
-          <span class="text-xs px-2.5 py-1 rounded-lg bg-neutral-950 border border-white/10 text-neutral-300">Filtro de Casos</span>
-          <span class="text-xs px-2.5 py-1 rounded-lg bg-neutral-950 border border-white/10 text-neutral-300">Agenda Privada</span>
-        </div>
-      </div>
-
-      <!-- Card 4: Automatizaciones con IA con IconAI propio -->
-      <div class="md:col-span-2 rounded-3xl p-8 bg-gradient-to-br from-neutral-900/80 via-neutral-900/30 to-red-950/20 border border-red-500/20 hover:border-red-500/40 transition-all duration-300 group relative overflow-hidden flex flex-col justify-between min-h-[340px] shadow-lg shadow-red-950/20">
-        <div class="absolute right-0 bottom-0 w-80 h-80 bg-red-600/10 rounded-full blur-3xl pointer-events-none group-hover:bg-red-600/20 transition-all"></div>
-
-        <div>
-          <div class="flex items-center justify-between mb-6">
-            <div class="w-12 h-12 rounded-2xl bg-red-950/60 border border-red-500/40 flex items-center justify-center text-red-400 group-hover:scale-105 transition-transform">
-              <IconAI class="w-7 h-7 text-white" />
-            </div>
-            <span class="text-xs font-medium px-3 py-1 rounded-full bg-red-950/60 border border-red-700/50 text-red-300 flex items-center gap-1.5">
-              <IconSparkle class="w-3.5 h-3.5 text-red-400" />
-              Especialidad Solius Studio
-            </span>
-          </div>
-
-          <h3 class="text-2xl font-bold text-white tracking-tight">
-            Automatización de Procesos & Agentes IA
-          </h3>
-          <p class="mt-3 text-sm text-neutral-400 max-w-xl leading-relaxed">
-            Eliminá el tiempo perdido respondiendo las mismas dudas 50 veces por día. Implementamos chatbots y agentes entrenados con la información de tu negocio para responder consultas, calificar prospectos y coordinar turnos en automático por WhatsApp o tu web.
-          </p>
-        </div>
-
-        <div class="mt-8 flex flex-wrap items-center gap-2 pt-4 border-t border-white/10">
-          <span class="text-xs px-2.5 py-1 rounded-lg bg-black/60 border border-white/10 text-neutral-300">Chatbots WhatsApp con IA</span>
-          <span class="text-xs px-2.5 py-1 rounded-lg bg-black/60 border border-white/10 text-neutral-300">Calificación de Prospectos</span>
-          <span class="text-xs px-2.5 py-1 rounded-lg bg-black/60 border border-white/10 text-neutral-300">Sincronización con Hojas de Cálculo</span>
-        </div>
-      </div>
-
     </div>
+
+    <!-- Card 3: Firmas Legales y Contables (5 cols) -->
+    <div class="md:col-span-5 rounded-xl p-8 bg-[#0c0c0f] border border-white/[0.08] hover:border-white/20 transition-all duration-300 flex flex-col justify-between group">
+      <div>
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/10 flex items-center justify-center text-white">
+              <IconLegal class="w-5 h-5 text-neutral-200" />
+            </div>
+            <span class="font-mono text-xs uppercase tracking-wider text-neutral-400">// Servicios Profesionales</span>
+          </div>
+        </div>
+
+        <h3 class="text-xl font-semibold text-white tracking-tight">
+          Sistemas de Admisión para Estudios
+        </h3>
+        <p class="mt-3 text-sm text-neutral-400 leading-relaxed">
+          Portales corporativos sobrios para abogados y contadores. Formularios de evaluación previa para filtrar consultas no viables y cobrar consultas iniciales.
+        </p>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-neutral-400">
+        <span>Filtro de prospectos</span>
+        <span class="text-white">Agenda blindada</span>
+      </div>
+    </div>
+
+    <!-- Card 4: Automatizaciones con IA (7 cols) -->
+    <div class="md:col-span-7 rounded-xl p-8 bg-[#0c0c0f] border border-white/[0.08] hover:border-red-500/30 transition-all duration-300 flex flex-col justify-between group relative">
+      <div>
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/10 flex items-center justify-center text-white">
+              <IconAI class="w-5 h-5 text-red-500" />
+            </div>
+            <span class="font-mono text-xs uppercase tracking-wider text-neutral-400">// Agentes Inteligentes</span>
+          </div>
+          <span class="text-xs font-mono px-2.5 py-1 rounded bg-red-950/40 border border-red-800/40 text-red-400">
+            Respuesta en segundos
+          </span>
+        </div>
+
+        <h3 class="text-2xl font-semibold text-white tracking-tight">
+          Agentes de Atención y Calificación 24/7
+        </h3>
+        <p class="mt-3 text-sm text-neutral-400 leading-relaxed">
+          Deja de perder clientes por demorar horas en contestar WhatsApp. Diseñamos asistentes entrenados con el catálogo y las políticas de tu negocio para responder dudas frecuentes, cotizar y agendar reuniones de forma autónoma.
+        </p>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-white/[0.06] grid grid-cols-1 sm:grid-cols-3 gap-3 font-mono text-xs text-neutral-300">
+        <div>• Atención 24 horas</div>
+        <div>• Conexión a WhatsApp & CRM</div>
+        <div>• Calificación de leads</div>
+      </div>
+    </div>
+
   </div>
 </section>
