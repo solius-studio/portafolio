@@ -1,42 +1,142 @@
 ---
 import IconSparkle from './icons/IconSparkle.astro';
 import IconArrowRight from './icons/IconArrowRight.astro';
+import IconMenu from './icons/IconMenu.astro';
+import IconClose from './icons/IconClose.astro';
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 py-4 sm:py-6 transition-all duration-300">
-  <nav class="flex items-center justify-between w-full max-w-5xl px-5 py-3 rounded-full bg-neutral-950/75 backdrop-blur-xl border border-white/10 shadow-2xl shadow-black/80">
-    <!-- Logotipo Solius Studio con sello propio -->
-    <a href="#" class="flex items-center gap-2 group">
-      <div class="relative flex items-center justify-center w-7 h-7 rounded-lg bg-neutral-900 border border-white/10 group-hover:border-red-500/50 transition-colors">
-        <div class="w-2.5 h-2.5 rounded-full bg-red-600 group-hover:scale-110 transition-transform shadow-[0_0_8px_rgba(239,68,68,0.8)]"></div>
-      </div>
-      <div class="flex items-baseline gap-1">
-        <span class="font-bold tracking-tight text-white text-base sm:text-lg">SOLIUS</span>
-        <span class="text-xs font-medium tracking-widest text-neutral-400 uppercase">STUDIO</span>
-      </div>
-    </a>
-
-    <!-- Enlaces Desktop -->
-    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-400">
-      <a href="#servicios" class="hover:text-white transition-colors">Servicios</a>
-      <a href="#proyectos" class="hover:text-white transition-colors">Casos de Éxito</a>
-      <a href="#ia-automatizacion" class="flex items-center gap-1.5 hover:text-white transition-colors">
-        <span>Agentes IA</span>
-        <span class="px-1.5 py-0.5 text-[10px] font-semibold text-red-400 bg-red-950/60 border border-red-800/40 rounded-full">Nuevo</span>
+<header class="fixed top-0 left-0 right-0 z-50 flex flex-col items-center px-4 py-3 sm:py-5 transition-all duration-300">
+  <nav class="relative flex items-center justify-between w-full max-w-5xl px-4 sm:px-6 py-2.5 sm:py-3 rounded-full bg-neutral-950/80 backdrop-blur-2xl border border-white/[0.08] shadow-[0_12px_40px_-10px_rgba(0,0,0,0.85)] before:absolute before:inset-x-8 before:top-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent">
+    
+    <!-- Lado Izquierdo: Logotipo Solius Studio con Estado Operativo -->
+    <div class="flex items-center gap-3">
+      <a href="#" class="flex items-center gap-2.5 group">
+        <div class="relative flex items-center justify-center w-8 h-8 rounded-xl bg-neutral-900 border border-white/10 group-hover:border-red-500/60 transition-colors shadow-inner">
+          <div class="w-2.5 h-2.5 rounded-full bg-red-600 group-hover:scale-125 transition-transform shadow-[0_0_12px_rgba(239,68,68,0.9)]"></div>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-baseline gap-1">
+            <span class="font-bold tracking-tight text-white text-base sm:text-lg">SOLIUS</span>
+            <span class="text-[10px] sm:text-xs font-semibold tracking-widest text-neutral-400 uppercase">STUDIO</span>
+          </div>
+        </div>
       </a>
-      <a href="#metodo" class="hover:text-white transition-colors">Metodología</a>
-      <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+
+      <!-- Badge de Estado en Vivo (Ingeniería de Confianza) -->
+      <div class="hidden lg:inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-white/[0.03] border border-white/[0.06] text-[11px] font-mono text-zinc-400">
+        <span class="relative flex h-1.5 w-1.5">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
+        </span>
+        <span class="text-zinc-300 font-medium">DISPONIBLE // Q4 2026</span>
+      </div>
     </div>
 
-    <!-- CTA Navbar con flecha propia -->
-    <div class="flex items-center gap-3">
+    <!-- Enlaces Desktop (Estilo Apple Minimalista) -->
+    <div class="hidden md:flex items-center gap-7 text-sm font-medium text-neutral-400">
+      <a href="#servicios" class="hover:text-white transition-colors duration-200">Servicios</a>
+      <a href="#proyectos" class="hover:text-white transition-colors duration-200">Casos Reales</a>
+      <a href="#ia-automatizacion" class="flex items-center gap-1.5 hover:text-white transition-colors duration-200 group">
+        <span>Agentes IA</span>
+        <span class="px-1.5 py-0.5 text-[9px] font-mono font-bold uppercase tracking-wider text-red-400 bg-red-950/70 border border-red-800/50 rounded-full group-hover:border-red-500/70 transition-colors">
+          Autónomos
+        </span>
+      </a>
+      <a href="#metodo" class="hover:text-white transition-colors duration-200">Método</a>
+      <a href="#faq" class="hover:text-white transition-colors duration-200">FAQ</a>
+    </div>
+
+    <!-- Lado Derecho: CTA Principal y Botón Móvil -->
+    <div class="flex items-center gap-2 sm:gap-3">
+      <!-- Botón de Acción Principal -->
       <a 
         href="#contacto" 
-        class="group relative inline-flex items-center gap-2 px-4 py-2 text-xs sm:text-sm font-medium text-white rounded-full bg-gradient-to-r from-neutral-900 to-neutral-800 border border-white/15 hover:border-red-500/50 transition-all duration-300 hover:shadow-[0_0_20px_-3px_rgba(239,68,68,0.4)]"
+        class="group relative inline-flex items-center gap-2 px-4 sm:px-5 py-2 text-xs sm:text-sm font-medium text-white rounded-full bg-neutral-900 border border-white/15 hover:border-red-500/60 transition-all duration-300 hover:shadow-[0_0_25px_-5px_rgba(239,68,68,0.5)] active:scale-95"
       >
-        <span>Agendar Consulta</span>
+        <span class="hidden xs:inline">Cotizar Proyecto</span>
+        <span class="xs:hidden">Cotizar</span>
         <IconArrowRight class="w-3.5 h-3.5 text-neutral-400 group-hover:text-red-400 group-hover:translate-x-0.5 transition-all" />
       </a>
+
+      <!-- Botón Menú Móvil (Hamburguesa) -->
+      <button 
+        id="mobile-menu-btn"
+        type="button" 
+        aria-label="Abrir menú de navegación"
+        class="md:hidden flex items-center justify-center w-9 h-9 rounded-full bg-white/5 border border-white/10 text-neutral-300 hover:text-white hover:bg-white/10 transition-colors focus:outline-none"
+      >
+        <span id="menu-icon-open"><IconMenu class="w-4 h-4" /></span>
+        <span id="menu-icon-close" class="hidden"><IconClose class="w-4 h-4" /></span>
+      </button>
     </div>
   </nav>
+
+  <!-- Panel Desplegable Móvil (Glassmorphism Completo) -->
+  <div 
+    id="mobile-drawer" 
+    class="hidden md:hidden w-full max-w-5xl mt-2 px-6 py-5 rounded-2xl bg-neutral-950/95 backdrop-blur-2xl border border-white/10 shadow-2xl flex flex-col gap-4 text-sm font-medium text-neutral-300 transition-all duration-300"
+  >
+    <a href="#servicios" class="mobile-nav-link py-2 border-b border-white/5 hover:text-white transition-colors">
+      Servicios
+    </a>
+    <a href="#proyectos" class="mobile-nav-link py-2 border-b border-white/5 hover:text-white transition-colors">
+      Casos Reales
+    </a>
+    <a href="#ia-automatizacion" class="mobile-nav-link py-2 border-b border-white/5 flex items-center justify-between hover:text-white transition-colors">
+      <span>Agentes IA</span>
+      <span class="px-2 py-0.5 text-[10px] font-mono text-red-400 bg-red-950/60 border border-red-800/40 rounded-full">
+        Autónomos
+      </span>
+    </a>
+    <a href="#metodo" class="mobile-nav-link py-2 border-b border-white/5 hover:text-white transition-colors">
+      Método
+    </a>
+    <a href="#faq" class="mobile-nav-link py-2 border-b border-white/5 hover:text-white transition-colors">
+      Preguntas Frecuentes
+    </a>
+    <div class="pt-2 flex flex-col gap-2">
+      <div class="inline-flex items-center gap-2 text-xs font-mono text-emerald-400 py-1">
+        <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span>SISTEMAS OPERATIVOS // LATENCIA 18ms</span>
+      </div>
+      <a 
+        href="#contacto" 
+        class="mobile-nav-link flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-medium text-sm transition-colors shadow-lg shadow-red-600/30"
+      >
+        <span>Hablar por WhatsApp con un Ingeniero</span>
+        <IconArrowRight class="w-4 h-4" />
+      </a>
+    </div>
+  </div>
 </header>
+
+<script>
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const drawer = document.getElementById('mobile-drawer');
+  const iconOpen = document.getElementById('menu-icon-open');
+  const iconClose = document.getElementById('menu-icon-close');
+  const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+  if (menuBtn && drawer && iconOpen && iconClose) {
+    menuBtn.addEventListener('click', () => {
+      const isClosed = drawer.classList.contains('hidden');
+      if (isClosed) {
+        drawer.classList.remove('hidden');
+        iconOpen.classList.add('hidden');
+        iconClose.classList.remove('hidden');
+      } else {
+        drawer.classList.add('hidden');
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+      }
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        drawer.classList.add('hidden');
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+      });
+    });
+  }
+</script>
